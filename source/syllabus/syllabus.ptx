@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Syllabus</title>
+
+  <introduction>
+    <p>
+    </p>
+  </introduction>
+  <!-- Include chapters -->
+  <subsection xml:id="sec-course-info">
+    <title>Course Information</title>
+
+    <p>
+      This is the syllabus for <term>Introduction to Probability and Statistics for the Life Sciences (MATH 1044)</term> for Spring 2026.
+      It is a 4 credit course.
+      <!-- use a description list (dl) for short items --> <dl>
+      <li>
+        <title>Instructor</title>
+
+        <p>
+          Andy Eisenberg, <url href="mailto:andy.eisenberg@temple.edu">andy.eisenberg@temple.edu</url>.
+        </p>
+      </li>
+
+      <li>
+        <title>Office Hours</title>
+
+        <p>
+          TBD
+        </p>
+      </li>
+
+      <li>
+        <title>Lecture</title>
+
+        <p>
+          TR 11:40 am - 1:20 pm, Gladfelter L024
+        </p>
+      </li>
+
+      <li>
+        <title>Recitations</title>
+
+        <p>
+          Sec 1: M 12:00 pm - 12:50 pm, Wachman 9
+        </p>
+
+        <p>
+          Sec 2: W 12:00 pm - 12:50 pm, Wachman 15
+        </p>
+
+        <p>
+          Sec 3: F 11:00 am - 11:50 am, Wachman 408
+        </p>
+
+        <p>
+          Sec 4: F  1:00 pm -  1:50 pm, Wachman 408
+        </p>
+      </li>
+
+      <li>
+        <title>Course Description</title>
+
+        <p>
+          course description from catalog
+        </p>
+      </li>
+
+      <li>
+        <title>Prerequisite</title>
+
+        <p>
+          list of prerequisites
+        </p>
+      </li>
+
+      <li>
+        <title>Textbook and course materials</title>
+
+        <p>
+          <pubtitle>textbook name</pubtitle>
+          by textbook author.
+        </p>
+      </li>
+      </dl>
+    </p>
+    <!-- Use paragraphs to break apart subsections -->
+    <paragraphs>
+      <title>Course Overview</title>
+
+      <p>
+      </p>
+    </paragraphs>
+  </subsection>
+  <!-- Other subsections for larger dividers -->
+  <subsection xml:id="sec-assessments">
+    <title>Assessments and Grades</title>
+
+    <p>
+    </p>
+  </subsection>
+</section>
