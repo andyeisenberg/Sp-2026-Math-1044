@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-calculus-review">
+  <title>Calculus Review</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      In Calculus I, you learned about derivatives, antiderivatives, and definite integrals.
+      All of these will make an appearance in the context of probability density functions, cumulative distribution functions, and probability calculations in continuous sample spaces, so it will be useful to refresh your memory and practice some calculations.
+    </p>
+  </introduction>
+  <!-- Exercises start here. -->
+  <exercise workspace="2in">
+    <statement>
+      <p>
+        The Power Rule for derivatives states:
+        <md number="yes">
+          <mrow> \frac{d}{dx}\left( x^n \right) = </mrow>
+        </md>
+      </p>
+    </statement>
+  </exercise>
+</worksheet>

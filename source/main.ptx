@@ -22,9 +22,8 @@
     <chapter xml:id="recitations">
       <title>Recitations</title>
 
-      <!-- Include recitation files --> <!--
-      <xi:include href="./recitation/recitation01.ptx"/>
-      -->
+      <xi:include href="./recitations/calculus-review.ptx"/>
+     
     </chapter>
   </book>
 </pretext>
