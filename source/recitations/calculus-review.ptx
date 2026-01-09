@@ -12,14 +12,71 @@
     </p>
   </introduction>
   <!-- Exercises start here. -->
-  <exercise workspace="2in">
+  <exercise>
     <statement>
       <p>
         The Power Rule for derivatives states:
-        <md number="yes">
+        <md>
           <mrow> \frac{d}{dx}\left( x^n \right) = </mrow>
         </md>
       </p>
     </statement>
   </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The Power Rule for antiderivatives states:
+        <md>
+          <mrow> \int\left( x^n \right)\ dx = </mrow>
+        </md>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Practice with the following derivatives:
+        <md>
+          <mrow> \frac{d}{dx}\left( 2x^2 + x^{-3} + 4\sqrt{x} \right) \amp = </mrow>
+          <mrow> \frac{d}{dx}\left( \frac{1}{x} + 3e^{2x} + x^e + \pi^e \right) \amp = </mrow>
+        </md>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Practice with the following antiderivatives:
+        <md>
+          <mrow> \int  2x^2 + x^{-3} + 4\sqrt{x} \ dx \amp = </mrow>
+          <mrow> \int  \frac{1}{x} + 3e^{2x} + x^e + \pi^e \ dx \amp = </mrow>
+        </md>
+      </p>
+    </statement>
+  </exercise>
+
+  <theorem xml:id="thm-FTC">
+    <statement>
+        <p>
+            If <m>F(x)</m> is an antiderivative of <m>f(x)</m><mdash />i.e., if <m>F'(x) = f(x)</m><mdash />then the Fundamental Theorem of Calculus (FTC) says:
+            <md>
+                <mrow> \int_a^b f(x)\ dx = F(x)\bigg|_a^b = F(b) - F(a).  </mrow>
+            </md>
+            If <m>f(x)</m> is a probability density function (don't worry about what that means for now), then integrals such as <m>\int_a^b f(x)\ dx</m> are used to calculate certain probabilities, and so are function values of the form <m>F(x)</m>.
+        </p>
+    </statement>
+  </theorem>
+  
+  <exercise>
+    <statement>
+      <p>
+        Practice with the following integrals:
+        <md>
+          <mrow> \int_0^1 \frac{3}{2} x^{3/2} \ dx \amp = </mrow>
+          <mrow> \int_0^x 3e^{-3t} \ dt \amp = </mrow>
+        </md>
+      </p>
+    </statement>
+  </exercise>
+
 </worksheet>
