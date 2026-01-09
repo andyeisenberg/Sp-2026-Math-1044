@@ -16,43 +16,43 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Calculus Review",
-  "body": " Calculus Review    In Calculus I, you learned about derivatives, antiderivatives, and definite integrals. All of these will make an appearance in the context of probability density functions, cumulative distribution functions, and probability calculations in continuous sample spaces, so it will be useful to refresh your memory and practice some calculations.      The Power Rule for derivatives states:       The Power Rule for antiderivatives states:       Practice with the following derivatives:       Practice with the following antiderivatives:      Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then: If is a probability density function (don't worry about what that means for now), then integrals such as are used to calculate certain probabilities, and so are function values of the form .      Practice with the following integrals:     "
+  "body": " Calculus Review    In Calculus I, you learned about derivatives, antiderivatives, and definite integrals. All of these will make an appearance in the context of probability density functions, cumulative distribution functions, and probability calculations in continuous sample spaces, so it will be useful to refresh your memory and practice some calculations.       The Power Rule for derivatives states:       The Power Rule for antiderivatives states:       Practice with the following derivatives:                Practice with the following antiderivatives:                 Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:     If is a probability density function (don't worry about what that means for now), then integrals such as are used to calculate certain probabilities, as are values of the form .    Practice with the following integrals:               "
 },
 {
-  "id": "recitation-calculus-review-3",
+  "id": "recitation-calculus-review-3-1",
   "level": "2",
-  "url": "recitation-calculus-review.html#recitation-calculus-review-3",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-3-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
   "body": "  The Power Rule for derivatives states:    "
 },
 {
-  "id": "recitation-calculus-review-4",
+  "id": "recitation-calculus-review-3-2",
   "level": "2",
-  "url": "recitation-calculus-review.html#recitation-calculus-review-4",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-3-2",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  The Power Rule for antiderivatives states:    "
 },
 {
-  "id": "recitation-calculus-review-5",
+  "id": "recitation-calculus-review-3-3",
   "level": "2",
-  "url": "recitation-calculus-review.html#recitation-calculus-review-5",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-3-3",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Practice with the following derivatives:    "
+  "body": "  Practice with the following derivatives:             "
 },
 {
-  "id": "recitation-calculus-review-6",
+  "id": "recitation-calculus-review-3-4",
   "level": "2",
-  "url": "recitation-calculus-review.html#recitation-calculus-review-6",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-3-4",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Practice with the following antiderivatives:    "
+  "body": "  Practice with the following antiderivatives:             "
 },
 {
   "id": "thm-FTC",
@@ -61,16 +61,16 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "1",
   "title": "Fundamental Theorem of Calculus.",
-  "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then: If is a probability density function (don't worry about what that means for now), then integrals such as are used to calculate certain probabilities, and so are function values of the form .   "
+  "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
 {
-  "id": "recitation-calculus-review-8",
+  "id": "recitation-calculus-review-4-3",
   "level": "2",
-  "url": "recitation-calculus-review.html#recitation-calculus-review-8",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-4-3",
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Practice with the following integrals:    "
+  "body": "  Practice with the following integrals:             "
 }
 ]
 
