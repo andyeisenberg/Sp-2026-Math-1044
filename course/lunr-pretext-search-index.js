@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Calculus Review",
-  "body": " Calculus Review    In Calculus I, you learned about derivatives, antiderivatives, and definite integrals. All of these will make an appearance in the context of probability density functions, cumulative distribution functions, and probability calculations in continuous sample spaces, so it will be useful to refresh your memory and practice some calculations.      The Power Rule for derivatives states:     "
+  "body": " Calculus Review    In Calculus I, you learned about derivatives, antiderivatives, and definite integrals. All of these will make an appearance in the context of probability density functions, cumulative distribution functions, and probability calculations in continuous sample spaces, so it will be useful to refresh your memory and practice some calculations.      The Power Rule for derivatives states:       The Power Rule for antiderivatives states:       Practice with the following derivatives:       Practice with the following antiderivatives:       If is an antiderivative of i.e., if then the Fundamental Theorem of Calculus (FTC) says: If is a probability density function (don't worry about what that means for now), then integrals such as are used to calculate certain probabilities, and so are function values of the form .      Practice with the following integrals:     "
 },
 {
   "id": "recitation-calculus-review-3",
@@ -26,6 +26,51 @@ var ptx_lunr_docs = [
   "number": "1",
   "title": "",
   "body": "  The Power Rule for derivatives states:    "
+},
+{
+  "id": "recitation-calculus-review-4",
+  "level": "2",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-4",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  The Power Rule for antiderivatives states:    "
+},
+{
+  "id": "recitation-calculus-review-5",
+  "level": "2",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Practice with the following derivatives:    "
+},
+{
+  "id": "recitation-calculus-review-6",
+  "level": "2",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-6",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Practice with the following antiderivatives:    "
+},
+{
+  "id": "thm-FTC",
+  "level": "2",
+  "url": "recitation-calculus-review.html#thm-FTC",
+  "type": "Theorem",
+  "number": "1",
+  "title": "",
+  "body": "  If is an antiderivative of i.e., if then the Fundamental Theorem of Calculus (FTC) says: If is a probability density function (don't worry about what that means for now), then integrals such as are used to calculate certain probabilities, and so are function values of the form .   "
+},
+{
+  "id": "recitation-calculus-review-8",
+  "level": "2",
+  "url": "recitation-calculus-review.html#recitation-calculus-review-8",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Practice with the following integrals:    "
 }
 ]
 
