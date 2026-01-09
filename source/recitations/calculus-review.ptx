@@ -56,9 +56,12 @@
   </exercise>
 
   <theorem xml:id="thm-FTC">
+    <title>Fundamental Theorem of Calculus</title>
+    
+    
     <statement>
         <p>
-            If <m>F(x)</m> is an antiderivative of <m>f(x)</m><mdash />i.e., if <m>F'(x) = f(x)</m><mdash />then the Fundamental Theorem of Calculus (FTC) says:
+            If <m>F(x)</m> is an antiderivative of <m>f(x)</m><mdash />i.e., if <m>F'(x) = f(x)</m><mdash />then:
             <md>
                 <mrow> \int_a^b f(x)\ dx = F(x)\bigg|_a^b = F(b) - F(a).  </mrow>
             </md>
