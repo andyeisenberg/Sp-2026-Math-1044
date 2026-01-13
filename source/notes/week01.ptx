@@ -6,30 +6,303 @@
   <introduction>
     <p>
       This is an outline of the topics we covered in the first week of class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
     </p>
   </introduction>
 
-  <!-- Can also be <handout> instead of <subsection> to get a printable version -->
+
   <subsection>
-    <title>Monday 8/22</title>
+    <title>Tuesday 1/13</title>
+
+    <p>
+      In calculus, you mostly asked <term>deterministic</term> questions about functions.
+      In science experiments, you need to take <term>randomness</term> into account.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          A toxin molecule in a cell has a certain chance each minute to leave the cell.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          A patient takes a diagnostic test for a disease and wants to know the chance that they have the disease based on the test result.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Based on historical year-over-year population growth rate data for a particular species, what is a reasonable range for next year's population?
+        </p>
+      </statement>
+    </example>
+
+    <definition xml:id="def-sample-space">
+      <statement>
+        <p>
+          The <term>sample space</term>, often denoted <m>\Omega</m>, is the set of all possible results of an experiment.
+          A single result is called an <term>outcome</term>, while a collection of results is called an <term>event</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="def-subset">
+      <statement>
+        <p>
+          Let <m>A</m> be a set.
+          The symbol <m>\in</m> means "is an element of", as in <m>a \in A</m>.
+          Given another set <m>B</m>, we say <m>A</m> is a <term>subset</term> of <m>B</m>, written <m>A\subset B</m>, to mean that every element of the set <m>A</m> is also an element of the set <m>B</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-sample-space">
+      <statement>
+        <p>
+          An experiment consists of rolling a standard 6-sided die.
+          The sample space is <m>\Omega = \{1, 2, 3, 4, 5, 6\}</m>.
+          One possible event is <m>A = \{2, 4, 6\}</m>, i.e., the event that the result of the roll is even.
+        </p>
+      </statement>
+    </example>
+
+    <definition xml:id="def-set-operations">
+      <statement>
+        <p>
+          Consider sets <m>A</m> and <m>B</m>, each contained inside <m>\Omega</m>.
+          We can combine sets in a variety of ways: <dl>
+          <li>
+            <title>Union</title>
+
+            <p>
+              The <term>union</term> of <m>A</m> and <m>B</m> is the set <m>A \cup B = \{x \mid x \in A \text{ or } x \in B\}</m>.
+            </p>
+          </li>
+
+          <li>
+            <title>Intersection</title>
+
+            <p>
+              The <term>intersection</term> of <m>A</m> and <m>B</m> is the set <m>A \cap B = \{x \mid x \in A \text{ and } x \in B\}</m>.
+            </p>
+          </li>
+
+          <li>
+            <title>Difference</title>
+
+            <p>
+              The <term>set difference</term> <m>A-B</m> is the set <m>A - B = \{x \mid x \in A \text{ and } x \notin B\}</m>.
+            </p>
+          </li>
+
+          <li>
+            <title>Complement</title>
+
+            <p>
+              The <term>complement</term> of <m>A</m> is the set <m>A^c = \{x \in \Omega \mid x \notin A\}</m>.
+            </p>
+          </li>
+
+          <li>
+            <title>Empty Set</title>
+
+            <p>
+              The <term>empty set</term>, usually written <m>\emptyset</m> or <m>\{\}</m>, is the set which contains no elements.
+            </p>
+          </li>
+          </dl>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      It's useful sometimes to draw pictures called <term>Venn diagrams</term> representing sets:
+    </p>
+
+    <figure xml:id="fig-Venn-diagram">
+      <caption>Example Venn Diagram</caption>
+      <image width="50%">
+        <description>
+          <p>
+            Venn diagram showing sets <m>A, B, C</m> with the region representing <m>(A\cup B\cup C) - (A \cap C)</m> shaded.
+          </p>
+        </description>
+        <latex-image>
+        \begin{tikzpicture}
+        \def\firstcircle{(90:1.75cm) circle (2.5cm)}
+        \def\secondcircle{(210:1.75cm) circle (2.5cm)}
+        \def\thirdcircle{(330:1.75cm) circle (2.5cm)}
+        \fill[gray!30] \firstcircle;
+        \fill[gray!30] \secondcircle;
+        \fill[gray!30] \thirdcircle;
+        \begin{scope}
+        \clip \firstcircle;
+        \clip \thirdcircle;
+        \fill[white] \firstcircle;
+        \end{scope}
+        \draw \firstcircle node[text=black,above] {$A$};
+        \draw \secondcircle node [text=black,below left] {$B$};
+        \draw \thirdcircle node [text=black,below right] {$C$};
+        \node at (0, -4.5) {$(A\cup B\cup C) - (A \cap C)$};
+        \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      Next, we want to start assigning probabilities to each individual outcome so we can then find the probabilities of events.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          An experiment consists of rolling a standard 6-sided die.
+          The sample space is <m>\Omega = \{1, 2, 3, 4, 5, 6\}</m>.
+          We might assign probabilities as follows:
+        </p>
+
+        <table>
+          <title>Distribution for a fair die</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell><m>x</m></cell>
+              <cell><m>\Pr(x)</m></cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell><m>1/6</m></cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell><m>1/6</m></cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell><m>1/6</m></cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell><m>1/6</m></cell>
+            </row>
+
+            <row>
+              <cell>5</cell>
+              <cell><m>1/6</m></cell>
+            </row>
+
+            <row>
+              <cell>6</cell>
+              <cell><m>1/6</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Note that we don't have to assign the same probability to each outcome.
+          If we do, we call this distribution <term>uniform</term>.
+          If we have some event, such as <m>A = \{2, 4, 6\}</m>, then we calculate the probability of the event by adding together the probabilities of the outcomes that make up the event:
+          <md>
+            <mrow> \Pr(A) = \Pr(2) + \Pr(4) + \Pr(6) = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = \frac{1}{2} </mrow>
+          </md>
+          Note that this is the same result that we would get if we counted the total number of outcomes in <m>A</m> and divided by the total number of outcomes in <m>\Omega</m>.
+        </p>
+      </statement>
+    </example>
+
+    <definition xml:id="def-cardinality">
+      <statement>
+        <p>
+          Given a finite set <m>A</m>, the <term>cardinality</term> of <m>A</m>, written <m>|A|</m>, is the number of elements in <m>A</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <fact>
+      <statement>
+        <p>
+          If <m>\Omega</m> is a finite probability space with the uniform distribution and <m>A \subset \Omega</m> is an event, then:
+          <md>
+            <mrow> \Pr(A) = \frac{|A|}{|\Omega|} </mrow>
+          </md>
+        </p>
+      </statement>
+    </fact>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we have a weighted die that's much more likely to come up 6 than any other outcome.
+        </p>
+
+        <table>
+          <title>Distribution for a fair die</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell><m>x</m></cell>
+              <cell><m>\Pr(x)</m></cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell>0.2</cell>
+            </row>
+
+            <row>
+              <cell>5</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>6</cell>
+              <cell>0.4</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          With this distribution, if <m>A = \{2, 4, 6\}</m>, then:
+          <md>
+            <mrow> \Pr(A) = 0.1 + 0.2 + 0.4 = 0.7 \neq \frac{3}{6}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+  <!--
+  <subsection>
+    <title>Thursday 1/15</title>
 
     <p>
     </p>
   </subsection>
-
-
-  <subsection>
-    <title>Wednesday 8/24</title>
-
-    <p>
-    </p>
-  </subsection>
-
-
-  <subsection>
-    <title>Friday 8/26</title>
-
-    <p>
-    </p>
-  </subsection>
+  -->
 </section>

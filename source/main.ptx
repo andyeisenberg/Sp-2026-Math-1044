@@ -19,6 +19,12 @@
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 
+    <chapter xml:id="ch-notes">
+      <title>Class Notes</title>
+
+      <xi:include href="./notes/week01.ptx" />
+    </chapter>
+
     <chapter xml:id="recitations">
       <title>Recitations</title>
 
