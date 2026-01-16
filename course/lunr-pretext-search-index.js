@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Tuesday 1\/13   Sec 1.1: Sets  In prior math courses, you mostly asked deterministic questions. Now, we need new tools to model randomness .    A toxin molecule in a cell has a certain chance each minute to leave the cell.      A patient takes a diagnostic test for a disease and wants to know the chance that they have the disease based on the test result.      The sample space , often denoted , is the set of all possible results of an experiment. A single result is called an outcome , while a collection of results is called an event .      An experiment consists of rolling a standard 6-sided die (D6). The sample space is . One possible event is , i.e., the event that the result of the roll is even.    Note: we'll use notation like D6 to indicate a 6-sided die with faces 1, 2, 3, 4, 5, 6. Similarly, for example, D4 will indicate a 4-sided die with faces 1, 2, 3, 4.    The symbol means \"is an element of\", as in .  The symbol means \"is a subset of\", as in . This means that every element of the set is also an element of the set .      Consider sets and , each contained inside . We can combine sets in a variety of ways:   Union  The union of and is the set .    Intersection  The intersection of and is the set .    Difference  The set difference  is the set .    Complement  The complement of is the set .    Empty Set  The empty set , usually written or , is the set which contains no elements.       It's useful sometimes to draw pictures called Venn diagrams representing set interactions.     Union    Venn diagram showing sets with the region representing shaded.       Intersection    Venn diagram showing sets with the region representing shaded.         Difference    Venn diagram showing sets with the region representing shaded.       Complement    Venn diagram showing set with the region representing shaded.          Sec 1.2: Probability  Next, we want to start assigning probabilities to each individual outcome so we can then find the probabilities of events.    An experiment consists of rolling a D6. The sample space is . We might assign probabilities as follows:   Distribution for a fair die        1     2     3     4     5     6      Note that we don't have to assign the same probability to each outcome. If we do, we call this distribution uniform . If we have some event, such as , then we calculate the probability of the event by adding together the probabilities of the outcomes that make up the event: Note that this is the same result that we would get if we counted the total number of outcomes in and divided by the total number of outcomes in .      Given a finite set , the cardinality of , written , is the number of elements in .      If is a finite probability space with the uniform distribution and is an event, then:       Suppose we have a weighted die that's much more likely to come up 6 than any other outcome.   Distribution for a fair die        1  0.1    2  0.1    3  0.1    4  0.2    5  0.1    6  0.4     With this distribution, if , then:       Pick a number from 1 to 10. What is the probability of picking 3?  Some considerations:   Are we using the uniform distribution?    What even is the sample space here? Do we need to pick only integers, or is an outcome here?    What would \"uniform\" mean if the sample space was infinite?         A probability distribution on a sample space assigns probabilities to every event, satisfying the following conditions:    .     for any event .    If , then .         Suppose we flip a coin until we see heads. The sample space is . What would \"uniform\" mean here? Is there any way we could assign the same probability to each individual outcome here?  Instead of \"uniform\", what if we want to treat the coin as a fair coin? Then what would the distribution be?   Distribution assuming a fair coin     # flips      1      2      3      4                         One last (very useful!) observation. Recall: If , then .  For any event , and . So: We can rewrite this in two useful ways:        "
+  "body": " Week 1   This is an outline of the topics we covered in the first week of class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Tuesday 1\/13   Sec 1.1: Sets  In prior math courses, you mostly asked deterministic questions. Now, we need new tools to model randomness .    A toxin molecule in a cell has a certain chance each minute to leave the cell.      A patient takes a diagnostic test for a disease and wants to know the chance that they have the disease based on the test result.      The sample space , often denoted , is the set of all possible results of an experiment. A single result is called an outcome , while a collection of results is called an event .      An experiment consists of rolling a standard 6-sided die (D6). The sample space is . One possible event is , i.e., the event that the result of the roll is even.    Note: we'll use notation like D6 to indicate a 6-sided die with faces 1, 2, 3, 4, 5, 6. Similarly, for example, D4 will indicate a 4-sided die with faces 1, 2, 3, 4.    The symbol means \"is an element of\", as in .  The symbol means \"is a subset of\", as in . This means that every element of the set is also an element of the set .      Consider sets and , each contained inside . We can combine sets in a variety of ways:   Union  The union of and is the set .    Intersection  The intersection of and is the set .    Difference  The set difference  is the set .    Complement  The complement of is the set .    Empty Set  The empty set , usually written or , is the set which contains no elements.       It's useful sometimes to draw pictures called Venn diagrams representing set interactions.     Union    Venn diagram showing sets with the region representing shaded.       Intersection    Venn diagram showing sets with the region representing shaded.         Difference    Venn diagram showing sets with the region representing shaded.       Complement    Venn diagram showing set with the region representing shaded.          Sec 1.2: Probability  Next, we want to start assigning probabilities to each individual outcome so we can then find the probabilities of events.    An experiment consists of rolling a D6. The sample space is . We might assign probabilities as follows:   Distribution for a fair die        1     2     3     4     5     6      Note that we don't have to assign the same probability to each outcome. If we do, we call this distribution uniform . If we have some event, such as , then we calculate the probability of the event by adding together the probabilities of the outcomes that make up the event: Note that this is the same result that we would get if we counted the total number of outcomes in and divided by the total number of outcomes in .      Given a finite set , the cardinality of , written , is the number of elements in .      If is a finite probability space with the uniform distribution and is an event, then:       Suppose we have a weighted die that's much more likely to come up 6 than any other outcome.   Distribution for a fair die        1  0.1    2  0.1    3  0.1    4  0.2    5  0.1    6  0.4     With this distribution, if , then:       Pick a number from 1 to 10. What is the probability of picking 3?  Some considerations:   Are we using the uniform distribution?    What even is the sample space here? Do we need to pick only integers, or is an outcome here?    What would \"uniform\" mean if the sample space was infinite?         A probability distribution on a sample space assigns probabilities to every event, satisfying the following conditions:    .     for any event .    If , then .         Suppose we flip a coin until we see heads. The sample space is . What would \"uniform\" mean here? Is there any way we could assign the same probability to each individual outcome here?  Instead of \"uniform\", what if we want to treat the coin as a fair coin? Then what would the distribution be?   Distribution assuming a fair coin     # flips      1      2      3      4                         One last (very useful!) observation. Recall: If , then .  For any event , and . So: We can rewrite this in two useful ways:        Thursday 1\/15   Conditional Probability  Question: How does evidence (e.g., knowledge of one event occurring) change our knowledge of probabilities for other events?    Roll a fair D6 two times. Let and . feels more likely if we already know has occurred.      The conditional probability of given is: ,    tells the proportion of which is overlapped by .    Two overlapping circles representing events and sit inside a rectangle representing the sample space . The circle labeled is shaded. The portion of that circle which is overlapped by the circle is also filled in with slanted lines.          Continuing from the previous example, . So . Then: Notice that is significantly larger than .      Diagnostic Testing  Setup: A patient takes a diagnostic test. Let be the event that they test positive. Let be the event that they have the disease.    The sensitivity of a diagnostic test is . The specificity of a diagnostic test is .    But, what the patient really wants to know is .    A disease has a prevalence of 1%. A test has sensitivity of 90% and specificity of 91%. For a patient who gets a positive test result, what is the probability that they have the disease?       C!     Bayes' Theorem (v1)   For events with nonzero probability:     For example, if a patient sees a positive diagnostic test result, they might try to calculate:  is the sensitivity. could be the prevalence. We don't have direct access to .  Observation: , so .            Observation 2: So:    Bayes' Theorem (v2)          Continuing from the previous example: What if the patient got a negative test result instead? In that case, what is the probaiblity they do not have the disease?       Independent Events  Question: is supposed to capture how information about affects the probability of . What if it doesn't?    Events are independent if .    Observation: If have nonzero probability and are independent, then: We can take this last equation as a definition of independence.    Continuing , recall and . We found that , so and are not independent.  Now consider the event . We have: Therefore events are independent.      "
 },
 {
   "id": "subsubsec-Sets-2",
@@ -199,6 +199,105 @@ var ptx_lunr_docs = [
   "body": "  One last (very useful!) observation. Recall: If , then .  For any event , and . So: We can rewrite this in two useful ways:    "
 },
 {
+  "id": "subsubsec-Conditional-Probability-3",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Conditional-Probability-3",
+  "type": "Example",
+  "number": "22",
+  "title": "",
+  "body": "  Roll a fair D6 two times. Let and . feels more likely if we already know has occurred.   "
+},
+{
+  "id": "def-conditional-probability",
+  "level": "2",
+  "url": "notes-week-01.html#def-conditional-probability",
+  "type": "Definition",
+  "number": "23",
+  "title": "",
+  "body": "  The conditional probability of given is: ,    tells the proportion of which is overlapped by .    Two overlapping circles representing events and sit inside a rectangle representing the sample space . The circle labeled is shaded. The portion of that circle which is overlapped by the circle is also filled in with slanted lines.       "
+},
+{
+  "id": "example-rolls-conditional",
+  "level": "2",
+  "url": "notes-week-01.html#example-rolls-conditional",
+  "type": "Example",
+  "number": "25",
+  "title": "",
+  "body": "  Continuing from the previous example, . So . Then: Notice that is significantly larger than .   "
+},
+{
+  "id": "def-sensitivity-specificity",
+  "level": "2",
+  "url": "notes-week-01.html#def-sensitivity-specificity",
+  "type": "Definition",
+  "number": "26",
+  "title": "",
+  "body": "  The sensitivity of a diagnostic test is . The specificity of a diagnostic test is .   "
+},
+{
+  "id": "subsubsec-Diagnostic-Testing-5",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Diagnostic-Testing-5",
+  "type": "Example",
+  "number": "27",
+  "title": "",
+  "body": "  A disease has a prevalence of 1%. A test has sensitivity of 90% and specificity of 91%. For a patient who gets a positive test result, what is the probability that they have the disease?       C!   "
+},
+{
+  "id": "thm-Bayes-v1",
+  "level": "2",
+  "url": "notes-week-01.html#thm-Bayes-v1",
+  "type": "Theorem",
+  "number": "28",
+  "title": "Bayes’ Theorem (v1).",
+  "body": " Bayes' Theorem (v1)   For events with nonzero probability:    "
+},
+{
+  "id": "fig-P-breakdown",
+  "level": "2",
+  "url": "notes-week-01.html#fig-P-breakdown",
+  "type": "Figure",
+  "number": "29",
+  "title": "",
+  "body": "         "
+},
+{
+  "id": "thm-Bayes-v2",
+  "level": "2",
+  "url": "notes-week-01.html#thm-Bayes-v2",
+  "type": "Theorem",
+  "number": "30",
+  "title": "Bayes’ Theorem (v2).",
+  "body": " Bayes' Theorem (v2)       "
+},
+{
+  "id": "subsubsec-Diagnostic-Testing-12",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Diagnostic-Testing-12",
+  "type": "Example",
+  "number": "31",
+  "title": "",
+  "body": "  Continuing from the previous example: What if the patient got a negative test result instead? In that case, what is the probaiblity they do not have the disease?    "
+},
+{
+  "id": "def-independent-events",
+  "level": "2",
+  "url": "notes-week-01.html#def-independent-events",
+  "type": "Definition",
+  "number": "32",
+  "title": "",
+  "body": "  Events are independent if .   "
+},
+{
+  "id": "example-rolls-independent",
+  "level": "2",
+  "url": "notes-week-01.html#example-rolls-independent",
+  "type": "Example",
+  "number": "33",
+  "title": "",
+  "body": "  Continuing , recall and . We found that , so and are not independent.  Now consider the event . We have: Therefore events are independent.   "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
@@ -248,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "22",
+  "number": "34",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
