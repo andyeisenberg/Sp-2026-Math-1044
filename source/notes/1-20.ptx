@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-01-20">
+  <title>Tuesday 1/20</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection xml:id="subsec-Discrete-Random-Variables">
+    <title>Sec 2.1: Random Variables</title>
+
+    <definition xml:id="def-RV">
+      <statement>
+        <p>
+          A <term>random variable</term> is a function <m>X \colon \Omega \to \R</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      The idea is that <m>X</m>   is a variable representing a real number value which depends on the outcome of an experiment.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          An experiment consists of planting 50 seeds in a garden, then growing them for 3 months.
+          Let <m>H_i</m> be the height of plant <m>i</m>.
+          
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

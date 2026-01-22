@@ -22,7 +22,8 @@
     <chapter xml:id="ch-notes">
       <title>Class Notes</title>
 
-      <xi:include href="./notes/week01.ptx" />
+      <xi:include href="./notes/1-13.ptx" />
+      <xi:include href="./notes/1-15.ptx" />
     </chapter>
 
     <chapter xml:id="quizzes">

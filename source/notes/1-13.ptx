@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="notes-week-01">
-  <title>Week 1</title>
+<section xml:id="notes-01-13">
+  <title>Tuesday, Jan 13</title>
 
   <introduction>
     <p>
-      This is an outline of the topics we covered in the first week of class.
+      This is an outline of the topics we covered in class.
       These notes are <em>not</em> a substitute for your own note-taking.
       I highly recommend that you take your own notes during class.
       If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
@@ -13,10 +13,7 @@
   </introduction>
 
 
-  <subsection>
-    <title>Tuesday 1/13</title>
-
-    <subsubsection xml:id="subsubsec-Sets">
+    <subsection xml:id="subsec-Sets">
       <title>Sec 1.1: Sets</title>
 
       <p>
@@ -223,9 +220,9 @@
           </figure>
         </sidebyside>
       </sbsgroup>
-    </subsubsection>
+    </subsection>
 
-    <subsubsection xml:id="subsubsec-Probability">
+    <subsection xml:id="subsec-Probability">
       <title>Sec 1.2: Probability</title>
 
       <p>
@@ -516,280 +513,5 @@
           </p>
         </statement>
       </example>
-    </subsubsection>
-  </subsection>
-
-
-  <subsection>
-    <title>Thursday 1/15</title>
-
-    <subsubsection xml:id="subsubsec-Conditional-Probability">
-      <title>Conditional Probability</title>
-
-      <p>
-        Question: How does evidence (e.g., knowledge of one event occurring) change our knowledge of probabilities for other events?
-      </p>
-
-      <example>
-        <statement>
-          <p>
-            Roll a fair D6 two times.
-            Let <m>A = \{\text{sum } \geq 10\}</m> and <m>B = \{\text{first roll is } 6\}</m>.
-            <m>A</m> feels more likely if we already know <m>B</m> has occurred.
-          </p>
-        </statement>
-      </example>
-
-      <definition xml:id="def-conditional-probability">
-        <statement>
-          <p>
-            The <term>conditional probability</term> of <m>A</m> given <m>B</m> is: ,
-            <md>
-              <mrow> \Pr(A \mid B) = \frac{\Pr(A\cap B)}{\Pr(B)} </mrow>
-            </md>
-          </p>
-
-          <figure xml:id="fig-conditional-probability">
-            <caption><m>\Pr(A \mid B)</m> tells the proportion of <m>B</m> which is overlapped by <m>A</m>.</caption>
-            <image width="50%">
-              <description>
-                <p>
-                  Two overlapping circles representing events <m>A</m> and <m>B</m> sit inside a rectangle representing the sample space <m>\Omega</m>.
-                  The circle labeled <m>B</m> is shaded.
-                  The portion of that circle which is overlapped by the <m>A</m> circle is also filled in with slanted lines.
-                </p>
-              </description>
-              <latex-image>
-              \begin{tikzpicture}
-              \def\firstcircle{(180:1.75cm) circle (2.5cm)}
-              \def\secondcircle{(0:1.75cm) circle (2.5cm)}
-              \fill [gray!30] \secondcircle;
-              \begin{scope}
-              \clip \firstcircle;
-              \clip \secondcircle;
-              \fill [pattern=north east lines] \firstcircle;
-              \end{scope}
-              \draw \firstcircle node[text=black] {$A$};
-              \draw \secondcircle node[text=black] {$B$};
-              \draw (-5, -3) rectangle (5, 3) node [text=black,right] {$\Omega$};
-              \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
-        </statement>
-      </definition>
-
-      <example xml:id="example-rolls-conditional">
-        <statement>
-          <p>
-            Continuing from the previous example, <m>|\Omega| = 36</m>.
-            <md>
-              <mrow> A \amp = \{(4, 6), (5, 5), (5, 6), (6, 4), (6, 5), (6, 6)\} </mrow>
-              <mrow> B \amp = \{(6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6)\} </mrow>
-              <mrow> A \cap B \amp = \{(6, 4), (6, 5), (6, 6)\} </mrow>
-            </md>
-            So <m>\Pr(A) = \frac{6}{36}, \Pr(B) = \frac{6}{36}, \text{and } \Pr(A\cap B) = \frac{3}{36}</m>.
-            Then:
-            <md>
-              <mrow> \Pr(A \mid B) = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{3/36}{6/36} = \frac{3}{6} = \frac{1}{2}. </mrow>
-            </md>
-            Notice that <m>\Pr(A\mid B)</m> is significantly larger than <m>\Pr(A)</m>.
-          </p>
-        </statement>
-      </example>
-    </subsubsection>
-
-    <subsubsection xml:id="subsubsec-Diagnostic-Testing">
-      <title>Diagnostic Testing</title>
-
-      <p>
-        Setup: A patient takes a diagnostic test.
-        Let <m>P</m> be the event that they test positive.
-        Let <m>D</m> be the event that they have the disease.
-      </p>
-
-      <definition xml:id="def-sensitivity-specificity">
-        <statement>
-          <p>
-            The <term>sensitivity</term> of a diagnostic test is <m>\Pr(P \mid D)</m>.
-            The <term>specificity</term> of a diagnostic test is <m>\Pr(P^c \mid D^c)</m>.
-          </p>
-        </statement>
-      </definition>
-
-      <p>
-        But, what the patient really wants to know is <m>\Pr(D \mid P)</m>.
-      </p>
-
-      <example>
-        <statement>
-          <p>
-            A disease has a prevalence of 1%.
-            A test has sensitivity of 90% and specificity of 91%.
-            For a patient who gets a positive test result, what is the probability that they have the disease?
-          </p>
-
-          <p>
-            <md>
-              <mrow> \text{A) } 9/10 \amp \amp \text{B) } 8/10 \amp \amp \text{C) } 1/10 \amp \amp \text{D) } 1/100 </mrow>
-            </md>
-          </p>
-        </statement>
-
-        <answer>
-          <p>
-            C!
-          </p>
-        </answer>
-      </example>
-
-      <theorem xml:id="thm-Bayes-v1">
-        <title>Bayes' Theorem (v1)</title>
-
-        <statement>
-          <p>
-            For events <m>A, B</m> with nonzero probability:
-            <md>
-              <mrow> \Pr(B \mid A) = \frac{\Pr(A \mid B)\Pr(B)}{\Pr(A)} </mrow>
-            </md>
-          </p>
-        </statement>
-      </theorem>
-
-      <p>
-        For example, if a patient sees a positive diagnostic test result, they might try to calculate:
-        <md>
-          <mrow> \Pr(D \mid P) = \frac{\Pr(P \mid D)\Pr(D)}{\Pr(P)} </mrow>
-        </md>
-        <m>\Pr(P \mid D)</m> is the sensitivity. <m>\Pr(D)</m> could be the prevalence. We don't have direct access to <m>\Pr(P)</m>.
-      </p>
-
-      <p>
-        Observation: <m>\Omega = D \cup D^c</m>, so <m>P = (P\cap D) \cup (P\cap D^c)</m>.
-      </p>
-
-      <figure xml:id="fig-P-breakdown">
-        <caption></caption>
-        <image width="50%">
-          <description>
-            <p>
-            </p>
-          </description>
-          <latex-image>
-            \begin{tikzpicture}
-            \def\firstcircle{(0, 0) circle (2)}
-            \def\leftside{(-3, -3) rectangle (-0.5, 3)}
-            \def\rightside{(-0.5, -3) rectangle (4, 3)}
-            \begin{scope}
-            \clip\leftside;
-            \fill [gray!50] \firstcircle;
-            \end{scope}
-            \begin{scope}
-            \clip\rightside;
-            \fill [pattern=north east lines] \firstcircle;
-            \end{scope}
-            \draw (0, 0) circle (2);
-            \node at (2.5, 0) {$P$};
-            \draw (-0.5, 3) to (-0.5, -3);
-            \node at (-1.5, -3.5) {$D$};
-            \node at (1.5, -3.5) {$D^c$};
-            \draw (-3, -3) rectangle (4, 3) node [text=black,right] {$\Omega$};
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-      </figure>
-
-      <p>
-        Observation 2:
-        <md>
-          <mrow> \Pr(P \mid D) \amp \frac{\Pr(P\cap D)}{\Pr(D)} \amp \amp \Rightarrow \amp \Pr(P \cap D) \amp = \Pr(P\mid D)\Pr(D) </mrow>
-          <mrow> \Pr(P \mid D^c) \amp \frac{\Pr(P\cap D^c)}{\Pr(D^c)} \amp \amp \Rightarrow \amp \Pr(P \cap D^c) \amp = \Pr(P\mid D^c)\Pr(D^c) </mrow>
-        </md>
-        So:
-        <md>
-          <mrow> \Pr(P) = \Pr(P\mid D)\Pr(D) + \Pr(P\mid D^c)\Pr(D^c)  </mrow>
-        </md>
-      </p>
-
-      <theorem xml:id="thm-Bayes-v2">
-        <title>Bayes' Theorem (v2)</title>
-
-        <statement>
-          <p>
-            <md>
-              <mrow> \Pr(B \mid A) = \frac{\Pr(A \mid B)\Pr(B)}{\Pr(A \mid B)\Pr(B) + \Pr(A \mid B^c)\Pr(B^c)} </mrow>
-            </md>
-          </p>
-        </statement>
-      </theorem>
-
-      <example>
-        <statement>
-          <p>
-            Continuing from the previous example:
-            <md>
-              <mrow> \Pr(D\mid P) \amp = \frac{\Pr(P\mid D)\Pr(D)}{\Pr(P\mid D)\Pr(D) + \Pr(P\mid D^c)\Pr(D^c)} </mrow>
-              <mrow>  \amp = \frac{(0.9)(0.01)}{(0.9)(0.01) + (1 - 0.91)(1 - 0.01)} </mrow>
-              <mrow>  \amp \approx 0.092 </mrow>
-            </md>
-            What if the patient got a negative test result instead? In that case, what is the probaiblity they do not have the disease?
-            <md>
-              <mrow> \Pr(D^c\mid P^c) \amp = \frac{\Pr(P^c\mid D^c)\Pr(D^c)}{\Pr(P^c\mid D^c)\Pr(D^c) + \Pr(P^c\mid D)\Pr(D)} </mrow>
-              <mrow>  \amp = \frac{(0.91)(1 - 0.01)}{(0.91)(1 - 0.01) + (1 - 0.9)(0.01)} </mrow>
-              <mrow>  \amp \approx 0.999 </mrow>
-            </md>
-          </p>
-        </statement>
-      </example>
-    </subsubsection>
-
-    <subsubsection xml:id="subsubsec-Independent-Events">
-      <title>Independent Events</title>
-
-      <p>
-        Question: <m>\Pr(A \mid B)</m> is supposed to capture how information about <m>B</m> affects the probability of <m>A</m>.
-        What if it doesn't?
-      </p>
-
-      <definition xml:id="def-independent-events">
-        <statement>
-          <p>
-            Events <m>A, B</m> are <term>independent</term> if <m>\Pr(A \mid B) = \Pr(A)</m>.
-          </p>
-        </statement>
-      </definition>
-
-      <p>
-        Observation: If <m>A, B</m> have nonzero probability and are independent, then:
-        <md>
-          <mrow> \Pr(A\mid B) \amp = \Pr(A) </mrow>
-          <mrow> \frac{\Pr(A\cap B)}{\Pr(B)} \amp = \Pr(A) </mrow>
-          <mrow> \Pr(A\cap B) \amp = \Pr(A)\Pr(B) </mrow>
-        </md>
-        We can take this last equation as a definition of independence.
-      </p>
-
-      <example xml:id="example-rolls-independent">
-        <statement>
-          <p>
-            Continuing <xref ref="example-rolls-conditional"/>, recall <m>A = \{\text{sum} \geq 10\}</m> and <m>B = \{\text{1st roll is } 6\}</m>.
-            We found that <m>\Pr(A \mid B) \neq \Pr(A)</m>, so <m>A</m> and <m>B</m> are not independent.
-          </p>
-
-          <p>
-            Now consider the event <m>C = \{\text{sum} = 7\}</m>.
-            We have:
-            <md>
-              <mrow> C \amp = \{(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)\} </mrow>
-              <mrow> \Pr(C) \amp = \frac{6}{36} = \frac{1}{6} </mrow>
-              <mrow> B\cap C \amp = \{(6, 1)\} </mrow>
-              <mrow> \Pr(B\cap C) \amp = \frac{1}{36} </mrow>
-              <mrow> \text{therefore: } \Pr(C\mid B) \amp = \frac{\Pr(C\cap B)}{\Pr(B)} = \frac{1/36}{1/6} = \frac{1}{6} = \Pr(C) </mrow>
-            </md>
-            Therefore events <m>B, C</m> are independent.
-          </p>
-        </statement>
-      </example>
-    </subsubsection>
-  </subsection>
-</section>
+    </subsection>
+  </section>
