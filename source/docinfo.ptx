@@ -13,6 +13,18 @@
     \newcommand{\Z}{\mathbb Z}
     \newcommand{\Q}{\mathbb Q}
     \newcommand{\R}{\mathbb R}
+
+    <!-- named distributions -->
+    \DeclareMathOperator{\Bin}{Bin}
+    \DeclareMathOperator{\Geom}{Geom}
+    \DeclareMathOperator{\Poiss}{Poiss}
+    \DeclareMathOperator{\Exp}{Exp}
+
+    <!-- other notation -->
+    \DeclareMathOperator{\E}{E}
+    \DeclareMathOperator{\Var}{Var}
+    \DeclareMathOperator{\Cov}{Cov}
+
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->

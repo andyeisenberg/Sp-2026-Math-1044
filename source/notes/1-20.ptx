@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-01-20">
-  <title>Tuesday 1/20</title>
+  <title>Tuesday, Jan 20</title>
 
   <introduction>
     <p>
@@ -25,7 +25,7 @@
     </definition>
 
     <p>
-      The idea is that <m>X</m>   is a variable representing a real number value which depends on the outcome of an experiment.
+      The idea is that <m>X</m> is a variable representing a real number value which depends on the outcome of an experiment.
     </p>
 
     <example>
@@ -33,7 +33,144 @@
         <p>
           An experiment consists of planting 50 seeds in a garden, then growing them for 3 months.
           Let <m>H_i</m> be the height of plant <m>i</m>.
-          
+          Let <m>D</m> be the number of seeds that didn't sprout.
+          Let
+          <md>
+            <mrow> A \amp = \text{avg height of all 50 plants} </mrow>
+            <mrow> \amp = \frac{H_1 + H_2 + \dotsb + H_{50}}{50} </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      A random variable has its own probability distribution.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Roll a fair D6 twice.
+          Let <m>S</m> be the sum of the rolls.
+          Then <m>\Omega = \{(1, 1), (1, 2), \dotsc, (6, 6)\}</m> has 36 elements.
+          Since the die is fair, the distribution on <m>\Omega</m> is uniform, i.e., <m>\Pr(\omega) = \frac{1}{36}</m> for any <m>\omega \in \Omega</m>.
+        </p>
+
+        <p>
+          <m>S</m> takes on the values <m>2, 3, 4, \dotsc, 12</m>, with probabilities:
+        </p>
+
+        <table>
+          <title>Distribution for <m>S</m></title>
+
+          <tabular halign="center">
+            <row>
+              <cell><m>x</m></cell>
+              <cell><m>\Pr(S = x)</m></cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell>1/36</cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell>2/36</cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell>3/36</cell>
+            </row>
+
+            <row>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+            </row>
+
+            <row>
+              <cell>7</cell>
+              <cell>6/36</cell>
+            </row>
+
+            <row>
+              <cell>8</cell>
+              <cell>5/36</cell>
+            </row>
+
+            <row>
+              <cell><m>\vdots</m></cell>
+              <cell></cell>
+            </row>
+
+            <row>
+              <cell>12</cell>
+              <cell>1/36</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Note that the distribution on <m>\Omega</m> is uniform, but the distribution on <m>S</m> is not.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>\Omega</m> be a sample space and <m>A \subset \Omega</m> an event.
+          Let
+          <md>
+            <mrow> X = \begin{cases} 1 \amp x \in A \\ 0 \amp x \notin A \end{cases} </mrow>
+          </md>
+          <m>X</m> is called an <term>indicator random variable</term>, and we say "<m>X</m> <term>indicates</term> <m>A</m>".
+        </p>
+
+        <p>
+          The distribution on <m>X</m> is:
+          <md>
+            <mrow> \Pr(X = 1) \amp = \Pr(\{ x \mid x \in A\}) = \Pr(A) </mrow>
+            <mrow> \Pr(X = 0) \amp = 1 - \Pr(A) </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we flip a coin <m>n</m> times.
+          Let <m>H_i</m> indicate heads on flip <m>i</m>.
+          Let <m>S</m> be the total number of heads in all flips.
+          Then:
+          <md>
+            <mrow> S = H_1 + H_2 + \dotsb + H_{n} </mrow>
+          </md>
+          If <m>p</m> is the probability of the coin coming up heads on a flip, then <m>S</m> has the <term>binomial distribution</term> with parameters <m>n, p</m>.
+          We'll use the notation <m>S \sim \Bin(n, p)</m> and:
+          <md>
+            <mrow> b(k) = b(k; n, p) = \Pr(S = k). </mrow>
+          </md>
+        </p>
+
+        <p>
+          Suppose the coin has <m>p = 0.3</m> and we flip it <m>n = 4</m> times.
+          Find <m>b(2) = b(2; 4, 0.3)</m>.
+        </p>
+
+        <p>
+          The relevant flip sequences are:
+          <md>
+            <mrow> THHT, HHTT, TTHH, THTH, HTHT, HTTH </mrow>
+          </md>
+          Each individual sequence has a probability of <m>(0.3)(0.3)(0.7)(0.7) = 0.0441</m>.
+          So the total probability is:
+          <md>
+            <mrow> b(2; 4, 0.3) = (6)(0.0441) = 0.2646. </mrow>
+          </md>
+          That is, (number of flip sequences)(probability of each sequence).
         </p>
       </statement>
     </example>
