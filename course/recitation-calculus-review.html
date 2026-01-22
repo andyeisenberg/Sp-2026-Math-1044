@@ -101,15 +101,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.9';
+eBookConfig.runestone_version = '7.11.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="_static/prefix-runtime.3dca4b99808f4053.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.80892ed1280c2803.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -140,6 +140,17 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+
+
+\DeclareMathOperator{\Bin}{Bin}
+\DeclareMathOperator{\Geom}{Geom}
+\DeclareMathOperator{\Poiss}{Poiss}
+\DeclareMathOperator{\Exp}{Exp}
+
+
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -163,26 +174,31 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-notes.html" class="internal"><span class="title">Class Notes</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section">
-<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Tuesday 1/13</span></a></div>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-13.html" class="internal"><span class="title">Tuesday, Jan 13</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Sets" class="internal"><span class="title">Sec 1.1: Sets</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Probability" class="internal"><span class="title">Sec 1.2: Probability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-13.html#subsec-Sets" class="internal"><span class="title">Sec 1.1: Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-13.html#subsec-Probability" class="internal"><span class="title">Sec 1.2: Probability</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Thursday 1/15</span></a></div>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-15.html" class="internal"><span class="title">Thursday, Jan 15</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Conditional-Probability" class="internal"><span class="title">Conditional Probability</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Diagnostic-Testing" class="internal"><span class="title">Diagnostic Testing</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Independent-Events" class="internal"><span class="title">Independent Events</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Conditional-Probability" class="internal"><span class="title">Sec 1.3: Conditional Probability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Diagnostic-Testing" class="internal"><span class="title">Diagnostic Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Independent-Events" class="internal"><span class="title">Sec 1.4: Independent Events</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-20.html" class="internal"><span class="title">Tuesday, Jan 20</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-20.html#subsec-Discrete-Random-Variables" class="internal"><span class="title">Sec 2.1: Random Variables</span></a></div></li></ul>
+</li>
 </ul>
-</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="quizzes.html" class="internal"><span class="title">Quizzes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="quiz-01.html" class="internal"><span class="title">Quiz 1</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="recitations.html" class="internal"><span class="title">Recitations</span></a></div>
@@ -240,7 +256,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="workspace" data-space="2cm"></div>
 <div class="autopermalink" data-description="Task 4.b"><a href="#recitation-calculus-review-3-4-3" title="Copy heading and permalink for Task 4.b" aria-label="Copy heading and permalink for Task 4.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#recitation-calculus-review-3-4" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article></section><section class="onepage" id="recitation-calculus-review-4"><article class="theorem theorem-like" id="thm-FTC"><h3 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental Theorem of Calculus.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental Theorem of Calculus.</span>
 </h3>
 <div class="para logical" id="thm-FTC-2-1">
 <div class="para">If <span class="process-math">\(F(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)\)</span>—i.e., if <span class="process-math">\(F'(x) = f(x)\)</span>—then:</div>
@@ -251,7 +267,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm-FTC-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 34: Fundamental Theorem of Calculus"><a href="#thm-FTC" title="Copy heading and permalink for Theorem 34: Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Theorem 34: Fundamental Theorem of Calculus">🔗</a></div></article><div class="para" id="recitation-calculus-review-4-2">If <span class="process-math">\(f(x)\)</span> is a probability density function (don’t worry about what that means for now), then integrals such as <span class="process-math">\(\int_a^b f(x)\ dx\)</span> are used to calculate certain probabilities, as are values of the form <span class="process-math">\(F(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#recitation-calculus-review-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 40: Fundamental Theorem of Calculus"><a href="#thm-FTC" title="Copy heading and permalink for Theorem 40: Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Theorem 40: Fundamental Theorem of Calculus">🔗</a></div></article><div class="para" id="recitation-calculus-review-4-2">If <span class="process-math">\(f(x)\)</span> is a probability density function (don’t worry about what that means for now), then integrals such as <span class="process-math">\(\int_a^b f(x)\ dx\)</span> are used to calculate certain probabilities, as are values of the form <span class="process-math">\(F(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#recitation-calculus-review-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exercise exercise-like" id="recitation-calculus-review-4-3"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
 <div class="introduction" id="recitation-calculus-review-4-3-1"><div class="para" id="recitation-calculus-review-4-3-1-1">Practice with the following integrals:<div class="autopermalink" data-description="Paragraph"><a href="#recitation-calculus-review-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
