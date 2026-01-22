@@ -25,6 +25,13 @@
       <xi:include href="./notes/week01.ptx" />
     </chapter>
 
+    <chapter xml:id="quizzes">
+      <title>Quizzes</title>
+
+      <xi:include href="./quizzes/quiz-01.ptx"/>
+     
+    </chapter>
+
     <chapter xml:id="recitations">
       <title>Recitations</title>
 

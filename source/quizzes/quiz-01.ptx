@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-01">
+  <title>Quiz 1</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes or textbooks is not allowed.
+      You may use a scientific calculator, not a graphing calculator or phone app.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          Write either True or False for each of the following statements.
+          No justification is required.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            If <m>A</m> and <m>B</m> are any sets, then <m>|A\cap B| \leq |A|</m> and <m>|A\cap B| \leq |B|</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            If <m>A</m> and <m>B</m> are any events, then <m>\Pr(A \mid B) = 1 - \Pr(B \mid A)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            If <m>A</m> and <m>B</m> are any events, then <m>\Pr(A\cap B)\Pr(B) = \Pr(A \mid B)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          We find a 4-sided die with faces 0, 1, 3, and 5.
+          An experiment consists of rolling the die two times.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Write down the sample space <m>\Omega</m> of all possible outcomes for this experiment.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \Omega = \{ \amp (0, 0), (0, 1), (0, 3), (0, 5), </mrow>
+              <mrow> \amp (1, 0), (1, 1), (1, 3), (1, 5), </mrow>
+              <mrow> \amp (3, 0), (3, 1), (3, 3), (3, 5), </mrow>
+              <mrow> \amp (5, 0), (5, 1), (5, 3), (5, 5)\} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Let <m>A</m> be the event that the second roll is at least twice the value of the first roll.
+            Let m   B be the event that the sum of the rolls is odd.
+            Assume the die is fair.
+            List the outcomes in <m>A</m> and calculate <m>\Pr(A)</m>.
+            List the outcomes in <m>B</m> and calculate <m>\Pr(B)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> A \amp = \{(0, 0), (0, 1), (0, 3), (0, 5), (1, 3), (1, 5)\} </mrow>
+              <mrow> B \amp = \{ (0, 1), (0, 3), (0, 5), (1, 0), (3, 0), (5, 0) \} </mrow>
+            </md>
+            Then <m>\Pr(A) = \frac{|A|}{|\Omega|} = \frac{6}{16} = \frac{3}{8}</m>, and <m>\Pr(B) = \frac{|B|}{|\Omega|} = \frac{6}{16} = \frac{3}{8}</m>.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          A diagnostic test is developed to detect a disease present in 1.3% of the population.
+          For a patient who has the disease, the test will accurately give a positive result 62% of the time.
+          When the patient does not have the disease, the test will accurately give a negative result 99.4% of the time.
+        </p>
+
+        <p>
+          For a patient who receives a positive test, what is the probability they have the disease?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Let <m>P</m> be the event of receiving a positive test result and <m>D</m> be the event of having the disease.
+          The given information is: <m>\Pr(D) = 0.013, \Pr(P\mid D) = 0.62</m>, and <m>\Pr(P^c \mid D^c) = 0.994</m>.
+          Then, using Bayes' Theorem:
+          <md>
+            <mrow> \Pr(D\mid P) = \frac{\Pr(P \mid D)\Pr(D)}{\Pr(P)} \amp = \frac{\Pr(P \mid D)\Pr(D)}{\Pr(P \mid D)\Pr(D) + \Pr(P \mid D^c)\Pr(D^c)} </mrow>
+            <mrow> \amp = \frac{\Pr(P \mid D)\Pr(D)}{\Pr(P \mid D)\Pr(D) + (1 - \Pr(P^c \mid D^c))(1 - \Pr(D))} </mrow>
+            <mrow> \amp = \frac{(0.62)(0.013)}{(0.62)(0.013) + (1 - 0.994)(1 - 0.013)}  </mrow>
+            <mrow> \amp \approx \boxed{0.576}  </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>
