@@ -13,6 +13,26 @@
   </introduction>
 
 
+  <subsection xml:id="subsec-hw1-review">
+    <title>HW 1 Q5</title>
+
+    <p>
+      Write <m>F</m> for the event that there's a fire and <m>S</m> for the event that there's visible smoke.
+      Then the information we're given can be interpreted as:
+      <md>
+        <mrow> \Pr(F) \amp = 0.01 </mrow>
+        <mrow> \Pr(S) \amp = 0.1 </mrow>
+        <mrow> \Pr(S\mid F) \amp = 0.9 </mrow>
+      </md>
+      In this case, we can use the simpler version of Bayes' Theorem:
+      <md>
+        <mrow> \Pr(F \mid S) = \frac{\Pr(S \mid F)\Pr(F)}{\Pr(S)} = \dotsb </mrow>
+      </md>
+      Unlike our usual diagnostic testing examples, we do have access to the denominator probability here.
+    </p>
+  </subsection>
+
+
   <subsection xml:id="subsec-Discrete-Random-Variables">
     <title>Sec 2.1: Random Variables</title>
 
