@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-01-22">
+  <title>Thursday, Jan 22</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection xml:id="subsec-discrete-distributions">
+    <title>Discrete Distributions</title>
+
+    <theorem xml:id="thm-binomial">
+      <statement>
+        <p>
+          Suppose we expand <m>(x + y)^n</m>.
+          We'll get a polynomial with some coefficients:
+          <md>
+            <mrow> (x+y)^n = {n\choose 0} x^n + {n\choose 1} x^{n-1}y + \dotsb + {n\choose n-1} xy^{n-1} + {n\choose n} y^n, </mrow>
+          </md>
+          where <m>{n \choose k}</m>, read "<m>n</m> choose <m>k</m>", is the coefficient of <m>x^{n-k}y^k</m>.
+        </p>
+
+        <p>
+          Alternatively: <m>{n\choose k}</m> is the number of ways to pick <m>k</m> things out of a set of <m>n</m> things.
+          Then:
+          <md>
+            <mrow> {n \choose k} = \frac{n!}{k!(n-k)!}, </mrow>
+          </md>
+          where <m>n!</m>, read "<m>n</m> factorial", refers to the product:
+          <md>
+            <mrow> n! = n(n-1)(n-2)\dotsm (3)(2)(1). </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <fact>
+      <statement>
+        <p>
+          <m>0! = 1.</m>
+        </p>
+      </statement>
+    </fact>
+
+    <example>
+      <statement>
+        <p>
+          <md>
+            <mrow> {n\choose 0} \amp = \frac{n!}{0!(n - 0)!} = \frac{n!}{0!}{n!} = \frac{1}{0!} = 1 </mrow>
+            <mrow> {10 \choose 3} \amp = \frac{10!}{3!7!} = \frac{10 \times 9 \times 8 \times 7!}{3\times 2 \times 1 \times 7!} = 10 \times 3 \times 4 = 120. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      So now we get a general probability formula for the binomial distribution:
+      <md>
+        <mrow> b(k; n, p) = {n \choose k} p^k (1-p)^{n-k}. </mrow>
+      </md>
+    </p>
+
+    <p>
+      Let's see some more important distribution types:
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we have a coin with <term>bias</term> <m>p</m>, i.e., probability <m>p</m> of coming up heads.
+          (Note: this is not a common term, but it will be convenient for us to have some terminology for it since we'll refer to this parameter often.) We flip the coin repeatedly until we see heads.
+          Let <m>N</m> be the number of flips.
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          <m>N</m>  has the <term>geometric distribution</term> with parameter <m>p</m>. We'll write <m>N \sim \Geom(p)</m>, and we'll write:
+          <md>
+            <mrow> g(k) = g(k; p) = \Pr(N = k). </mrow>
+          </md>
+          The geometric distribution is given by:
+        </p>
+
+        <table>
+          <title>Geometrid Distribution</title>
+
+          <tabular>
+            <row>
+              <cell><m>k</m></cell>
+              <cell>flip sequences</cell>
+              <cell><m>g(k)</m></cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell>H</cell>
+              <cell><m>p</m></cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell>TH</cell>
+              <cell><m>(1-p)p</m></cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell>TTH</cell>
+              <cell><m>(1-p)^2p</m></cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell>TTTH</cell>
+              <cell><m>(1-p)^3p</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          In general:
+          <md>
+            <mrow> g(k; p) = (1-p)^{k-1}p. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Suppose a toxin molecule inside a cell has a 0.2 chance of leaving during each minute.
+          Let <m>T</m> be the number of minutes until the molecule leaves.
+          Find <m>\Pr(T \leq 3).</m>
+        </p>
+
+        <p>
+          If <m>T \leq 3</m>, then <m>T</m> is either 1, 2, or 3.
+          <md>
+            <mrow> \Pr(T = 1) \amp = g(1; 0.2) = 0.2 </mrow>
+            <mrow> \Pr(T = 2) \amp = g(2; 0.2) = 0.8 \times 0.2 = 0.16 </mrow>
+            <mrow> \Pr(T = 3) \amp = g(3; 0.2) = 0.8^2 \times 0.2 = 0.128 </mrow>
+            <mrow> \Pr(T \leq 3) \amp = 0.2 + 0.16 + 0.128 = 0.488. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          A <term>Poisson process</term>  is a process in which some event occurs at a constant probabilistic rate <m>\lambda</m>.
+          Suppose we observe a Poisson process for <m>t</m> time.
+          Let <m>N</m> be the number of occurrences of the event during that observation time.
+          Then <m>N</m> has the <term>Poisson distribution</term> with parameters <m>\lambda, t</m>.
+          We'll write <m>N \times \Poiss(\lambda, t)</m>, and:
+          <md>
+            <mrow> p(k) = p(k; \lambda, t) = \Pr(N = k) = \frac{(\lambda t)^k}{k!} e^{-\lambda t}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Consider the following examples:
+          <ul>
+            <li>
+              <p>
+                A radioactive material emmitting particles as it decays.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                A call center receiving calls.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                A stretch of highways seeing cars pass by.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Suppose a highway typically has 200 cars per hour.
+          Let <m>N</m> be the number of cars in a 30-minute observation period.
+          Then <m>\lambda = 200, t = \frac{1}{2}</m>, so <m>\lambda t = 100</m> .
+          Then:
+          <md>
+            <mrow> \Pr(N = k) \amp = \frac{100^k}{k!} e^{-100} </mrow>
+            <mrow> \text{e.g., } \Pr(N = 110) \amp = \frac{100^{110}}{110!} e^{-100} \approx 0.023. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+
+
+  <subsection xml:id="subsec-continuous-distributions">
+    <title>Continuous Distributions</title>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we pick a real number <m>X \in [0, 4]</m> uniformly.
+          Intuitively, we can say things like <m>\Pr(X \leq 1) = \frac{1}{4}</m> and <m>\Pr(1 \leq X \leq 3) = \frac{1}{2}</m>.
+          What aobut <m>\Pr(X = 2)?</m>
+        </p>
+
+        <p>
+          Assigning probabilities to individual outcomes isn't useful here.
+          Instead, we assign probabilities to intervals of the form <m>a \leq X \leq b</m>.
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          Let <m>X</m>  be a random variable.
+          If <m>X</m> takes an interval's worth of values, then it's called <term>continuous</term>.
+          Otherwise, it's called <term>discrete</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          <ul>
+            <li>
+              <p>
+                Indicator, Bin, Geom, Poiss are all discrete.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Pick <m>X \in [0, 4]</m> is continuous.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Height of a plant is continuous.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Time is often (but not always) treated as continuous.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          Let <m>X</m>  be a continuous random variable.
+          A <term>probability density function (pdf)</term> for <m>X</m> is a function <m>f(x)</m> such that:
+          <ol>
+            <li>
+              <p>
+                <m>f(x) \geq 0</m> for all <m>x</m>, and,
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\int_{\Omega} f(x)\ dx = 1</m>, where <m>\int_{\Omega}</m> indicates that we should integrate over the entire range of possible values of <m>X</m>.
+              </p>
+            </li>
+          </ol>
+          Given a pdf <m>f(x)</m> for <m>X</m>:
+          <md>
+            <mrow> \Pr(a \leq X \leq b) = \int_a^b f(x)\ dx. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Pick <m>X\in [0, 4]</m> uniformly.
+          Because of the uniform assumption, <m>f(x)</m> must be a constant function <m>f(x) = k</m> for some <m>k</m>.
+          To find <m>k</m>:
+          <md>
+            <mrow> 1 = \int_0^4 f(x)\ dx \amp = \int_0^4 k\ dx = kx \bigg|_0^4 = 4k - 0 </mrow>
+            <mrow> \Rightarrow \quad k \amp = \frac{1}{4} </mrow>
+          </md>
+          More generally, if <m>X \in [a, b]</m> is chosen uniformly, then the pdf would be:
+          <md>
+            <mrow> f(x) = \frac{1}{b - a}, \quad a \leq x \leq b </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
