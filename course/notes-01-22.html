@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: boulder                        *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Thursday, Jan 22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Introduction to Probability and Statistics for the Life Sciences">
+<meta property="book:author" content="Andy Eisenberg">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.fc0e080e84d54281.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.e2abc79debce15fd.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Introduction to Probability and Statistics for the Life Sciences</span> <span class="subtitle">Spring 2026 MATH 1044</span></a></h1>
+<p class="byline">Andy Eisenberg</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-01-20.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="quizzes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+
+
+\DeclareMathOperator{\Bin}{Bin}
+\DeclareMathOperator{\Geom}{Geom}
+\DeclareMathOperator{\Poiss}{Poiss}
+\DeclareMathOperator{\Exp}{Exp}
+
+
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-materials" class="internal"><span class="title">Textbook and Other Required Materials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-grading" class="internal"><span class="title">Grading</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-notes.html" class="internal"><span class="title">Class Notes</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-13.html" class="internal"><span class="title">Tuesday, Jan 13</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-13.html#subsec-Sets" class="internal"><span class="title">Sec 1.1: Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-13.html#subsec-Probability" class="internal"><span class="title">Sec 1.2: Probability</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-15.html" class="internal"><span class="title">Thursday, Jan 15</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Conditional-Probability" class="internal"><span class="title">Sec 1.3: Conditional Probability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Diagnostic-Testing" class="internal"><span class="title">Diagnostic Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Independent-Events" class="internal"><span class="title">Sec 1.4: Independent Events</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-20.html" class="internal"><span class="title">Tuesday, Jan 20</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-20.html#subsec-hw1-review" class="internal"><span class="title">HW 1 Q5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-20.html#subsec-Discrete-Random-Variables" class="internal"><span class="title">Sec 2.1: Random Variables</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="notes-01-22.html" class="internal"><span class="title">Thursday, Jan 22</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-22.html#subsec-discrete-distributions" class="internal"><span class="title">Discrete Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-22.html#subsec-continuous-distributions" class="internal"><span class="title">Continuous Distributions</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="quizzes.html" class="internal"><span class="title">Quizzes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="quiz-01.html" class="internal"><span class="title">Quiz 1</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="recitations.html" class="internal"><span class="title">Recitations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-calculus-review.html" class="internal"><span class="title">Calculus Review</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="notes-01-22"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday, Jan 22</span>
+</h2>
+<section class="introduction" id="notes-01-22-2"><div class="para" id="notes-01-22-2-1">This is an outline of the topics we covered in class. These notes are <em class="emphasis">not</em> a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.<div class="autopermalink" data-description="Paragraph"><a href="#notes-01-22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-discrete-distributions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Discrete Distributions</span>
+</h3>
+<article class="theorem theorem-like" id="thm-binomial"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="thm-binomial-1-1">
+<div class="para">Suppose we expand <span class="process-math">\((x + y)^n\text{.}\)</span> We’ll get a polynomial with some coefficients:</div>
+<div class="displaymath process-math" id="thm-binomial-1-1-2">
+\begin{gather*}
+(x+y)^n = {n\choose 0} x^n + {n\choose 1} x^{n-1}y + \dotsb + {n\choose n-1} xy^{n-1} + {n\choose n} y^n, 
+\end{gather*}
+</div>
+<div class="para">where <span class="process-math">\({n \choose k}\text{,}\)</span> read "<span class="process-math">\(n\)</span> choose <span class="process-math">\(k\)</span>", is the coefficient of <span class="process-math">\(x^{n-k}y^k\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-binomial-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="thm-binomial-1-2">
+<div class="para">Alternatively: <span class="process-math">\({n\choose k}\)</span> is the number of ways to pick <span class="process-math">\(k\)</span> things out of a set of <span class="process-math">\(n\)</span> things. Then:</div>
+<div class="displaymath process-math" id="thm-binomial-1-2-4">
+\begin{gather*}
+{n \choose k} = \frac{n!}{k!(n-k)!}, 
+\end{gather*}
+</div>
+<div class="para">where <span class="process-math">\(n!\text{,}\)</span> read "<span class="process-math">\(n\)</span> factorial", refers to the product:</div>
+<div class="displaymath process-math" id="thm-binomial-1-2-7">
+\begin{gather*}
+n! = n(n-1)(n-2)\dotsm (3)(2)(1). 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-binomial-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 40"><a href="#thm-binomial" title="Copy heading and permalink for Theorem 40" aria-label="Copy heading and permalink for Theorem 40">🔗</a></div></article><article class="fact theorem-like" id="subsec-discrete-distributions-3"><h4 class="heading">
+<span class="type">Fact</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-discrete-distributions-3-1-1">
+<span class="process-math">\(0! = 1.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Fact 41"><a href="#subsec-discrete-distributions-3" title="Copy heading and permalink for Fact 41" aria-label="Copy heading and permalink for Fact 41">🔗</a></div></article><article class="example example-like" id="subsec-discrete-distributions-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-discrete-distributions-4-1-1">
+<div class="displaymath process-math" id="subsec-discrete-distributions-4-1-1-1">
+\begin{align*}
+{n\choose 0} \amp = \frac{n!}{0!(n - 0)!} = \frac{n!}{0!}{n!} = \frac{1}{0!} = 1 \\
+{10 \choose 3} \amp = \frac{10!}{3!7!} = \frac{10 \times 9 \times 8 \times 7!}{3\times 2 \times 1 \times 7!} = 10 \times 3 \times 4 = 120. 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 42"><a href="#subsec-discrete-distributions-4" title="Copy heading and permalink for Example 42" aria-label="Copy heading and permalink for Example 42">🔗</a></div></article><div class="para logical" id="subsec-discrete-distributions-5">
+<div class="para">So now we get a general probability formula for the binomial distribution:</div>
+<div class="displaymath process-math" id="subsec-discrete-distributions-5-1">
+\begin{gather*}
+b(k; n, p) = {n \choose k} p^k (1-p)^{n-k}. 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-discrete-distributions-6">Let’s see some more important distribution types:<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-discrete-distributions-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-discrete-distributions-7-1-1">Suppose we have a coin with <dfn class="terminology">bias</dfn> <span class="process-math">\(p\text{,}\)</span> i.e., probability <span class="process-math">\(p\)</span> of coming up heads. (Note: this is not a common term, but it will be convenient for us to have some terminology for it since we’ll refer to this parameter often.) We flip the coin repeatedly until we see heads. Let <span class="process-math">\(N\)</span> be the number of flips.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 43"><a href="#subsec-discrete-distributions-7" title="Copy heading and permalink for Example 43" aria-label="Copy heading and permalink for Example 43">🔗</a></div></article><article class="definition definition-like" id="subsec-discrete-distributions-8"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-discrete-distributions-8-1-1">
+<div class="para">
+<span class="process-math">\(N\)</span>  has the <dfn class="terminology">geometric distribution</dfn> with parameter <span class="process-math">\(p\text{.}\)</span> We’ll write <span class="process-math">\(N \sim \Geom(p)\text{,}\)</span> and we’ll write:</div>
+<div class="displaymath process-math" id="subsec-discrete-distributions-8-1-1-5">
+\begin{gather*}
+g(k) = g(k; p) = \Pr(N = k). 
+\end{gather*}
+</div>
+<div class="para">The geometric distribution is given by:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="table table-like" id="subsec-discrete-distributions-8-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">45<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Geometrid Distribution<div class="autopermalink" data-description="Table 45: Geometrid Distribution"><a href="#subsec-discrete-distributions-8-1-2" title="Copy heading and permalink for Table 45: Geometrid Distribution" aria-label="Copy heading and permalink for Table 45: Geometrid Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">flip sequences</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(g(k)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">H</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">TH</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((1-p)p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">TTH</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((1-p)^2p\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">TTTH</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((1-p)^3p\)</span></td>
+</tr>
+</table></div></figure> <div class="para logical" id="subsec-discrete-distributions-8-1-3">
+<div class="para">In general:</div>
+<div class="displaymath process-math" id="subsec-discrete-distributions-8-1-3-1">
+\begin{gather*}
+g(k; p) = (1-p)^{k-1}p. 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 44"><a href="#subsec-discrete-distributions-8" title="Copy heading and permalink for Definition 44" aria-label="Copy heading and permalink for Definition 44">🔗</a></div></article><article class="example example-like" id="subsec-discrete-distributions-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">46</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-discrete-distributions-9-1-1">Suppose a toxin molecule inside a cell has a 0.2 chance of leaving during each minute. Let <span class="process-math">\(T\)</span> be the number of minutes until the molecule leaves. Find <span class="process-math">\(\Pr(T \leq 3).\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="subsec-discrete-distributions-9-1-2">
+<div class="para">If <span class="process-math">\(T \leq 3\text{,}\)</span> then <span class="process-math">\(T\)</span> is either 1, 2, or 3.</div>
+<div class="displaymath process-math" id="subsec-discrete-distributions-9-1-2-3">
+\begin{align*}
+\Pr(T = 1) \amp = g(1; 0.2) = 0.2 \\
+\Pr(T = 2) \amp = g(2; 0.2) = 0.8 \times 0.2 = 0.16 \\
+\Pr(T = 3) \amp = g(3; 0.2) = 0.8^2 \times 0.2 = 0.128 \\
+\Pr(T \leq 3) \amp = 0.2 + 0.16 + 0.128 = 0.488. 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-9-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 46"><a href="#subsec-discrete-distributions-9" title="Copy heading and permalink for Example 46" aria-label="Copy heading and permalink for Example 46">🔗</a></div></article><article class="definition definition-like" id="subsec-discrete-distributions-10"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-discrete-distributions-10-1-1">
+<div class="para">A <dfn class="terminology">Poisson process</dfn>  is a process in which some event occurs at a constant probabilistic rate <span class="process-math">\(\lambda\text{.}\)</span> Suppose we observe a Poisson process for <span class="process-math">\(t\)</span> time. Let <span class="process-math">\(N\)</span> be the number of occurrences of the event during that observation time. Then <span class="process-math">\(N\)</span> has the <dfn class="terminology">Poisson distribution</dfn> with parameters <span class="process-math">\(\lambda, t\text{.}\)</span> We’ll write <span class="process-math">\(N \times \Poiss(\lambda, t)\text{,}\)</span> and:</div>
+<div class="displaymath process-math" id="subsec-discrete-distributions-10-1-1-9">
+\begin{gather*}
+p(k) = p(k; \lambda, t) = \Pr(N = k) = \frac{(\lambda t)^k}{k!} e^{-\lambda t}. 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 47"><a href="#subsec-discrete-distributions-10" title="Copy heading and permalink for Definition 47" aria-label="Copy heading and permalink for Definition 47">🔗</a></div></article><article class="example example-like" id="subsec-discrete-distributions-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-discrete-distributions-11-1-1">
+<div class="para">Consider the following examples:</div>
+<ul class="disc" id="subsec-discrete-distributions-11-1-1-1">
+<li id="subsec-discrete-distributions-11-1-1-1-1">
+<div class="para" id="subsec-discrete-distributions-11-1-1-1-1-1">A radioactive material emmitting particles as it decays.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-11-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-discrete-distributions-11-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-discrete-distributions-11-1-1-1-2">
+<div class="para" id="subsec-discrete-distributions-11-1-1-1-2-1">A call center receiving calls.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-11-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-discrete-distributions-11-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-discrete-distributions-11-1-1-1-3">
+<div class="para" id="subsec-discrete-distributions-11-1-1-1-3-1">A stretch of highways seeing cars pass by.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-11-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-discrete-distributions-11-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 48"><a href="#subsec-discrete-distributions-11" title="Copy heading and permalink for Example 48" aria-label="Copy heading and permalink for Example 48">🔗</a></div></article><article class="example example-like" id="subsec-discrete-distributions-12"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">49</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-discrete-distributions-12-1-1">
+<div class="para">Suppose a highway typically has 200 cars per hour. Let <span class="process-math">\(N\)</span> be the number of cars in a 30-minute observation period. Then <span class="process-math">\(\lambda = 200, t = \frac{1}{2}\text{,}\)</span> so <span class="process-math">\(\lambda t = 100\)</span> . Then:</div>
+<div class="displaymath process-math" id="subsec-discrete-distributions-12-1-1-4">
+\begin{align*}
+\Pr(N = k) \amp = \frac{100^k}{k!} e^{-100} \\
+\text{e.g., } \Pr(N = 110) \amp = \frac{100^{110}}{110!} e^{-100} \approx 0.023. 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-discrete-distributions-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 49"><a href="#subsec-discrete-distributions-12" title="Copy heading and permalink for Example 49" aria-label="Copy heading and permalink for Example 49">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Discrete Distributions"><a href="#subsec-discrete-distributions" title="Copy heading and permalink for Subsection: Discrete Distributions" aria-label="Copy heading and permalink for Subsection: Discrete Distributions">🔗</a></div></section><section class="subsection" id="subsec-continuous-distributions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Continuous Distributions</span>
+</h3>
+<article class="example example-like" id="subsec-continuous-distributions-2"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-continuous-distributions-2-1-1">Suppose we pick a real number <span class="process-math">\(X \in [0, 4]\)</span> uniformly. Intuitively, we can say things like <span class="process-math">\(\Pr(X \leq 1) = \frac{1}{4}\)</span> and <span class="process-math">\(\Pr(1 \leq X \leq 3) = \frac{1}{2}\text{.}\)</span> What aobut <span class="process-math">\(\Pr(X = 2)?\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsec-continuous-distributions-2-1-2">Assigning probabilities to individual outcomes isn’t useful here. Instead, we assign probabilities to intervals of the form <span class="process-math">\(a \leq X \leq b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 50"><a href="#subsec-continuous-distributions-2" title="Copy heading and permalink for Example 50" aria-label="Copy heading and permalink for Example 50">🔗</a></div></article><article class="definition definition-like" id="subsec-continuous-distributions-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">51</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsec-continuous-distributions-3-1-1">Let <span class="process-math">\(X\)</span>  be a random variable. If <span class="process-math">\(X\)</span> takes an interval’s worth of values, then it’s called <dfn class="terminology">continuous</dfn>. Otherwise, it’s called <dfn class="terminology">discrete</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 51"><a href="#subsec-continuous-distributions-3" title="Copy heading and permalink for Definition 51" aria-label="Copy heading and permalink for Definition 51">🔗</a></div></article><article class="example example-like" id="subsec-continuous-distributions-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-continuous-distributions-4-1-1">
+<ul class="disc" id="subsec-continuous-distributions-4-1-1-1">
+<li id="subsec-continuous-distributions-4-1-1-1-1">
+<div class="para" id="subsec-continuous-distributions-4-1-1-1-1-1">Indicator, Bin, Geom, Poiss are all discrete.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-continuous-distributions-4-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-continuous-distributions-4-1-1-1-2">
+<div class="para" id="subsec-continuous-distributions-4-1-1-1-2-1">Pick <span class="process-math">\(X \in [0, 4]\)</span> is continuous.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-continuous-distributions-4-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-continuous-distributions-4-1-1-1-3">
+<div class="para" id="subsec-continuous-distributions-4-1-1-1-3-1">Height of a plant is continuous.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-4-1-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-continuous-distributions-4-1-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-continuous-distributions-4-1-1-1-4">
+<div class="para" id="subsec-continuous-distributions-4-1-1-1-4-1">Time is often (but not always) treated as continuous.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-4-1-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-continuous-distributions-4-1-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 52"><a href="#subsec-continuous-distributions-4" title="Copy heading and permalink for Example 52" aria-label="Copy heading and permalink for Example 52">🔗</a></div></article><article class="definition definition-like" id="subsec-continuous-distributions-5"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-continuous-distributions-5-1-1">
+<div class="para">Let <span class="process-math">\(X\)</span>  be a continuous random variable. A <dfn class="terminology">probability density function (pdf)</dfn> for <span class="process-math">\(X\)</span> is a function <span class="process-math">\(f(x)\)</span> such that:</div>
+<ol class="decimal" id="subsec-continuous-distributions-5-1-1-5">
+<li id="subsec-continuous-distributions-5-1-1-5-1">
+<div class="para" id="subsec-continuous-distributions-5-1-1-5-1-1">
+<span class="process-math">\(f(x) \geq 0\)</span> for all <span class="process-math">\(x\text{,}\)</span> and,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-5-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-continuous-distributions-5-1-1-5-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-continuous-distributions-5-1-1-5-2">
+<div class="para" id="subsec-continuous-distributions-5-1-1-5-2-1">
+<span class="process-math">\(\int_{\Omega} f(x)\ dx = 1\text{,}\)</span> where <span class="process-math">\(\int_{\Omega}\)</span> indicates that we should integrate over the entire range of possible values of <span class="process-math">\(X\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-5-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-continuous-distributions-5-1-1-5-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Given a pdf <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(X\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-continuous-distributions-5-1-1-8">
+\begin{gather*}
+\Pr(a \leq X \leq b) = \int_a^b f(x)\ dx. 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 53"><a href="#subsec-continuous-distributions-5" title="Copy heading and permalink for Definition 53" aria-label="Copy heading and permalink for Definition 53">🔗</a></div></article><article class="example example-like" id="subsec-continuous-distributions-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="subsec-continuous-distributions-6-1-1">
+<div class="para">Pick <span class="process-math">\(X\in [0, 4]\)</span> uniformly. Because of the uniform assumption, <span class="process-math">\(f(x)\)</span> must be a constant function <span class="process-math">\(f(x) = k\)</span> for some <span class="process-math">\(k\text{.}\)</span> To find <span class="process-math">\(k\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="subsec-continuous-distributions-6-1-1-6">
+\begin{align*}
+1 = \int_0^4 f(x)\ dx \amp = \int_0^4 k\ dx = kx \bigg|_0^4 = 4k - 0 \\
+\Rightarrow \quad k \amp = \frac{1}{4} 
+\end{align*}
+</div>
+<div class="para">More generally, if <span class="process-math">\(X \in [a, b]\)</span> is chosen uniformly, then the pdf would be:</div>
+<div class="displaymath process-math" id="subsec-continuous-distributions-6-1-1-8">
+\begin{gather*}
+f(x) = \frac{1}{b - a}, \quad a \leq x \leq b 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-continuous-distributions-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 54"><a href="#subsec-continuous-distributions-6" title="Copy heading and permalink for Example 54" aria-label="Copy heading and permalink for Example 54">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Continuous Distributions"><a href="#subsec-continuous-distributions" title="Copy heading and permalink for Subsection: Continuous Distributions" aria-label="Copy heading and permalink for Subsection: Continuous Distributions">🔗</a></div></section><div class="autopermalink" data-description="Section: Thursday, Jan 22"><a href="#notes-01-22" title="Copy heading and permalink for Section: Thursday, Jan 22" aria-label="Copy heading and permalink for Section: Thursday, Jan 22">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="notes-01-20.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="quizzes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

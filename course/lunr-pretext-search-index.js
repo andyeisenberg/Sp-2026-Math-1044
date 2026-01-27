@@ -361,6 +361,141 @@ var ptx_lunr_docs = [
   "body": "  Suppose we flip a coin times. Let indicate heads on flip . Let be the total number of heads in all flips. Then: If is the probability of the coin coming up heads on a flip, then has the binomial distribution with parameters . We'll use the notation and:   Suppose the coin has and we flip it times. Find .  The relevant flip sequences are: Each individual sequence has a probability of . So the total probability is: That is, (number of flip sequences)(probability of each sequence).   "
 },
 {
+  "id": "notes-01-22",
+  "level": "1",
+  "url": "notes-01-22.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Jan 22",
+  "body": " Thursday, Jan 22   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Discrete Distributions    Suppose we expand . We'll get a polynomial with some coefficients: where , read \" choose \", is the coefficient of .  Alternatively: is the number of ways to pick things out of a set of things. Then: where , read \" factorial\", refers to the product:                   So now we get a general probability formula for the binomial distribution:   Let's see some more important distribution types:    Suppose we have a coin with bias  , i.e., probability of coming up heads. (Note: this is not a common term, but it will be convenient for us to have some terminology for it since we'll refer to this parameter often.) We flip the coin repeatedly until we see heads. Let be the number of flips.       has the geometric distribution with parameter . We'll write , and we'll write: The geometric distribution is given by:   Geometrid Distribution     flip sequences     1  H     2  TH     3  TTH     4  TTTH      In general:       Suppose a toxin molecule inside a cell has a 0.2 chance of leaving during each minute. Let be the number of minutes until the molecule leaves. Find   If , then is either 1, 2, or 3.       A Poisson process is a process in which some event occurs at a constant probabilistic rate . Suppose we observe a Poisson process for time. Let be the number of occurrences of the event during that observation time. Then has the Poisson distribution with parameters . We'll write , and:       Consider the following examples:   A radioactive material emmitting particles as it decays.    A call center receiving calls.    A stretch of highways seeing cars pass by.         Suppose a highway typically has 200 cars per hour. Let be the number of cars in a 30-minute observation period. Then , so . Then:       Continuous Distributions    Suppose we pick a real number uniformly. Intuitively, we can say things like and . What aobut   Assigning probabilities to individual outcomes isn't useful here. Instead, we assign probabilities to intervals of the form .      Let be a random variable. If takes an interval's worth of values, then it's called continuous . Otherwise, it's called discrete .         Indicator, Bin, Geom, Poiss are all discrete.    Pick is continuous.    Height of a plant is continuous.    Time is often (but not always) treated as continuous.         Let be a continuous random variable. A probability density function (pdf) for is a function such that:    for all , and,     , where indicates that we should integrate over the entire range of possible values of .   Given a pdf for :       Pick uniformly. Because of the uniform assumption, must be a constant function for some . To find : More generally, if is chosen uniformly, then the pdf would be:      "
+},
+{
+  "id": "thm-binomial",
+  "level": "2",
+  "url": "notes-01-22.html#thm-binomial",
+  "type": "Theorem",
+  "number": "40",
+  "title": "",
+  "body": "  Suppose we expand . We'll get a polynomial with some coefficients: where , read \" choose \", is the coefficient of .  Alternatively: is the number of ways to pick things out of a set of things. Then: where , read \" factorial\", refers to the product:    "
+},
+{
+  "id": "subsec-discrete-distributions-3",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-3",
+  "type": "Fact",
+  "number": "41",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "subsec-discrete-distributions-4",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-4",
+  "type": "Example",
+  "number": "42",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "subsec-discrete-distributions-7",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-7",
+  "type": "Example",
+  "number": "43",
+  "title": "",
+  "body": "  Suppose we have a coin with bias  , i.e., probability of coming up heads. (Note: this is not a common term, but it will be convenient for us to have some terminology for it since we'll refer to this parameter often.) We flip the coin repeatedly until we see heads. Let be the number of flips.   "
+},
+{
+  "id": "subsec-discrete-distributions-8",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-8",
+  "type": "Definition",
+  "number": "44",
+  "title": "",
+  "body": "   has the geometric distribution with parameter . We'll write , and we'll write: The geometric distribution is given by:   Geometrid Distribution     flip sequences     1  H     2  TH     3  TTH     4  TTTH      In general:    "
+},
+{
+  "id": "subsec-discrete-distributions-9",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-9",
+  "type": "Example",
+  "number": "46",
+  "title": "",
+  "body": "  Suppose a toxin molecule inside a cell has a 0.2 chance of leaving during each minute. Let be the number of minutes until the molecule leaves. Find   If , then is either 1, 2, or 3.    "
+},
+{
+  "id": "subsec-discrete-distributions-10",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-10",
+  "type": "Definition",
+  "number": "47",
+  "title": "",
+  "body": "  A Poisson process is a process in which some event occurs at a constant probabilistic rate . Suppose we observe a Poisson process for time. Let be the number of occurrences of the event during that observation time. Then has the Poisson distribution with parameters . We'll write , and:    "
+},
+{
+  "id": "subsec-discrete-distributions-11",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-11",
+  "type": "Example",
+  "number": "48",
+  "title": "",
+  "body": "  Consider the following examples:   A radioactive material emmitting particles as it decays.    A call center receiving calls.    A stretch of highways seeing cars pass by.      "
+},
+{
+  "id": "subsec-discrete-distributions-12",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-discrete-distributions-12",
+  "type": "Example",
+  "number": "49",
+  "title": "",
+  "body": "  Suppose a highway typically has 200 cars per hour. Let be the number of cars in a 30-minute observation period. Then , so . Then:    "
+},
+{
+  "id": "subsec-continuous-distributions-2",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-continuous-distributions-2",
+  "type": "Example",
+  "number": "50",
+  "title": "",
+  "body": "  Suppose we pick a real number uniformly. Intuitively, we can say things like and . What aobut   Assigning probabilities to individual outcomes isn't useful here. Instead, we assign probabilities to intervals of the form .   "
+},
+{
+  "id": "subsec-continuous-distributions-3",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-continuous-distributions-3",
+  "type": "Definition",
+  "number": "51",
+  "title": "",
+  "body": "  Let be a random variable. If takes an interval's worth of values, then it's called continuous . Otherwise, it's called discrete .   "
+},
+{
+  "id": "subsec-continuous-distributions-4",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-continuous-distributions-4",
+  "type": "Example",
+  "number": "52",
+  "title": "",
+  "body": "     Indicator, Bin, Geom, Poiss are all discrete.    Pick is continuous.    Height of a plant is continuous.    Time is often (but not always) treated as continuous.      "
+},
+{
+  "id": "subsec-continuous-distributions-5",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-continuous-distributions-5",
+  "type": "Definition",
+  "number": "53",
+  "title": "",
+  "body": "  Let be a continuous random variable. A probability density function (pdf) for is a function such that:    for all , and,     , where indicates that we should integrate over the entire range of possible values of .   Given a pdf for :    "
+},
+{
+  "id": "subsec-continuous-distributions-6",
+  "level": "2",
+  "url": "notes-01-22.html#subsec-continuous-distributions-6",
+  "type": "Example",
+  "number": "54",
+  "title": "",
+  "body": "  Pick uniformly. Because of the uniform assumption, must be a constant function for some . To find : More generally, if is chosen uniformly, then the pdf would be:    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
@@ -446,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "40",
+  "number": "55",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
