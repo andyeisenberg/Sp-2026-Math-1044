@@ -496,6 +496,123 @@ var ptx_lunr_docs = [
   "body": "  Pick uniformly. Because of the uniform assumption, must be a constant function for some . To find : More generally, if is chosen uniformly, then the pdf would be:    "
 },
 {
+  "id": "notes-01-27",
+  "level": "1",
+  "url": "notes-01-27.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Jan 27",
+  "body": " Thursday, Jan 27   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Continuous Distributions    Let with . Find . Then, we can calculate probabilities, e.g.:     Note: a pdf outputs probability densities, not probabilities. To get probabilities, we must integrate.    Let be a continuous random variable with values in . The cumulative distribution function (cdf) is: To calculate it:       Let . Then: Then, we can calculate probabilities, e.g.:     Given , we can find by calculating: Given , we can find by calculating:     Suppose a machine needs repairs on average twice per month. Let be the time until repair. This is a Poisson process ( per month).       is said to have the exponential distribution with parameter . We'll write . The exponential density function is:       Let . Then: So, e.g.:      The distributions Bin, Geom, Poiss, and Exp are conceptually linked.   Relationship of common distributions     Counting Events  Time Until    Discrete Time  Bin  Geom    Continuous Time  Poiss  Exp        Joint Distributions    Let take values and take values . The joint distribution of and is the collection of all values for every combination. The separarte distributions for and are called marginal distributions .      Suppose , with joint distribution below.   Example Joint Distribution           0.1  0.15  0.05     0.2  0.2  0.3     We find the marginal distribution for by summing along the columns: We find the marginal distribution for by summing along the rows:       Random variables are independent if: for every combination.      In the previous example: so are not independent.      Let indicate heads on the first and second flip, respectively, of a fair coin. Then:   Joint Distribution for Indicator Random Variables          1\/4  1\/4     1\/4  1\/4     Then the marginal distributions are: Then, for any : So are independent.     "
+},
+{
+  "id": "subsec-continuous-2-2",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-continuous-2-2",
+  "type": "Example",
+  "number": "55",
+  "title": "",
+  "body": "  Let with . Find . Then, we can calculate probabilities, e.g.:    "
+},
+{
+  "id": "def-cdf",
+  "level": "2",
+  "url": "notes-01-27.html#def-cdf",
+  "type": "Definition",
+  "number": "56",
+  "title": "",
+  "body": "  Let be a continuous random variable with values in . The cumulative distribution function (cdf) is: To calculate it:    "
+},
+{
+  "id": "subsec-continuous-2-5",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-continuous-2-5",
+  "type": "Example",
+  "number": "57",
+  "title": "",
+  "body": "  Let . Then: Then, we can calculate probabilities, e.g.:    "
+},
+{
+  "id": "subsec-continuous-2-7",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-continuous-2-7",
+  "type": "Example",
+  "number": "58",
+  "title": "",
+  "body": "  Suppose a machine needs repairs on average twice per month. Let be the time until repair. This is a Poisson process ( per month).   "
+},
+{
+  "id": "subsec-continuous-2-8",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-continuous-2-8",
+  "type": "Definition",
+  "number": "59",
+  "title": "",
+  "body": "   is said to have the exponential distribution with parameter . We'll write . The exponential density function is:    "
+},
+{
+  "id": "subsec-continuous-2-9",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-continuous-2-9",
+  "type": "Example",
+  "number": "60",
+  "title": "",
+  "body": "  Let . Then: So, e.g.:    "
+},
+{
+  "id": "subsec-continuous-2-10",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-continuous-2-10",
+  "type": "Remark",
+  "number": "61",
+  "title": "",
+  "body": " The distributions Bin, Geom, Poiss, and Exp are conceptually linked.   Relationship of common distributions     Counting Events  Time Until    Discrete Time  Bin  Geom    Continuous Time  Poiss  Exp     "
+},
+{
+  "id": "subsec-Joint-Distributions-2",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-Joint-Distributions-2",
+  "type": "Definition",
+  "number": "63",
+  "title": "",
+  "body": "  Let take values and take values . The joint distribution of and is the collection of all values for every combination. The separarte distributions for and are called marginal distributions .   "
+},
+{
+  "id": "subsec-Joint-Distributions-3",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-Joint-Distributions-3",
+  "type": "Example",
+  "number": "64",
+  "title": "",
+  "body": "  Suppose , with joint distribution below.   Example Joint Distribution           0.1  0.15  0.05     0.2  0.2  0.3     We find the marginal distribution for by summing along the columns: We find the marginal distribution for by summing along the rows:    "
+},
+{
+  "id": "subsec-Joint-Distributions-4",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-Joint-Distributions-4",
+  "type": "Definition",
+  "number": "66",
+  "title": "",
+  "body": "  Random variables are independent if: for every combination.   "
+},
+{
+  "id": "subsec-Joint-Distributions-5",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-Joint-Distributions-5",
+  "type": "Example",
+  "number": "67",
+  "title": "",
+  "body": "  In the previous example: so are not independent.   "
+},
+{
+  "id": "subsec-Joint-Distributions-6",
+  "level": "2",
+  "url": "notes-01-27.html#subsec-Joint-Distributions-6",
+  "type": "Example",
+  "number": "68",
+  "title": "",
+  "body": "  Let indicate heads on the first and second flip, respectively, of a fair coin. Then:   Joint Distribution for Indicator Random Variables          1\/4  1\/4     1\/4  1\/4     Then the marginal distributions are: Then, for any : So are independent.   "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
@@ -581,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "55",
+  "number": "70",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
