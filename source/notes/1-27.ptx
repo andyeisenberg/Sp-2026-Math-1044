@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-01-27">
+  <title>Thursday, Jan 27</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection xml:id="subsec-continuous-2">
+    <title>Continuous Distributions</title>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X\in [0, 1]</m> with <m>f(x) = kx^{3/2}</m>.
+          Find <m>k</m>.
+          <md>
+            <mrow> 1 = \int_0^1 f(x)\ dx \amp = \int_0^1 kx^{3/2} dx = \frac{2kx^{5/2}}{5}\bigg|_0^1 = \frac{2k}{5} - 0 </mrow>
+            <mrow> \Rightarrow \quad 1 \amp  = \frac{2k}{5} \quad \Rightarrow \quad k = \frac{5}{2} </mrow>
+          </md>
+          Then, we can calculate probabilities, e.g.:
+          <md>
+            <mrow> \Pr\left(X \lt \frac{1}{2}\right) = \int_0^{1/2} \frac{5}{2}x^{3/2}\ dx = \frac{5}{2}\cdot \frac{2x^{5/2}}{5}\bigg|_0^{1/2} = \left(\frac{1}{2}\right)^{5/2} \approx 0.177.</mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Note: a pdf outputs probability densities, not probabilities.
+      To get probabilities, we must integrate.
+    </p>
+
+    <definition xml:id="def-cdf">
+      <statement>
+        <p>
+          Let <m>X</m> be a continuous random variable with values in <m>[a, b]</m>.
+          The <term>cumulative distribution function (cdf)</term> is:
+          <md>
+            <mrow> F(x) = \Pr(X \leq x). </mrow>
+          </md>
+          To calculate it:
+          <md>
+            <mrow> F(x) = \int_a^x f(t)\ dt. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X \in [0, 1], f(x) = \frac{5}{2}x^{3/2}</m>.
+          Then:
+          <md>
+            <mrow> F(x) = \int_0^x f(t)\ dt \amp = \int_0^x \frac{5}{2}t^{3/2}\ dt = \frac{5}{2}\cdot \frac{2t^{5/2}}{5}\bigg|_0^x </mrow>
+            <mrow> F(x) \amp = x^{5/2} </mrow>
+          </md>
+          Then, we can calculate probabilities, e.g.:
+          <md>
+            <mrow> \Pr\left(X \lt \frac{1}{2}\right) \amp = F\left(\frac{1}{2}\right) = \left(\frac{1}{2}\right)^{5/2} \approx 0.177 </mrow>
+            <mrow> \Pr(0.2 \leq X \leq 0.6) \amp = F(0.6) - F(0.2) = (0.6)^{5/2} - (0.2)^{5/2} \approx 0.261 </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Given <m>f(x)</m>, we can find <m>F(x)</m> by calculating:
+      <md>
+        <mrow> F(x) = \int_a^x f(t)\ dt. </mrow>
+      </md>
+      Given <m>F(x)</m>, we can find <m>f(x)</m> by calculating:
+      <md>
+        <mrow> f(x) = F'(x). </mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose a machine needs repairs on average twice per month.
+          Let <m>T</m> be the time until repair.
+          This is a Poisson process (<m>\lambda = 2</m> per month).
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          <m>T</m>  is said to have the <term>exponential distribution</term> with parameter <m>\lambda</m>. We'll write <m>T \sim \Exp(\lambda)</m>. The <term>exponential density function</term> is:
+          <md>
+            <mrow> f(t) = \lambda e^{-\lambda t}, \quad t \geq 0. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>\lambda = 2, f(t) = 2e^{-2t}, t\geq 0</m>.
+          Then:
+          <md>
+            <mrow> F(t) \amp = \int_0^t f(x)\ dx = \int_0^t 2e^{-2x}\ dx = -e^{-2x}\bigg|_0^x </mrow>
+            <mrow> \amp = -e^{-2t} - (-e^0) = 1 - e^{-2t}. </mrow>
+          </md>
+          So, e.g.:
+          <md>
+            <mrow> \Pr\left(T \leq \frac{3}{4}\right) \amp = F\left(\frac{3}{4}\right) = 1 - e^{-3/2} \approx 0.777 </mrow>
+            <mrow> \Pr(T \gt 1) \amp = 1 - \Pr(T \leq 1) = 1 - F(1) </mrow>
+            <mrow> \amp = 1 - (1 - e^{-2}) = e^{-2} \approx 0.135. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <remark>
+      <p>
+        The distributions Bin, Geom, Poiss, and Exp are conceptually linked.
+      </p>
+
+      <table>
+        <title>Relationship of common distributions</title>
+
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell bottom="minor">Counting Events</cell>
+            <cell bottom="minor">Time Until</cell>
+          </row>
+
+          <row>
+            <cell right="minor">Discrete Time</cell>
+            <cell>Bin</cell>
+            <cell>Geom</cell>
+          </row>
+
+          <row>
+            <cell right="minor">Continuous Time</cell>
+            <cell>Poiss</cell>
+            <cell>Exp</cell>
+          </row>
+        </tabular>
+      </table>
+    </remark>
+  </subsection>
+
+
+  <subsection xml:id="subsec-Joint-Distributions">
+    <title>Joint Distributions</title>
+
+    <definition>
+      <statement>
+        <p>
+          Let <m>X</m>  take values <m>x_1, x_2, \dotsc, x_n</m> and <m>Y</m>  take values <m>y_1, y_2, \dotsc, y_m</m>.
+          The <term>joint distribution</term> of <m>X</m> and <m>Y</m> is the collection of all values <m>\Pr(X = x_i, Y = y_j)</m> for every <m>i, j</m> combination.
+          The separarte distributions for <m>X</m> and <m>Y</m> are called <term>marginal distributions</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Suppose <m>X \in \{1, 2, 3\}, Y \in \{0, 1\}</m>, with joint distribution below.
+        </p>
+
+        <table>
+          <title>Example Joint Distribution</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell right="minor"></cell>
+              <cell right="minor"><m>X = 1</m></cell>
+              <cell right="minor"><m>X = 2</m></cell>
+              <cell><m>X = 3</m></cell>
+            </row>
+
+            <row bottom="minor">
+              <cell right="minor"><m>Y = 0</m></cell>
+              <cell right="minor">0.1</cell>
+              <cell right="minor">0.15</cell>
+              <cell>0.05</cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 1</m></cell>
+              <cell right="minor">0.2</cell>
+              <cell right="minor">0.2</cell>
+              <cell>0.3</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          We find the marginal distribution for <m>X</m> by summing along the columns:
+          <md>
+            <mrow> \Pr(X = 1) \amp = 0.3 </mrow>
+            <mrow> \Pr(X = 2) \amp = 0.35 </mrow>
+            <mrow> \Pr(X = 3) \amp = 0.35 </mrow>
+          </md>
+          We find the marginal distribution for <m>Y</m> by summing along the rows:
+          <md>
+            <mrow> \Pr(Y = 0) \amp = 0.3 </mrow>
+            <mrow> \Pr(Y = 1) \amp = 0.7 </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          Random variables <m>X, Y</m>  are <term>independent</term> if:
+          <md>
+            <mrow> \Pr(X = x_i, Y = y_j) = \Pr(X = x_i)\Pr(Y = y_j) </mrow>
+          </md>
+          for every <m>i, j</m> combination.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          In the previous example:
+          <md>
+            <mrow> \Pr(X = 2, Y = 1) = 0.2 \neq (0.35)(0.7) = \Pr(X = 2)\Pr(Y = 1), </mrow>
+          </md>
+          so <m>X, Y</m> are not independent.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X, Y</m> indicate heads on the first and second flip, respectively, of a fair coin.
+          Then:
+        </p>
+
+        <table>
+          <title>Joint Distribution for Indicator Random Variables</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell right="minor"></cell>
+              <cell right="minor"><m>X = 0</m></cell>
+              <cell><m>X = 1</m></cell>
+            </row>
+
+            <row bottom="minor">
+              <cell right="minor"><m>Y = 0</m></cell>
+              <cell right="minor">1/4</cell>
+              <cell>1/4</cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 1</m></cell>
+              <cell right="minor">1/4</cell>
+              <cell>1/4</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Then the marginal distributions are:
+          <md >
+            <mrow> \Pr(X = 0) \amp = \frac{1}{2} \amp \Pr(Y = 0) \amp = \frac{1}{2} </mrow>
+            <mrow> \Pr(X = 1) \amp = \frac{1}{2} \amp \Pr(Y = 1) \amp = \frac{1}{2} </mrow>
+          </md>
+          Then, for any <m>a, b</m>:
+          <md>
+            <mrow> \Pr(X = a, Y = b) = \frac{1}{4} = \frac{1}{2}\cdot \frac{1}{2} = \Pr(X = a)\Pr(Y = b). </mrow>
+          </md>
+          So <m>X, Y</m> are independent.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
