@@ -613,6 +613,159 @@ var ptx_lunr_docs = [
   "body": "  Let indicate heads on the first and second flip, respectively, of a fair coin. Then:   Joint Distribution for Indicator Random Variables          1\/4  1\/4     1\/4  1\/4     Then the marginal distributions are: Then, for any : So are independent.   "
 },
 {
+  "id": "notes-01-29",
+  "level": "1",
+  "url": "notes-01-29.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Jan 29",
+  "body": " Thursday, Jan 29   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Expected Value    Let be the roll of a fair D6. What is the average value of ? The sample space is . To find the average: That is: take each value of , multiply by the probability, and add all the results together.      Given a distribution table:   Distribution        1  0.1    2  0.1    3  0.1    4  0.1    5  0.1    6  0.5     Then the average is:       Let be a discrete random variable taking values with probabilities . The expected value of is:       Let indicate , with . Then: That is: \"E(indicator random variable) = Pr(event that it indicates)\".      Suppose we flip a fair coin 100 times. Let indicate heads on each flip. Then , so for every .  What if indicates a run of 4 heads starting at flip 3? That is, flips 3, 4, 5, and 6 must come up heads, and all other flips can come up either heads or tails. Since these flip results are independent, the probabilities multiply:       Let be a continuous random variable with pdf . The expected value of is:     It's worth putting this side-by-side with to compare the structure of each formula. These both say: \"multiply each value of the random variable by the probability, then accumulate all of those products\". Expected value is a weighted average of random variable values, with the probabilities as the weights.    Let with pdf . Then: What would happen if you forgot the ? Then the calculation would become: This mistake will often be easy to catch. For example, this random variable takes values between 0 and 1, so it doesn't seem very likely that the average value is 1!      Find given a distribution for .   Distribution for        -1  0.4    1  0.1    2  0.2    3  0.3     We can start by writing a distribution table for :   Distribution for        1  0.5    4  0.2    9  0.3     Then:       If takes on values with probabilities , and is any function, then:       Revisiting the previous example, the theorem says we don't need to first create the distribution table for . We can use the distribution table for , and just apply the square to each value:       The situation with continuous random variables is similar. Let with pdf . Then: Notice, in particular, that       If are random variables with finite expected value and , then:       Let be the number of heads in coin flips with bias . Then . Gross.  Instead of calculating this directly, define to indicate heads on each flip. Then:       Flip a fair coin 100 times. Then, the expected number of heads is:       Flip a fair coin 100 times. What is the expected number of runs of 4 heads? As in the binomial EV calculation, define indicator random variables each indicating a run of 4 heads starting at the specified flip. Then for each . Let be the number of runs of 4 heads. Then:       Consider a geometric distribution .   Geometric Distribution      with    1      2      3      4            Then is an infinite summation.  Instead, consider the following argument. If we flip a coin until we see heads, we either see heads on flip 1 or not. In the first case, . In the second case, what is the average value of ? Starting at flip 2, it will take on average flips to see heads. Since we already flipped the coin once, the total number of flips will be . So, we can write:      "
+},
+{
+  "id": "notes-01-29-3-2",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-2",
+  "type": "Example",
+  "number": "70",
+  "title": "",
+  "body": "  Let be the roll of a fair D6. What is the average value of ? The sample space is . To find the average: That is: take each value of , multiply by the probability, and add all the results together.   "
+},
+{
+  "id": "notes-01-29-3-3",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-3",
+  "type": "Example",
+  "number": "71",
+  "title": "",
+  "body": "  Given a distribution table:   Distribution        1  0.1    2  0.1    3  0.1    4  0.1    5  0.1    6  0.5     Then the average is:    "
+},
+{
+  "id": "def-discrete-EV",
+  "level": "2",
+  "url": "notes-01-29.html#def-discrete-EV",
+  "type": "Definition",
+  "number": "73",
+  "title": "",
+  "body": "  Let be a discrete random variable taking values with probabilities . The expected value of is:    "
+},
+{
+  "id": "notes-01-29-3-5",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-5",
+  "type": "Example",
+  "number": "74",
+  "title": "",
+  "body": "  Let indicate , with . Then: That is: \"E(indicator random variable) = Pr(event that it indicates)\".   "
+},
+{
+  "id": "notes-01-29-3-6",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-6",
+  "type": "Example",
+  "number": "75",
+  "title": "",
+  "body": "  Suppose we flip a fair coin 100 times. Let indicate heads on each flip. Then , so for every .  What if indicates a run of 4 heads starting at flip 3? That is, flips 3, 4, 5, and 6 must come up heads, and all other flips can come up either heads or tails. Since these flip results are independent, the probabilities multiply:    "
+},
+{
+  "id": "def-continuous-EV",
+  "level": "2",
+  "url": "notes-01-29.html#def-continuous-EV",
+  "type": "Definition",
+  "number": "76",
+  "title": "",
+  "body": "  Let be a continuous random variable with pdf . The expected value of is:    "
+},
+{
+  "id": "notes-01-29-3-9",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-9",
+  "type": "Example",
+  "number": "77",
+  "title": "",
+  "body": "  Let with pdf . Then: What would happen if you forgot the ? Then the calculation would become: This mistake will often be easy to catch. For example, this random variable takes values between 0 and 1, so it doesn't seem very likely that the average value is 1!   "
+},
+{
+  "id": "notes-01-29-3-10",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-10",
+  "type": "Example",
+  "number": "78",
+  "title": "",
+  "body": "  Find given a distribution for .   Distribution for        -1  0.4    1  0.1    2  0.2    3  0.3     We can start by writing a distribution table for :   Distribution for        1  0.5    4  0.2    9  0.3     Then:    "
+},
+{
+  "id": "notes-01-29-3-11",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-11",
+  "type": "Theorem",
+  "number": "81",
+  "title": "",
+  "body": "  If takes on values with probabilities , and is any function, then:    "
+},
+{
+  "id": "notes-01-29-3-12",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-12",
+  "type": "Example",
+  "number": "82",
+  "title": "",
+  "body": "  Revisiting the previous example, the theorem says we don't need to first create the distribution table for . We can use the distribution table for , and just apply the square to each value:    "
+},
+{
+  "id": "notes-01-29-3-13",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-13",
+  "type": "Example",
+  "number": "83",
+  "title": "",
+  "body": "  The situation with continuous random variables is similar. Let with pdf . Then: Notice, in particular, that    "
+},
+{
+  "id": "thm-linearity",
+  "level": "2",
+  "url": "notes-01-29.html#thm-linearity",
+  "type": "Theorem",
+  "number": "84",
+  "title": "",
+  "body": "  If are random variables with finite expected value and , then:    "
+},
+{
+  "id": "notes-01-29-3-15",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-15",
+  "type": "Example",
+  "number": "85",
+  "title": "",
+  "body": "  Let be the number of heads in coin flips with bias . Then . Gross.  Instead of calculating this directly, define to indicate heads on each flip. Then:    "
+},
+{
+  "id": "notes-01-29-3-16",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-16",
+  "type": "Example",
+  "number": "86",
+  "title": "",
+  "body": "  Flip a fair coin 100 times. Then, the expected number of heads is:    "
+},
+{
+  "id": "notes-01-29-3-17",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-17",
+  "type": "Example",
+  "number": "87",
+  "title": "",
+  "body": "  Flip a fair coin 100 times. What is the expected number of runs of 4 heads? As in the binomial EV calculation, define indicator random variables each indicating a run of 4 heads starting at the specified flip. Then for each . Let be the number of runs of 4 heads. Then:    "
+},
+{
+  "id": "notes-01-29-3-18",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-18",
+  "type": "Example",
+  "number": "88",
+  "title": "",
+  "body": "  Consider a geometric distribution .   Geometric Distribution      with    1      2      3      4            Then is an infinite summation.  Instead, consider the following argument. If we flip a coin until we see heads, we either see heads on flip 1 or not. In the first case, . In the second case, what is the average value of ? Starting at flip 2, it will take on average flips to see heads. Since we already flipped the coin once, the total number of flips will be . So, we can write:    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
@@ -698,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "70",
+  "number": "90",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
