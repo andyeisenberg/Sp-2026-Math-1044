@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-01-29">
+  <title>Thursday, Jan 29</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Expected Value</title>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>R</m> be the roll of a fair D6.
+          What is the average value of <m>R</m>? The sample space is <m>\Omega = \{1, 2, 3, 4, 5, 6\}</m>.
+          To find the average:
+          <md>
+            <mrow> \text{Avg} \amp = 1\left(\frac{1}{6}\right) + 2\left(\frac{1}{6}\right) + 3\left(\frac{1}{6}\right) + 4\left(\frac{1}{6}\right) + 5\left(\frac{1}{6}\right) + 6\left(\frac{1}{6}\right) </mrow>
+            <mrow> \amp = \frac{21}{6} = \frac{7}{2} = 3.5 </mrow>
+          </md>
+          That is: take each value of <m>R</m>, multiply by the probability, and add all the results together.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Given a distribution table:
+        </p>
+
+        <table>
+          <title>Distribution</title>
+
+          <tabular>
+            <row bottom="minor">
+              <cell><m>s</m></cell>
+              <cell><m>\Pr(S = s)</m></cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>5</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>6</cell>
+              <cell>0.5</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Then the average is:
+          <md>
+            <mrow> \text{Avg} = 1(0.1) + 2(0.1) + 3(0.1) + 4(0.1) + 5(0.1) + 6(0.5) = 4.5.  </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <definition xml:id="def-discrete-EV">
+      <statement>
+        <p>
+          Let <m>X</m> be a discrete random variable taking values <m>x_1, x_2, \dotsc, x_n</m> with probabilities <m>p_1, p_2, \dotsc, p_n</m>.
+          The <term>expected value</term> of <m>X</m> is:
+          <md>
+            <mrow> \E(X) = \sum_{i=1}^n x_ip_i = x_1p_1 + x_2p_2 + \dotsb + x_np_n. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X</m> indicate <m>A</m>, with <m>\Pr(A) = p</m>.
+          Then:
+          <md>
+            <mrow> E(X) = 0 \cdot \underbrace{\Pr(X = 0)}_{1 - p} + 1 \cdot \underbrace{\Pr(X = 1)}_{p} = 0(1-p) + 1p = p. </mrow>
+          </md>
+          That is: "E(indicator random variable) = Pr(event that it indicates)".
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we flip a fair coin 100 times.
+          Let <m>H_1, H_2, \dotsc, H_{100}</m> indicate heads on each flip.
+          Then <m>\Pr(H_i = 1) = \frac{1}{2}</m>, so <m>E(H_i) = \frac{1}{2}</m> for every <m>i</m>.
+        </p>
+
+        <p>
+          What if <m>X</m> indicates a run of 4 heads starting at flip 3? That is, flips 3, 4, 5, and 6 must come up heads, and all other flips can come up either heads or tails.
+          Since these flip results are independent, the probabilities multiply:
+          <md>
+            <mrow> \Pr(X = 1) = \left(\frac{1}{2}\right)\left(\frac{1}{2}\right)\left(\frac{1}{2}\right)\left(\frac{1}{2}\right) = \frac{1}{16} = \E(X). </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <definition xml:id="def-continuous-EV">
+      <statement>
+        <p>
+          Let <m>X \in [a, b]</m> be a continuous random variable with pdf <m>f(x)</m>.
+          The <term>expected value</term> of <m>X</m> is:
+          <md>
+            <mrow> \E(X) = \int_a^b x f(x)\ dx. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      It's worth putting this side-by-side with <xref ref="def-discrete-EV"/> to compare the structure of each formula.
+      These both say: "multiply each value of the random variable by the probability, then accumulate all of those products".
+      Expected value is a weighted average of random variable values, with the probabilities as the weights.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X \in [0, 1]</m> with pdf <m>f(x) = \frac{3}{2}\sqrt{x}</m>.
+          Then:
+          <md>
+            <mrow> \E(X) \amp = \int_0^1 x f(x)\ dx </mrow>
+            <mrow> \amp = \int_0^1 x \frac{3}{2} x^{1/2}\ dx </mrow>
+            <mrow> \amp = \int_0^1 \frac{3}{2} x^{3/2}\ dx </mrow>
+            <mrow> \amp = \frac{3}{2} \frac{2x^{5/2}}{5}\bigg|_0^1 </mrow>
+            <mrow> \amp = \frac{3}{5} \cdot 1^{5/2} - \frac{3}{5} \cdot 0^{5/2} </mrow>
+            <mrow> \amp = \frac{3}{5}. </mrow>
+          </md>
+          What would happen if you forgot the <m>x</m>? Then the calculation would become:
+          <md>
+            <mrow> \int_0^1 f(x)\ dx = 1 = \text{total probability} \amp </mrow>
+          </md>
+          This mistake will often be easy to catch.
+          For example, this random variable takes values between 0 and 1, so it doesn't seem very likely that the average value is 1!
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>\E(X^2)</m> given a distribution for <m>X</m>.
+        </p>
+
+        <table>
+          <title>Distribution for <m>X</m></title>
+
+          <tabular>
+            <row bottom="minor">
+              <cell><m>x</m></cell>
+              <cell><m>\Pr(X = x)</m></cell>
+            </row>
+
+            <row>
+              <cell>-1</cell>
+              <cell>0.4</cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell>0.2</cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell>0.3</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          We can start by writing a distribution table for <m>X^2</m>:
+        </p>
+
+        <table>
+          <title>Distribution for <m>X^2</m></title>
+
+          <tabular>
+            <row bottom="minor">
+              <cell><m>x</m></cell>
+              <cell><m>\Pr(X^2 = x)</m></cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell>0.5</cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell>0.2</cell>
+            </row>
+
+            <row>
+              <cell>9</cell>
+              <cell>0.3</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Then:
+          <md>
+            <mrow> \E(X^2) 1(0.5) + 4(0.2) + 9(0.3) = 4. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <theorem>
+      <statement>
+        <p>
+          If <m>X</m>   takes on values <m>x_1, \dotsc, x_n</m> with probabilities <m>p_1, \dotsc, p_n</m>, and <m>h</m> is any function, then:
+          <md>
+            <mrow> \E(h(X)) = \sum_{i=1}^n h(x_i)p_i. </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <statement>
+        <p>
+          Revisiting the previous example, the theorem says we don't need to first create the distribution table for <m>X^2</m>.
+          We can use the distribution table for <m>X</m>, and just apply the square to each value:
+          <md>
+            <mrow> \E(X^2) = (-1)^2(0.4) + (1)^2(0.1) + (2)^2(0.2) + (3)^2(0.3) = 4. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          The situation with continuous random variables is similar.
+          Let <m>X\in [0, 1]</m> with pdf <m>f(x) = \frac{3}{2}\sqrt{x}</m>.
+          Then:
+          <md>
+            <mrow> \E(X^2) \amp = \int_0^1 x^2 f(x)\ dx </mrow>
+            <mrow> \amp = \int_0^1 x^2 \frac{3}{2} x^{1/2}\ dx </mrow>
+            <mrow> \amp = \int_0^1 \frac{3}{2} x^{5/2}\ dx </mrow>
+            <mrow> \amp = \frac{3}{2}\cdot \frac{2x^{7/2}}{7}\bigg|_0^1 </mrow>
+            <mrow> \amp = \frac{3}{7}\cdot 1^{7/2} - 0\cdot 0^{7/2} </mrow>
+            <mrow> \amp = \frac{3}{7}. </mrow>
+          </md>
+          Notice, in particular, that <m>\E(X^2) \neq \E(X).</m>
+        </p>
+      </statement>
+    </example>
+
+    <theorem xml:id="thm-linearity">
+      <statement>
+        <p>
+          If <m>X, Y</m> are random variables with finite expected value and <m>k \in \R</m>, then:
+          <md>
+            <mrow> \E(X+Y) \amp = E(X) + E(Y) </mrow>
+            <mrow> \E(kX) \amp = kE(X) </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>N</m> be the number of heads in <m>n</m> coin flips with bias <m>p</m>.
+          Then <m>N\sim \Bin(n, p)</m>.
+          <md>
+            <mrow> \E)N) = \sum_{i=0}^n i\cdot b(i; n, p) = \sum_{i  = 0}^n i \cdot {n \choose i} p^i (1-p)^{n - i}. </mrow>
+          </md>
+          Gross.
+        </p>
+
+        <p>
+          Instead of calculating this directly, define <m>H_1, H_2, \dotsc, H_n</m> to indicate heads on each flip.
+          Then:
+          <md>
+            <mrow> N \amp = H_1 + H_2 + \dotsb + H_n </mrow>
+            <mrow> \E(N) \amp = \E(H_1 + H_2 + \dotsb + H_n) </mrow>
+            <mrow> \E(N) \amp = \E(H_1) + \E(H_2) + \dotsb + \E(H_n) </mrow>
+            <mrow> \amp = p + p + \dotsb + p </mrow>
+            <mrow> \amp = np. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Flip a fair coin 100 times.
+          Then, the expected number of heads is:
+          <md>
+            <mrow> \underbrace{(100)}_{n}\underbrace{(0.5)}_{p} = 50. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Flip a fair coin 100 times.
+          What is the expected number of runs of 4 heads? As in the binomial EV calculation, define indicator random variables <m>R_1, R_2, \dotsc, R_{97}</m> each indicating a run of 4 heads starting at the specified flip.
+          Then <m>\E(R_i) = \frac{1}{16}</m> for each <m>i</m>.
+          Let <m>T</m> be the number of runs of 4 heads.
+          Then:
+          <md>
+            <mrow> \E(T) \amp = \E(R_1 + \dotsb + R_{97}) </mrow>
+            <mrow> \amp = \E(R_1) + \dotsb + (R_{97}) </mrow>
+            <mrow> \amp = \frac{1}{16} + \dotsb + \frac{1}{16} </mrow>
+            <mrow> \amp = \frac{97}{16} \approx 6. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Consider a geometric distribution <m>T \sim \Geom(p)</m>.
+        </p>
+
+        <table>
+          <title>Geometric Distribution</title>
+
+          <tabular>
+            <row bottom="minor">
+              <cell><m>k</m></cell>
+              <cell><m>\Pr(T = k)</m></cell>
+              <cell>with <m>p = \frac{1}{2}</m></cell>
+            </row>
+
+            <row>
+              <cell>1</cell>
+              <cell><m>p</m></cell>
+              <cell><m>\frac{1}{2}</m></cell>
+            </row>
+
+            <row>
+              <cell>2</cell>
+              <cell><m>(1-p)p</m></cell>
+              <cell><m>\frac{1}{4}</m></cell>
+            </row>
+
+            <row>
+              <cell>3</cell>
+              <cell><m>(1-p)^2p</m></cell>
+              <cell><m>\frac{1}{8}</m></cell>
+            </row>
+
+            <row>
+              <cell>4</cell>
+              <cell><m>(1-p)^3p</m></cell>
+              <cell><m>\frac{1}{16}</m></cell>
+            </row>
+
+            <row>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Then <m>\E(T) = (1)\left(\frac{1}{2}\right) + (2)\left(\frac{1}{4}\right) + (3)\left(\frac{1}{8}\right) + \dotsb</m> is an infinite summation.
+        </p>
+
+        <p>
+          Instead, consider the following argument.
+          If we flip a coin until we see heads, we either see heads on flip 1 or not.
+          In the first case, <m>T = 1</m>.
+          In the second case, what is the average value of <m>T</m>? Starting at flip 2, it will take on average <m>\E(T)</m> flips to see heads.
+          Since we already flipped the coin once, the total number of flips will be <m>1 + \E(T)</m>.
+          So, we can write:
+          <md>
+            <mrow> \E(T) \amp = 1 \left(\frac{1}{2}\right) + (1 + \E(T)) \left(1 - \frac{1}{2}\right) </mrow>
+            <mrow> \E(T) \amp = \frac{1}{2} + \frac{1}{2} + \frac{\E(T)}{2} </mrow>
+            <mrow> \E(T) - \frac{\E(T)}{2} \amp = 1 </mrow>
+            <mrow> \frac{\E(T)}{2} \amp = 1 </mrow>
+            <mrow> \E(T) \amp = 2. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
