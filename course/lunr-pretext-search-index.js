@@ -802,6 +802,42 @@ var ptx_lunr_docs = [
   "body": "  A diagnostic test is developed to detect a disease present in 1.3% of the population. For a patient who has the disease, the test will accurately give a positive result 62% of the time. When the patient does not have the disease, the test will accurately give a negative result 99.4% of the time.  For a patient who receives a positive test, what is the probability they have the disease?    Let be the event of receiving a positive test result and be the event of having the disease. The given information is: , and . Then, using Bayes' Theorem:    "
 },
 {
+  "id": "quiz-02",
+  "level": "1",
+  "url": "quiz-02.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 2",
+  "body": " Quiz 2    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       Write either True or False for each of the following statements. No justification is required.     Let be integers with . Then .    True.      Suppose is a continuous random variable with pdf and cdf . Then .    True.      Suppose is a random variable taking values between 0 and 6. Then .    False.       Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     Since , and are not independent.         Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .           "
+},
+{
+  "id": "quiz-02-3-1",
+  "level": "2",
+  "url": "quiz-02.html#quiz-02-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Write either True or False for each of the following statements. No justification is required.     Let be integers with . Then .    True.      Suppose is a continuous random variable with pdf and cdf . Then .    True.      Suppose is a random variable taking values between 0 and 6. Then .    False.    "
+},
+{
+  "id": "quiz-02-3-2",
+  "level": "2",
+  "url": "quiz-02.html#quiz-02-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     Since , and are not independent.    "
+},
+{
+  "id": "quiz-02-4-1",
+  "level": "2",
+  "url": "quiz-02.html#quiz-02-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .         "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
@@ -851,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "90",
+  "number": "91",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
