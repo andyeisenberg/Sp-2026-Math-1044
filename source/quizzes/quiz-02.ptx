@@ -122,11 +122,9 @@
         <solution>
           <p>
             <md>
-              <mrow> \Pr(X = 0) \amp = 0.1 + 0.3 = 0.4 </mrow>
-              <mrow> \Pr(X = 1) \amp = 0.05 + 0.15 = 0.2 </mrow>
+              <mrow> \Pr(X = 0) \amp = 0.1 + 0.3 = 0.4 \amp \Pr(Y = 0) \amp = 0.1 + 0.05 + 0.1 = 0.25 </mrow>
+              <mrow> \Pr(X = 1) \amp = 0.05 + 0.15 = 0.2 \amp \Pr(Y = 1) \amp = 0.3 + 0.15 + 0.3 = 0.75 </mrow>
               <mrow> \Pr(X = 2) \amp = 0.1 + 0.3 = 0.4 </mrow>
-              <mrow> \Pr(Y = 0) \amp = 0.1 + 0.05 + 0.1 = 0.25 </mrow>
-              <mrow> \Pr(Y = 1) \amp = 0.3 + 0.15 + 0.3 = 0.75 </mrow>
             </md>
           </p>
         </solution>
@@ -142,11 +140,7 @@
 
         <solution>
           <p>
-            <md>
-              <mrow> \Pr(X = 2, Y = 0) \amp = 0.2 </mrow>
-              <mrow> \Pr(X = 2)\Pr(Y = 0) \amp = (0.4)(0.25) = 0.1 </mrow>
-            </md>
-            Since <m>0.2 \neq 0.1</m>, <m>X</m> and <m>Y</m> are not independent.
+            <m>\Pr(X = 2, Y = 0) = 0.2 </m>, and <m> \Pr(X = 2)\Pr(Y = 0) = (0.4)(0.25) = 0.1</m>. Since <m>0.2 \neq 0.1</m>, <m>X</m> and <m>Y</m> are not independent.
           </p>
         </solution>
       </task>
