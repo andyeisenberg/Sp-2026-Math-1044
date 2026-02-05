@@ -307,7 +307,7 @@
           Let <m>N</m> be the number of heads in <m>n</m> coin flips with bias <m>p</m>.
           Then <m>N\sim \Bin(n, p)</m>.
           <md>
-            <mrow> \E)N) = \sum_{i=0}^n i\cdot b(i; n, p) = \sum_{i  = 0}^n i \cdot {n \choose i} p^i (1-p)^{n - i}. </mrow>
+            <mrow> \E(N) = \sum_{i=0}^n i\cdot b(i; n, p) = \sum_{i  = 0}^n i \cdot {n \choose i} p^i (1-p)^{n - i}. </mrow>
           </md>
           Gross.
         </p>

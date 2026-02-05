@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-02">
+  <title>Quiz 2</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes or textbooks is not allowed.
+      You may use a scientific calculator, not a graphing calculator or phone app.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          Write either True or False for each of the following statements.
+          No justification is required.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Let <m>n, k</m> be integers with <m>0 \leq k \leq n</m>.
+            Then <m>{n\choose k} = {n \choose n - k}</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose <m>X</m> is a continuous random variable with pdf <m>f(x)</m> and cdf <m>F(x)</m>.
+            Then <m>\displaystyle{\int_a^b f(x)\ dx = F(b) - F(a)}</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose <m>X</m> is a random variable taking values between 0 and 6.
+            Then <m>\E(X) = 3</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          Consider the joint distribution for <m>X</m> and <m>Y</m> below.
+        </p>
+
+        <table>
+          <title>Joint Distribution</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell right="minor"></cell>
+              <cell><m>X = 0</m></cell>
+              <cell><m>X = 1</m></cell>
+              <cell><m>X = 2</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 0</m></cell>
+              <cell>0.1</cell>
+              <cell>0.05</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 1</m></cell>
+              <cell>0.3</cell>
+              <cell>0.15</cell>
+              <cell>0.3</cell>
+            </row>
+          </tabular>
+        </table>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Find the marginal distributions for <m>X</m> and <m>Y</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \Pr(X = 0) \amp = 0.1 + 0.3 = 0.4 </mrow>
+              <mrow> \Pr(X = 1) \amp = 0.05 + 0.15 = 0.2 </mrow>
+              <mrow> \Pr(X = 2) \amp = 0.1 + 0.3 = 0.4 </mrow>
+              <mrow> \Pr(Y = 0) \amp = 0.1 + 0.05 + 0.1 = 0.25 </mrow>
+              <mrow> \Pr(Y = 1) \amp = 0.3 + 0.15 + 0.3 = 0.75 </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Are <m>X</m> and <m>Y</m> independent?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \Pr(X = 2, Y = 0) \amp = 0.2 </mrow>
+              <mrow> \Pr(X = 2)\Pr(Y = 0) \amp = (0.4)(0.25) = 0.1 </mrow>
+            </md>
+            Since <m>0.2 \neq 0.1</m>, <m>X</m> and <m>Y</m> are not independent.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Suppose a continuous random variable <m>X</m> taking values in <m>[0, 1]</m> has cdf <m>F(x) = 2x^2 - x^4</m>.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Find the pdf <m>f(x)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> f(x) = F'(x) = 4x - 4x^3. </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Find <m>\E(X)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \E(X) \amp = \int_0^1 x f(x)\ dx </mrow>
+              <mrow> \amp = \int_0^1 x (4x - 4x^3)\ dx </mrow>
+              <mrow> \amp = \int_0^1 4x^2 - 4x^4\ dx </mrow>
+              <mrow> \amp =  \frac{4x^2}{3} - \frac{4x^5}{5}\bigg|_0^1 </mrow>
+              <mrow> \amp =  \left(\frac{4}{3} - \frac{4}{5}\right) - (0) </mrow>
+              <mrow> \amp =  \frac{8}{15} \approx 0.533. </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
