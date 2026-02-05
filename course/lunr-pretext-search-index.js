@@ -808,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Quiz 2",
-  "body": " Quiz 2    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       Write either True or False for each of the following statements. No justification is required.     Let be integers with . Then .    True.      Suppose is a continuous random variable with pdf and cdf . Then .    True.      Suppose is a random variable taking values between 0 and 6. Then .    False.       Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     Since , and are not independent.         Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .           "
+  "body": " Quiz 2    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       Write either True or False for each of the following statements. No justification is required.     Let be integers with . Then .    True.      Suppose is a continuous random variable with pdf and cdf . Then .    True.      Suppose is a random variable taking values between 0 and 6. Then .    False.       Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     , and . Since , and are not independent.         Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .           "
 },
 {
   "id": "quiz-02-3-1",
@@ -826,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     Since , and are not independent.    "
+  "body": "  Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     , and . Since , and are not independent.    "
 },
 {
   "id": "quiz-02-4-1",
