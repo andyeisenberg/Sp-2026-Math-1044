@@ -140,7 +140,16 @@
 
         <solution>
           <p>
-            <m>\Pr(X = 2, Y = 0) = 0.2 </m>, and <m> \Pr(X = 2)\Pr(Y = 0) = (0.4)(0.25) = 0.1</m>. Since <m>0.2 \neq 0.1</m>, <m>X</m> and <m>Y</m> are not independent.
+            Checking each cell in the table:
+            <md>
+              <mrow> \Pr(X = 0, Y = 0) \amp = 0.1 = (0.4)(0.25) = \Pr(X = 0)\Pr(Y = 0) </mrow>
+              <mrow> \Pr(X = 1, Y = 0) \amp = 0.05 = (0.2)(0.25) = \Pr(X = 1)\Pr(Y = 0) </mrow>
+              <mrow> \Pr(X = 2, Y = 0) \amp = 0.1 = (0.4)(0.25) = \Pr(X = 2)\Pr(Y = 0) </mrow>
+              <mrow> \Pr(X = 0, Y = 1) \amp = 0.3 = (0.4)(0.75) = \Pr(X = 0)\Pr(Y = 1) </mrow>
+              <mrow> \Pr(X = 1, Y = 1) \amp = 0.15 = (0.2)(0.75) = \Pr(X = 1)\Pr(Y = 1) </mrow>
+              <mrow> \Pr(X = 2, Y = 1) \amp = 0.3 = (0.4)(0.75) = \Pr(X = 2)\Pr(Y = 1) </mrow>
+            </md>
+            So <m>X, Y</m> are independent.
           </p>
         </solution>
       </task>

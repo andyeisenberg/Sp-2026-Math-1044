@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-03">
+  <title>Tuesday, Feb 3</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Variance</title>
+
+    <p>
+      Question: How spread out are <m>X</m> values? One answer we might try is to measure the average distance from the average value:
+      <md>
+        <mrow> \E\left[|X - \E(X)|\right] </mrow>
+      </md>
+      To simplify notation, we'll write <m>\mu = \E(X)</m>.
+      Also, it's often usefull to square a term rather than take absolute value when we want to ensure a positive output, so we'll define...
+    </p>
+
+    <definition xml:id="def-variance">
+      <statement>
+        <p>
+          Let <m>X</m> be a random variable with <m>\E(X) = \mu</m>.
+          The <term>variance</term> of <m>X</m> is:
+          <md>
+            <mrow> \sigma^2 = \Var(x) = \E\left[ (X - \mu)^2\right] </mrow>
+          </md>
+          <m>\sigma = \sqrt{\Var(X)}</m> is called the <term>standard deviation</term>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+</section>

@@ -28,6 +28,7 @@
       <xi:include href="./notes/1-22.ptx" />
       <xi:include href="./notes/1-27.ptx" />
       <xi:include href="./notes/1-29.ptx" />
+      <xi:include href="./notes/2-3.ptx" />
     </chapter>
 
     <chapter xml:id="quizzes">
@@ -44,5 +45,14 @@
       <xi:include href="./recitations/calculus-review.ptx"/>
      
     </chapter>
+
+    <chapter xml:id="review">
+      <title>Exam Review</title>
+
+      <xi:include href="./review/Exam-1-Review.ptx"/>
+     
+    </chapter>
+
+
   </book>
 </pretext>
