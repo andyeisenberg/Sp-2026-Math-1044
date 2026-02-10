@@ -766,6 +766,24 @@ var ptx_lunr_docs = [
   "body": "  Consider a geometric distribution .   Geometric Distribution      with    1      2      3      4            Then is an infinite summation.  Instead, consider the following argument. If we flip a coin until we see heads, we either see heads on flip 1 or not. In the first case, . In the second case, what is the average value of ? Starting at flip 2, it will take on average flips to see heads. Since we already flipped the coin once, the total number of flips will be . So, we can write:    "
 },
 {
+  "id": "notes-02-03",
+  "level": "1",
+  "url": "notes-02-03.html",
+  "type": "Section",
+  "number": "",
+  "title": "Tuesday, Feb 3",
+  "body": " Tuesday, Feb 3   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Variance  Question: How spread out are values? One answer we might try is to measure the average distance from the average value: To simplify notation, we'll write . Also, it's often usefull to square a term rather than take absolute value when we want to ensure a positive output, so we'll define...    Let be a random variable with . The variance of is:  is called the standard deviation .     "
+},
+{
+  "id": "def-variance",
+  "level": "2",
+  "url": "notes-02-03.html#def-variance",
+  "type": "Definition",
+  "number": "90",
+  "title": "",
+  "body": "  Let be a random variable with . The variance of is:  is called the standard deviation .   "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
@@ -808,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Quiz 2",
-  "body": " Quiz 2    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       Write either True or False for each of the following statements. No justification is required.     Let be integers with . Then .    True.      Suppose is a continuous random variable with pdf and cdf . Then .    True.      Suppose is a random variable taking values between 0 and 6. Then .    False.       Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     , and . Since , and are not independent.         Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .           "
+  "body": " Quiz 2    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       Write either True or False for each of the following statements. No justification is required.     Let be integers with . Then .    True.      Suppose is a continuous random variable with pdf and cdf . Then .    True.      Suppose is a random variable taking values between 0 and 6. Then .    False.       Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?    Checking each cell in the table: So are independent.         Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .           "
 },
 {
   "id": "quiz-02-3-1",
@@ -826,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?     , and . Since , and are not independent.    "
+  "body": "  Consider the joint distribution for and below.   Joint Distribution           0.1  0.05  0.1     0.3  0.15  0.3        Find the marginal distributions for and .           Are and independent?    Checking each cell in the table: So are independent.    "
 },
 {
   "id": "quiz-02-4-1",
@@ -887,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "91",
+  "number": "92",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
@@ -899,6 +917,321 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "",
   "body": "  Practice with the following integrals:             "
+},
+{
+  "id": "Exam-1-Review",
+  "level": "1",
+  "url": "Exam-1-Review.html",
+  "type": "Section",
+  "number": "",
+  "title": "Exam 1 Review",
+  "body": " Exam 1 Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, February 12. Your recitation this week will also be exam review.    Allowed Materials  You will be allowed to use a scientific calculator ( not a graphing calculator, not a calculator app on your phone). You may not share a calculator with another student; you must use your own calculator.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.      Consider the sets , , and , which are all subsets of .     Find .           Find , , , , , , , and . Is it true that the size of the union of sets is equal to the sum of the sizes of the individual sets?     , , , , , , , . In particular, note that , so it is not true in general that the size of the union of sets is the sum of the sizes of the individual sets.      Find and .     , .       Suppose we have a 6-sided die that's weighted to roll a 6 half of the time. We roll the die two times. List the set of all possible results. [Note: the result (2, 4)---rolling a 2 and then a 4---is different from the result ---rolling a 4 and then a 2.]     Note that simply lists outcomes with no reference to the probabilities. So the answer here is the same as in .      Suppose we flip a coin two times. List the set of all possible results. What about flipping three times? Four times? If we flip the coin 10 times, how many possible results will there be?    For two flips: .  For three flips: .  For four flips:   Each additional flip doubles the number of outcomes. So, with ten flips, we'll have .      If we roll a 6-sided die ten times, how many possible results will there be?    Each additional roll will multiply the number of outcomes by 6. So, with 10 rolls, we'll have       Consider the sample space with probability distribution below. Calculate the probabilities of , , , and .          1  0.1    2  0.05    3  0.2    4  0.15    5  0.15    6  0.1    7  0.05    8  0.1    9  0.1              Suppose a die has the values on the faces, but the die is not fair. Instead, the probabilities scale by the same amount as the face values. For example, a result of 4 is twice as likely as a result of 2, since 4 is twice as large as 2; a result of 6 is six times more likely than a result of 1; and so on. Write a probability distribution table for this die.     Probability Distribution for a Linearly Scaled Die        1     2     3     4     5     6          Suppose a die has the values on the faces, but the die is not fair. Instead, each even value has an equal probability, each odd value has an equal probability, and the even values are each twice as likely as the odd values to appear on a roll. Write a probability distribution table for this die.     Probability Distribution for an Even-biased Die        1     2     3     4     5     6          A toxin molecule inside a cell has a 0.3 probability of leaving the cell during a 1-minute period. For each value of , find the probability of the toxin molecule leaving the cell during the th minute. What is the probability of the molecule leaving the cell during the first 3 minutes?    For short, write to mean the probability of the toxin molecule leaving during the th minute. Then   The probability of leaving during the first 3 minutes is         In each of the following scenarios with given events and , alculate , , , and .     An experiment consists of rolling a fair die two times. Let be the event that the sum is even, and let be the event that the second roll is higher than the first.     So , , and . Finally:       An experiment consists of flipping a fair coin three times. Let be the event that the first and second flips match. Let be the event that there are at least two heads.     So , , and . Finally:        A diagnostic test is developed to detect a disease present in 3.2% of the population. For a patient who has the disease, the test will accurately give a positive result 65% of the time. When the patient does not have the disease, the test will accurately give a negative result 99.9% of the time.     For a patient who receives a positive test, what is the probability they have the disease?    Let be the event of testing positive and the event of having the disease. Then the prevalence is given as 3.2%, or 0.032. The sensitivity is , and the specificity is . So, according to Bayes' Theorem:       For a patient who receives a negative test, what is the probability they do not have the disease?            An experiment consists of rolling a fair die two times. Let be the event that the sum is even, and let be the event that the second roll is higher than the first. Are and independent?     So , , and . Finally: so and are not independent.      An experiment consists of flipping a fair coin three times. Let be the event that the first and second flips match. Let be the event that there are at least two heads. Are and independent?     So , , and . Finally: so and are independent.      Let and be events in the sample space . Create a probability distribution for so that are independent.     Example Distribution        1  0.1    2  0.2    3  0.2    4  0.1    5  0.1    6  0.3     Now , , and so and are independent.      An experiment consists of flipping a biased coin 20 times. If the coin comes up heads with probability , find the probability of seeing 5 heads. Find the probability of seeing up to (and including) 3 heads.    Let be the number of heads. Then , so:       An experiment consists of flipping a coin repeatedly until we first see heads.     If the coin comes up heads with probability 0.4, what is the probability we'll see our first heads within three flips? What about precisely on the third flip?    Let be the number of flips until we see heads. Then is geometric with parameter , so:       Which flip has the highest chance of being the first flip to come up heads?       A particular store has an average of 20 customers each hour. During a 4-hour afternoon shift, what is the probability of serving 80 customers.      A continuous random variable taking values in has p.d.f. for some constant .     What is the value of ?           Find             A continuous random variable taking values in has p.d.f. . Find the c.d.f. . Use your c.d.f. to find .     .       A continuous random variable taking values in has c.d.f. . Find the p.d.f. .           Consider with the joint distribution table below. Are independent?   Joint distribution for          0.2  0.3     0.4  0.1       No. For example,       Suppose have the distributions: Assuming are independent, write a joint distribution table.     Joint Distribution           0.04  0.16  0.2     0.06  0.24  0.3         Consider a random variable with probability distribution below. Find .          1  0.1    2  0.05    3  0.2    4  0.15    5  0.15    6  0.1    7  0.05    8  0.1    9  0.1       4.8.      Suppose we flip a coin times, and let count the number of heads.     If the coin comes up heads on a flip with probability , what is ?    40.      What if and ?    48.      What if and ?    100.       If , , and , what is ?    4.      A continuous random variable taking values in has p.d.f. . What is ?    2\/3.      A continuous random variable taking values in has p.d.f. . What is ?           A continuous random variable taking values in has p.d.f. . Find .           Consider a random variable with probability distribution below. Find .          1  0.1    2  0.05    3  0.2    4  0.15    5  0.15    6  0.1    7  0.05    8  0.1    9  0.1         Suppose we flip a coin times, and let count the number of heads. If the coin comes up heads on a flip with probability , what is ? What if and ? What if and ?      If , , what is ?      A continuous random variable taking values in has p.d.f. . What is ?      A continuous random variable taking values in has p.d.f. . What is ?      A continuous random variable taking values in has p.d.f. . Find .     "
+},
+{
+  "id": "Exam-1-Review-4-1",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the sets , , and , which are all subsets of .     Find .           Find , , , , , , , and . Is it true that the size of the union of sets is equal to the sum of the sizes of the individual sets?     , , , , , , , . In particular, note that , so it is not true in general that the size of the union of sets is the sum of the sizes of the individual sets.      Find and .     , .    "
+},
+{
+  "id": "Exam-1-Review-4-2",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose we have a 6-sided die that's weighted to roll a 6 half of the time. We roll the die two times. List the set of all possible results. [Note: the result (2, 4)---rolling a 2 and then a 4---is different from the result ---rolling a 4 and then a 2.]     Note that simply lists outcomes with no reference to the probabilities. So the answer here is the same as in .   "
+},
+{
+  "id": "Exam-1-Review-4-3",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose we flip a coin two times. List the set of all possible results. What about flipping three times? Four times? If we flip the coin 10 times, how many possible results will there be?    For two flips: .  For three flips: .  For four flips:   Each additional flip doubles the number of outcomes. So, with ten flips, we'll have .   "
+},
+{
+  "id": "Exam-1-Review-4-4",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  If we roll a 6-sided die ten times, how many possible results will there be?    Each additional roll will multiply the number of outcomes by 6. So, with 10 rolls, we'll have    "
+},
+{
+  "id": "Exam-1-Review-4-5",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Consider the sample space with probability distribution below. Calculate the probabilities of , , , and .          1  0.1    2  0.05    3  0.2    4  0.15    5  0.15    6  0.1    7  0.05    8  0.1    9  0.1           "
+},
+{
+  "id": "Exam-1-Review-4-6",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Suppose a die has the values on the faces, but the die is not fair. Instead, the probabilities scale by the same amount as the face values. For example, a result of 4 is twice as likely as a result of 2, since 4 is twice as large as 2; a result of 6 is six times more likely than a result of 1; and so on. Write a probability distribution table for this die.     Probability Distribution for a Linearly Scaled Die        1     2     3     4     5     6       "
+},
+{
+  "id": "Exam-1-Review-4-7",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Suppose a die has the values on the faces, but the die is not fair. Instead, each even value has an equal probability, each odd value has an equal probability, and the even values are each twice as likely as the odd values to appear on a roll. Write a probability distribution table for this die.     Probability Distribution for an Even-biased Die        1     2     3     4     5     6       "
+},
+{
+  "id": "Exam-1-Review-4-8",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  A toxin molecule inside a cell has a 0.3 probability of leaving the cell during a 1-minute period. For each value of , find the probability of the toxin molecule leaving the cell during the th minute. What is the probability of the molecule leaving the cell during the first 3 minutes?    For short, write to mean the probability of the toxin molecule leaving during the th minute. Then   The probability of leaving during the first 3 minutes is    "
+},
+{
+  "id": "Exam-1-Review-4-9-2",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-9-2",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "  An experiment consists of rolling a fair die two times. Let be the event that the sum is even, and let be the event that the second roll is higher than the first.     So , , and . Finally:    "
+},
+{
+  "id": "Exam-1-Review-4-9-3",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-9-3",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "  An experiment consists of flipping a fair coin three times. Let be the event that the first and second flips match. Let be the event that there are at least two heads.     So , , and . Finally:    "
+},
+{
+  "id": "Exam-1-Review-4-10",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-10",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "  A diagnostic test is developed to detect a disease present in 3.2% of the population. For a patient who has the disease, the test will accurately give a positive result 65% of the time. When the patient does not have the disease, the test will accurately give a negative result 99.9% of the time.     For a patient who receives a positive test, what is the probability they have the disease?    Let be the event of testing positive and the event of having the disease. Then the prevalence is given as 3.2%, or 0.032. The sensitivity is , and the specificity is . So, according to Bayes' Theorem:       For a patient who receives a negative test, what is the probability they do not have the disease?         "
+},
+{
+  "id": "Exam-1-Review-4-11",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-11",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "  An experiment consists of rolling a fair die two times. Let be the event that the sum is even, and let be the event that the second roll is higher than the first. Are and independent?     So , , and . Finally: so and are not independent.   "
+},
+{
+  "id": "Exam-1-Review-4-12",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-12",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "  An experiment consists of flipping a fair coin three times. Let be the event that the first and second flips match. Let be the event that there are at least two heads. Are and independent?     So , , and . Finally: so and are independent.   "
+},
+{
+  "id": "Exam-1-Review-4-13",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-13",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": "  Let and be events in the sample space . Create a probability distribution for so that are independent.     Example Distribution        1  0.1    2  0.2    3  0.2    4  0.1    5  0.1    6  0.3     Now , , and so and are independent.   "
+},
+{
+  "id": "Exam-1-Review-4-14",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-14",
+  "type": "Exercise",
+  "number": "15",
+  "title": "",
+  "body": "  An experiment consists of flipping a biased coin 20 times. If the coin comes up heads with probability , find the probability of seeing 5 heads. Find the probability of seeing up to (and including) 3 heads.    Let be the number of heads. Then , so:    "
+},
+{
+  "id": "Exam-1-Review-4-15",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-15",
+  "type": "Exercise",
+  "number": "16",
+  "title": "",
+  "body": "  An experiment consists of flipping a coin repeatedly until we first see heads.     If the coin comes up heads with probability 0.4, what is the probability we'll see our first heads within three flips? What about precisely on the third flip?    Let be the number of flips until we see heads. Then is geometric with parameter , so:       Which flip has the highest chance of being the first flip to come up heads?    "
+},
+{
+  "id": "Exam-1-Review-4-16",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-16",
+  "type": "Exercise",
+  "number": "17",
+  "title": "",
+  "body": "  A particular store has an average of 20 customers each hour. During a 4-hour afternoon shift, what is the probability of serving 80 customers.   "
+},
+{
+  "id": "Exam-1-Review-4-17",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-17",
+  "type": "Exercise",
+  "number": "18",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. for some constant .     What is the value of ?           Find          "
+},
+{
+  "id": "Exam-1-Review-4-18",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-18",
+  "type": "Exercise",
+  "number": "19",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . Find the c.d.f. . Use your c.d.f. to find .     .    "
+},
+{
+  "id": "Exam-1-Review-4-19",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-19",
+  "type": "Exercise",
+  "number": "20",
+  "title": "",
+  "body": "  A continuous random variable taking values in has c.d.f. . Find the p.d.f. .        "
+},
+{
+  "id": "Exam-1-Review-4-20",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-20",
+  "type": "Exercise",
+  "number": "21",
+  "title": "",
+  "body": "  Consider with the joint distribution table below. Are independent?   Joint distribution for          0.2  0.3     0.4  0.1       No. For example,    "
+},
+{
+  "id": "Exam-1-Review-4-21",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-21",
+  "type": "Exercise",
+  "number": "22",
+  "title": "",
+  "body": "  Suppose have the distributions: Assuming are independent, write a joint distribution table.     Joint Distribution           0.04  0.16  0.2     0.06  0.24  0.3      "
+},
+{
+  "id": "Exam-1-Review-4-22",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-22",
+  "type": "Exercise",
+  "number": "23",
+  "title": "",
+  "body": "  Consider a random variable with probability distribution below. Find .          1  0.1    2  0.05    3  0.2    4  0.15    5  0.15    6  0.1    7  0.05    8  0.1    9  0.1       4.8.   "
+},
+{
+  "id": "Exam-1-Review-4-23",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-23",
+  "type": "Exercise",
+  "number": "24",
+  "title": "",
+  "body": "  Suppose we flip a coin times, and let count the number of heads.     If the coin comes up heads on a flip with probability , what is ?    40.      What if and ?    48.      What if and ?    100.    "
+},
+{
+  "id": "Exam-1-Review-4-24",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-24",
+  "type": "Exercise",
+  "number": "25",
+  "title": "",
+  "body": "  If , , and , what is ?    4.   "
+},
+{
+  "id": "Exam-1-Review-4-25",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-25",
+  "type": "Exercise",
+  "number": "26",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . What is ?    2\/3.   "
+},
+{
+  "id": "Exam-1-Review-4-26",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-26",
+  "type": "Exercise",
+  "number": "27",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . What is ?        "
+},
+{
+  "id": "Exam-1-Review-4-27",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-27",
+  "type": "Exercise",
+  "number": "28",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . Find .        "
+},
+{
+  "id": "Exam-1-Review-4-28",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-28",
+  "type": "Exercise",
+  "number": "29",
+  "title": "",
+  "body": "  Consider a random variable with probability distribution below. Find .          1  0.1    2  0.05    3  0.2    4  0.15    5  0.15    6  0.1    7  0.05    8  0.1    9  0.1      "
+},
+{
+  "id": "Exam-1-Review-4-29",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-29",
+  "type": "Exercise",
+  "number": "30",
+  "title": "",
+  "body": "  Suppose we flip a coin times, and let count the number of heads. If the coin comes up heads on a flip with probability , what is ? What if and ? What if and ?   "
+},
+{
+  "id": "Exam-1-Review-4-30",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-30",
+  "type": "Exercise",
+  "number": "31",
+  "title": "",
+  "body": "  If , , what is ?   "
+},
+{
+  "id": "Exam-1-Review-4-31",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-31",
+  "type": "Exercise",
+  "number": "32",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . What is ?   "
+},
+{
+  "id": "Exam-1-Review-4-32",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-32",
+  "type": "Exercise",
+  "number": "33",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . What is ?   "
+},
+{
+  "id": "Exam-1-Review-4-33",
+  "level": "2",
+  "url": "Exam-1-Review.html#Exam-1-Review-4-33",
+  "type": "Exercise",
+  "number": "34",
+  "title": "",
+  "body": "  A continuous random variable taking values in has p.d.f. . Find .   "
 }
 ]
 

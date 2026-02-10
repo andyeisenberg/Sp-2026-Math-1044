@@ -101,7 +101,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.12';
+eBookConfig.runestone_version = '7.11.13';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -215,6 +215,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="notes-01-29.html" class="internal"><span class="title">Thursday, Jan 29</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-29.html#notes-01-29-3" class="internal"><span class="title">Expected Value</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-02-03.html" class="internal"><span class="title">Tuesday, Feb 3</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-03.html#notes-02-03-3" class="internal"><span class="title">Variance</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -227,6 +231,16 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="recitations.html" class="internal"><span class="title">Recitations</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-calculus-review.html" class="internal"><span class="title">Calculus Review</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="review.html" class="internal"><span class="title">Exam Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Exam-1-Review.html" class="internal"><span class="title">Exam 1 Review</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Exam-1-Review.html#Exam-1-Review-3" class="internal"><span class="title">Allowed Materials</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Exam-1-Review.html#Exam-1-Review-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
@@ -281,7 +295,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="introduction" id="quiz-02-3-2-1">
 <div class="para" id="quiz-02-3-2-1-1">Consider the joint distribution for <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> below.<div class="autopermalink" data-description="Paragraph"><a href="#quiz-02-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="quiz-02-3-2-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">90<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Joint Distribution<div class="autopermalink" data-description="Table 90: Joint Distribution"><a href="#quiz-02-3-2-1-2" title="Copy heading and permalink for Table 90: Joint Distribution" aria-label="Copy heading and permalink for Table 90: Joint Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="quiz-02-3-2-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">91<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Joint Distribution<div class="autopermalink" data-description="Table 91: Joint Distribution"><a href="#quiz-02-3-2-1-2" title="Copy heading and permalink for Table 91: Joint Distribution" aria-label="Copy heading and permalink for Table 91: Joint Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(X = 0\)</span></td>
@@ -322,8 +336,20 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="quiz-02-3-2-3-1-1">Are <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> independent?<div class="autopermalink" data-description="Paragraph"><a href="#quiz-02-3-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="quiz-02-3-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="quiz-02-3-2-3-2-1">
-<span class="process-math">\(\Pr(X = 2, Y = 0) = 0.2 \text{,}\)</span> and <span class="process-math">\(\Pr(X = 2)\Pr(Y = 0) = (0.4)(0.25) = 0.1\text{.}\)</span> Since <span class="process-math">\(0.2 \neq 0.1\text{,}\)</span> <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are not independent.<div class="autopermalink" data-description="Paragraph"><a href="#quiz-02-3-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="quiz-02-3-2-3-2-1">
+<div class="para">Checking each cell in the table:</div>
+<div class="displaymath process-math" id="quiz-02-3-2-3-2-1-1">
+\begin{align*}
+\Pr(X = 0, Y = 0) \amp = 0.1 = (0.4)(0.25) = \Pr(X = 0)\Pr(Y = 0) \\
+\Pr(X = 1, Y = 0) \amp = 0.05 = (0.2)(0.25) = \Pr(X = 1)\Pr(Y = 0) \\
+\Pr(X = 2, Y = 0) \amp = 0.1 = (0.4)(0.25) = \Pr(X = 2)\Pr(Y = 0) \\
+\Pr(X = 0, Y = 1) \amp = 0.3 = (0.4)(0.75) = \Pr(X = 0)\Pr(Y = 1) \\
+\Pr(X = 1, Y = 1) \amp = 0.15 = (0.2)(0.75) = \Pr(X = 1)\Pr(Y = 1) \\
+\Pr(X = 2, Y = 1) \amp = 0.3 = (0.4)(0.75) = \Pr(X = 2)\Pr(Y = 1) 
+\end{align*}
+</div>
+<div class="para">So <span class="process-math">\(X, Y\)</span> are independent.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#quiz-02-3-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 2.b.1"><a href="#quiz-02-3-2-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
 </div></details></div>
