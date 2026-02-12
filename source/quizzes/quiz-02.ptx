@@ -196,7 +196,7 @@
               <mrow> \E(X) \amp = \int_0^1 x f(x)\ dx </mrow>
               <mrow> \amp = \int_0^1 x (4x - 4x^3)\ dx </mrow>
               <mrow> \amp = \int_0^1 4x^2 - 4x^4\ dx </mrow>
-              <mrow> \amp =  \frac{4x^2}{3} - \frac{4x^5}{5}\bigg|_0^1 </mrow>
+              <mrow> \amp =  \frac{4x^3}{3} - \frac{4x^5}{5}\bigg|_0^1 </mrow>
               <mrow> \amp =  \left(\frac{4}{3} - \frac{4}{5}\right) - (0) </mrow>
               <mrow> \amp =  \frac{8}{15} \approx 0.533. </mrow>
             </md>
