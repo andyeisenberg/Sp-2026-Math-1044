@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-05">
+  <title>Thursday, Feb 5</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Summary</title>
+
+    <p>
+      Here are the expected value and variance formulas for common distributions.
+      Some of these, we've shown justification for.
+      Others requires techniques beyond the scope of the class to justify.
+    </p>
+
+    <table>
+      <title>Expected Value and Variance Formulas</title>
+
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>Distribution</cell>
+          <cell>Parameters</cell>
+          <cell>Expected Value</cell>
+          <cell>Variance</cell>
+        </row>
+
+        <row>
+          <cell>Indicator</cell>
+          <cell><m>p</m></cell>
+          <cell><m>p</m></cell>
+          <cell><m>p(1-p)</m></cell>
+        </row>
+
+        <row>
+          <cell>Binomial</cell>
+          <cell><m>n, p</m></cell>
+          <cell><m>np</m></cell>
+          <cell><m>np(1-p)</m></cell>
+        </row>
+
+        <row>
+          <cell>Geometric</cell>
+          <cell><m>p</m></cell>
+          <cell><m>\frac{1}{p}</m></cell>
+          <cell><m>\frac{1-p}{p^2}</m></cell>
+        </row>
+
+        <row>
+          <cell>Poisson</cell>
+          <cell><m>\lambda</m></cell>
+          <cell><m>\lambda</m></cell>
+          <cell><m>\lambda</m></cell>
+        </row>
+
+        <row>
+          <cell>Exponential</cell>
+          <cell><m>\lambda</m></cell>
+          <cell><m>\frac{1}{\lambda}</m></cell>
+          <cell><m>\frac{1}{\lambda^2}</m></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+
+
+  <subsection>
+    <title>Covariance</title>
+
+    <definition>
+      <statement>
+        <p>
+          If <m>X, Y</m>  are random variables with expected values of <m>\mu_X, \mu_Y</m>, then the <term>covariance</term> of <m>X</m> and <m>Y</m> is:
+          <md>
+            <mrow> \Cov(X, Y) \amp = \E\left[ (X - \mu_X)(Y - \mu_Y)\right]. </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Observe that:
+      <md>
+        <mrow> \Cov(X, X) \amp = \E\left[(X - \mu_X)(X - \mu_X)\right] </mrow>
+        <mrow> \amp = \E\left[(X - \mu_X)^2\right] </mrow>
+        <mrow> \amp = \Var(X), </mrow>
+      </md>
+      so covariance generalizes the variance formula to two variables.
+      As with variance, there's an alternative formula more suited to doing computations:
+      <md>
+        <mrow> \Var(X) \amp = \E\left[(X - \mu_X)(X - \mu_X)\right] = \E(X^2) - \mu_X^2 </mrow>
+        <mrow> \Cov(X, Y) \amp = \E\left[(X - \mu_X)(Y - \mu_Y)\right] = \E(XY) - \mu_X\mu_Y </mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Consider the joint distribution table:
+        </p>
+
+        <table>
+          <title>Joint Distribution</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell right="minor"></cell>
+              <cell><m>X = 0</m></cell>
+              <cell><m>X = 1</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 0</m></cell>
+              <cell>0.2</cell>
+              <cell>0.1</cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 1</m></cell>
+              <cell>0.05</cell>
+              <cell>0.65</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          From the table, we can calculate the marginal distributions:
+          <md>
+            <mrow> \Pr(X = 0) \amp = 0.25 \amp \Pr(Y = 0) \amp = 0.3 </mrow>
+            <mrow> \Pr(X = 1) \amp = 0.75 \amp \Pr(Y = 1) \amp = 0.7 </mrow>
+          </md>
+          So <m>\E(X) = \mu_X = 0.75</m> and <m>\E(Y) = \mu_Y = 0.7</m>.
+          Then:
+          <md>
+            <mrow> \E(XY) \amp = (0)(0)(0.2) + (1)(0)(0.1) + (0)(1)(0.05) + (1)(1)(0.65) </mrow>
+            <mrow> \amp = 0.65 </mrow>
+            <mrow> \Cov(X, Y) \amp = \E(XY) - \mu_X \mu_Y </mrow>
+            <mrow> \amp = 0.65 - (0.75)(0.7) </mrow>
+            <mrow> \amp = 0.125. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Question: the formula <m>\Var(X) = \E\left[(X - \mu_X)^2\right]</m> makes it clear that variance cannot be negative, since squares are nonnegative.
+      What about <m>\Cov(X, Y)</m>?
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          In the previous example, since <m>X, Y</m> were both indicator random variables, the variances for each were simply equal to the sum of the second row/column.
+          Similarly, <m>\E(XY)</m> was equal to the <m>X = 1, Y = 1</m> entry in the table.
+          Using two indicator random variables, significantly simplifies the covariance calculation, so we can vary the table and recalculate covariance quickly.
+          Consider the following joint distribution:
+        </p>
+
+        <table>
+          <title>Joint Distribution</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell right="minor"></cell>
+              <cell><m>X = 0</m></cell>
+              <cell><m>X = 1</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 0</m></cell>
+              <cell>0.1</cell>
+              <cell>0.4</cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>Y = 1</m></cell>
+              <cell>0.3</cell>
+              <cell>0.2</cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Then:
+          <md>
+            <mrow> \Cov(X, Y) = 0.2 - (0.6)(0.5) = -0.1 \lt 0. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Question: how do we interpret <m>\Cov(X, Y)</m>? <m>X - \mu_X</m> is positive when <m>X \gt \mu_X</m> and negative when <m>X \lt \mu_X</m>.
+      <m>Y - \mu_Y</m> is positive when <m>Y \gt \mu_Y</m> and negative when <m>Y \lt \mu_Y</m>.
+      So the product <m>(X - \mu_X)(Y - \mu_Y)</m> is positive when <m>X, Y</m> are both larger or both smaller than their expected values, and negative when one is larger and one is smaller.
+      That is, covariance tries to quantify the tendency of <m>X, Y</m> to get big/small at the same time.
+    </p>
+  </subsection>
+</section>

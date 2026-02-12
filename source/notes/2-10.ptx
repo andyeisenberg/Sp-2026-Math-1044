@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-10">
+  <title>Tuesday, Feb 10</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Likelihood</title>
+
+    <p>
+      In probability theory, we start with some probability model and its parameter values, and we try to find the probabilities of seeing certain types of data.
+      In statistics, we start with the collected data, and we try to find the most likely values of parameters for some underlying probability model.
+    </p>
+
+    <definition>
+      <statement>
+        <p>
+          An <term>estimator</term> is a way of estimating a parameter value based on data collected.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we flip a coin 100 times and see 52 heads.
+          Let <m>p</m> be the bias of the coin.
+          Then we might estimate:
+          <md>
+            <mrow> \widehat{p} = \frac{52}{100} </mrow>
+          </md>
+          (The notation <m>\widehat{p}</m> is sometimes used to indicate an estimator for <m>p</m>.)
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          If we see <m>k</m> heads in <m>n</m> flips, then the estimator <m>\widehat{p} = \frac{k}{n}</m> is called the <term>common sense estimator</term> for the binomial distribution parameter <m>p</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <definition>
+      <statement>
+        <p>
+          An estimator <m>\widehat{p}</m> is <term>unbiased</term> if <m>\E(\widehat{p}) = p</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Flip a coin 100 times, and let <m>S</m> be the number of heads.
+          Then <m>S \sim \Bin(100, p)</m>.
+          Let <m>\widehat{p} = \frac{S}{100} = \frac{S}{n}</m>.
+          Then:
+          <md>
+            <mrow> \E(\widehat{p}) \amp = \E\left(\frac{S}{n}\right) </mrow>
+            <mrow> \amp = \frac{1}{n} \E\left(S\right) </mrow>
+            <mrow> \amp = \frac{1}{n} (np) </mrow>
+            <mrow> \amp = p. </mrow>
+          </md>
+          So <m>\E(\widehat{p} = p</m>, i.e., the common sense estimator is unbiased.
+        </p>
+      </statement>
+    </example>
+
+    <definition>
+      <statement>
+        <p>
+          We perform an experiment and collect data.
+          Let <m>p</m>  be an unknown parameter value.
+          The <term>likelihood function</term> is:
+          <md>
+            <mrow> \L(p) = \Pr(\text{data} \mid \text{paramater value is } p). </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>S \sim \Bin(100, p)</m>.
+          Suppose we see 52 heads.
+          Then:
+          <md>
+            <mrow> \Pr(S = k) \amp = b(k; 100, p) = {100 \choose k}p^k (1 - p)^{100 - k} </mrow>
+            <mrow> \L(p) \amp = {100 \choose 52}p^{52} (1 - p)^{48} </mrow>
+          </md>
+          In the first line, the variable <m>k</m> represents the data.
+          In the second line, the variable <m>p</m> represents the parameter value.
+          Our goal, given the collected data, is to find the <term>maximum likelihood estimation</term> (MLE) for the parameter value.
+        </p>
+
+        <p>
+          <m>\L(p)</m> is a continuous function over a closed interval <m>p \in [0, 1]</m>, so we use the Closed Interval Method.
+          <md>
+            <mrow> \L'(p) \amp = {100 \choose 52}\left[ 52 p^{51} (1 - p)^{48} + p^{52}48 (1-p)^{47}(-1)\right] </mrow>
+            <mrow> \amp = {100 \choose 52} p^{51} (1-p)^{47}\left[ 52 (1 - p) - 48p \right] </mrow>
+            <mrow> \amp = {100 \choose 52} p^{51} (1-p)^{47}\left[ 52 - 100p \right] </mrow>
+          </md>
+          Now, we look for critical numbers in the interior of the interval:
+          <md>
+            <mrow> \L'(p) = 0 \text{ when } p = \frac{52}{100} </mrow>
+          </md>
+          Finally, we test the critical numbers and the endpoints of the interval to find the max:
+        </p>
+
+        <table>
+          <title>Check Candidate Locations for Max</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell><m>p</m></cell>
+              <cell><m>\L(p)</m></cell>
+            </row>
+
+            <row>
+              <cell><m>0</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+
+            <row>
+              <cell><m>52/100</m></cell>
+              <cell><m>\gt 0</m></cell>
+            </row>
+
+            <row>
+              <cell><m>1</m></cell>
+              <cell><m>0</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          So <m>\widehat{p} = \frac{52}{100}</m> is the MLE.
+        </p>
+
+        <p>
+          More generally, a similar calculation will show that, with <m>k</m> heads in <m>n</m> flips, the MLE will be <m>\widehat{p} = \frac{k}{n}</m>.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we observe a cell, measuring the time <m>T</m> until a toxin molecule leaves the cell.
+          Then <m>T \sim \Exp(\lambda)</m> for some <m>\lambda</m>, with pdf
+          <md>
+            <mrow> f(t) =\lambda e^{-\lambda t}, \lambda \gt 0 </mrow>
+          </md>
+          If we see a toxin molecule leave at 0.3 min, what's the MLE for <m>\lambda</m>?
+          <md>
+            <mrow> \L(\lambda) = \lambda e^{-0.3 \lambda} \quad \text{(density, not probability)} </mrow>
+          </md>
+          We want to maximize <m>\L(\lambda)</m> over <m>\lambda \in (0, \infty)</m>, an open interval.
+          So we'll use the "Open Interval Method".
+          <md>
+            <mrow> \L'(\lambda) \amp = e^{-0.3\lambda} + \lambda e^{-0.3\lambda}(-0.3) </mrow>
+            <mrow> \amp = e^{-0.3\lambda}\left( 1 - 0.3 e^{-0.3\lambda}\right) </mrow>
+          </md>
+          Then <m>\L'(\lambda) = 0</m> when <m>\lambda = \frac{1}{0.3}\approx 3.33</m>.
+          Checking <m>\lambda</m> values to the left and the right:
+          <md>
+            <mrow> \L'(1) \amp = (+)(+) = (+) </mrow>
+            <mrow> \L'(10) \amp = (+)(-) = (-) </mrow>
+          </md>
+          So <m>\L'(\lambda) \gt 0</m> (and therefore <m>\L(\lambda)</m> is increasing) on <m>(0, 1/0.3)</m>, and <m>\L'(\lambda) \lt 0</m> (and therefore <m>\L(\lambda)</m> is decreasing) on <m>(1/0.3, \infty)</m>.
+          Now we can conclude that <m>\widehat{\lambda} = 1/0.3 \approx 3.33</m> is the location of a global (and not just local) maximum value.
+        </p>
+
+        <p>
+          More generally, if the observed time is <m>t</m>, then the MLE will be <m>\widehat{\lambda} = \frac{1}{t}</m>.
+        </p>
+
+        <p>
+          What if we had more data points? For example, suppose two toxin molecules leave the cell at <m>t_1 = 0.3</m> min and <m>t_2 = 0.5</m> min?
+        </p>
+
+        <table>
+          <title>Waiting Times</title>
+
+          <tabular halign="center">
+            <row bottom="minor">
+              <cell>Molecule</cell>
+              <cell>Time</cell>
+              <cell>Rate Estimate</cell>
+            </row>
+
+            <row>
+              <cell><m>1</m></cell>
+              <cell><m>0.3</m></cell>
+              <cell><m>1/0.3 \approx 3.33</m></cell>
+            </row>
+
+            <row>
+              <cell><m>2</m></cell>
+              <cell><m>0.5</m></cell>
+              <cell><m>1/0.5 = 2</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          How do we combine these data points? We could take the average of the rate estimates:
+          <md>
+            <mrow> \frac{3.33 + 2}{2} \approx 2.67 </mrow>
+          </md>
+          Alternatively, we could average the times first, then create a new rate estimate from the average time:
+          <md>
+            <mrow> \frac{0.3 + 0.5}{2} \amp = 0.4 </mrow>
+            <mrow> \frac{1}{0.4} \amp = 2.5 </mrow>
+          </md>
+          Both of these make some sense, but let's do a careful computation to be certain which way is correct (if either of them is!).
+          <md>
+            <mrow> \L(\lambda) \amp = \left( \lambda e^{-0.3 \lambda} \right)\left( \lambda e^{-0.5 \lambda} \right) </mrow>
+            <mrow> \amp = \lambda^2 e^{-0.3 \lambda - 0.5 \lambda} </mrow>
+            <mrow> \amp = \lambda^2 e^{- 0.8 \lambda} </mrow>
+          </md>
+          Using the Open Interval Method:
+          <md>
+            <mrow> \L'(\lambda) \amp = 2\lambda e^{-0.8 \lambda} + \lambda^2 e^{-0.8 \lambda} (-0.8) </mrow>
+            <mrow> \amp = \lambda e^{-0.8 \lambda} \left[ 2 - 0.8\lambda \right] </mrow>
+          </md>
+          So <m>\L'(\lambda) = 0</m> when <m>\lambda = \frac{2}{0.8} = 2.5</m>.
+          Testing points to the left and right:
+          <md>
+            <mrow> \L'(1) \amp = (+)(+)(+) = (+) </mrow>
+            <mrow> \L'(5) \amp = (+)(+)(-) = (-) </mrow>
+          </md>
+          Now <m>\L'(\lambda) \gt 0</m> (<m>\L(\lambda)</m> is increasing) on <m>(0, 2.5)</m>, and <m>\L'(\lambda) \lt 0</m> (<m>\L(\lambda)</m> is decreasing) on <m>(2.5, \infty)</m>.
+          Therefore, the MLE is <m>\widehat{\lambda} = \frac{2}{0.8} = 2.5</m>.
+        </p>
+
+        <p>
+          Tracing the values <m>2</m> and <m>0.8</m> throughout the calculation, we can see that the value <m>2</m> will generally match the number of waiting times collected, and the value <m>0.8</m> will be the sum of the waiting times.
+          So, generally, with collected waiting times of <m>t_1, \dotsc, t_n</m>, the MLE will be:
+          <md>
+            <mrow> \widehat{\lambda} = \frac{n}{t_1 + \dotsb + t_n} = \frac{1}{\text{avg time}}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

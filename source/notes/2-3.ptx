@@ -37,5 +37,240 @@
         </p>
       </statement>
     </definition>
+
+    <p>
+      We can write an alternative formula here:
+      <md>
+        <mrow> \Var(X) \amp = \E\left[ (X - \mu)^2 \right] </mrow>
+        <mrow> \amp = \E\left[ X^2 - 2\mu X + \mu^2 \right] </mrow>
+        <mrow> \amp = \E(X^2) - 2\mu \E(X) + \E(\mu^2) </mrow>
+        <mrow> \amp = \E(X^2) - 2\mu^2 + \mu^2 </mrow>
+        <mrow> \amp = \E(X^2) - \mu^2. </mrow>
+      </md>
+      This formula is generally more useful for performing computations.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X</m> indicate event <m>A</m> with <m>\Pr(A) = p</m>.
+        </p>
+
+        <sidebyside widths="30% 30%">
+          <table>
+            <title>Distribution for <m>X</m></title>
+
+            <tabular halign="center">
+              <row bottom="minor">
+                <cell><m>k</m></cell>
+                <cell><m>\Pr(X = k)</m></cell>
+              </row>
+
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>1 - p</m></cell>
+              </row>
+
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>p</m></cell>
+              </row>
+            </tabular>
+          </table>
+
+          <table>
+            <title>Distribution for <m>X^2</m></title>
+
+            <tabular halign="center">
+              <row bottom="minor">
+                <cell><m>k</m></cell>
+                <cell><m>\Pr(X^2 = k)</m></cell>
+              </row>
+
+              <row>
+                <cell><m>0^2</m></cell>
+                <cell><m>1 - p</m></cell>
+              </row>
+
+              <row>
+                <cell><m>1^2</m></cell>
+                <cell><m>p</m></cell>
+              </row>
+            </tabular>
+          </table>
+        </sidebyside>
+
+        <p>
+          Then <m>\E(X) = p</m> and <m>\E(X^2) = p</m>, so:
+          <md>
+            <mrow> \Var(X) = \E(X^2) - \left(\E(X)\right)^2 = p - p^2 = p(1 - p). </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>R</m> be the roll of a fair D6.
+        </p>
+
+        <sidebyside widths="30% 30%">
+          <table>
+            <title>Distribution for <m>R</m></title>
+
+            <tabular halign="center">
+              <row bottom="minor">
+                <cell><m>k</m></cell>
+                <cell><m>\Pr(R = k)</m></cell>
+              </row>
+
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>3</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>4</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>5</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>6</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+            </tabular>
+          </table>
+
+          <table>
+            <title>Distribution for <m>R^2</m></title>
+
+            <tabular halign="center">
+              <row bottom="minor">
+                <cell><m>k</m></cell>
+                <cell><m>\Pr(R^2 = k)</m></cell>
+              </row>
+
+              <row>
+                <cell><m>1^2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>2^2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>3^2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>4^2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>5^2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+
+              <row>
+                <cell><m>6^2</m></cell>
+                <cell><m>1/6</m></cell>
+              </row>
+            </tabular>
+          </table>
+        </sidebyside>
+
+        <p>
+          Then <m>\E(R) = \frac{7}{2}</m> and <m>\E(R^2) = \frac{91}{6}</m>, so:
+          <md>
+            <mrow> \Var(R) = \E(R^2) - \left(\E(R)\right)^2 = \frac{91}{6} - \frac{49}{4} = \frac{35}{12}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>X \in [0, 1]</m> with pdf <m>f(x) = 2x</m>.
+          <md>
+            <mrow> \E(X) \amp = \int_0^1 x \cdot 2x\ dx </mrow>
+            <mrow> \amp = \int_0^1 2x^2\ dx </mrow>
+            <mrow> \amp = \frac{2x^3}{3}\bigg|_0^1 </mrow>
+            <mrow> \amp = \frac{2}{3} - 0 </mrow>
+            <mrow> \amp = \frac{2}{3} </mrow>
+            <mrow> \E(X^2) \amp = \int_0^1 x^2\cdot 2x\ dx </mrow>
+            <mrow> \amp = \int_0^1 2x^3\ dx </mrow>
+            <mrow> \amp = \frac{2x^4}{4}\bigg|_0^1 </mrow>
+            <mrow> \amp = \frac{1}{2} - 0 </mrow>
+            <mrow> \amp = \frac{1}{2} </mrow>
+            <mrow> \Rightarrow \quad \Var(X) \amp = \E(X^2) - \left(\E(X)\right)^2 </mrow>
+            <mrow> \amp = \frac{1}{2} - \frac{4}{9} </mrow>
+            <mrow> \amp = \frac{1}{18}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      WARNING!!! In general, variance is <em>not</em> linear! That is,
+      <md>
+        <mrow> \Var(X + Y) \amp \neq \Var(X) + \Var(Y) </mrow>
+        <mrow>\Var(kX) \amp \neq k \Var(X)</mrow>
+      </md>
+      But there are still relevant properties we can state here:
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          Let <m>X</m> be a random variable and <m>k\in \R</m>.
+          Then:
+          <md>
+            <mrow> \Var(X + k) \amp = \Var(X) \amp \Var(kX) \amp = k^2\Var(X). </mrow>
+          </md>
+          Moreover, if <m>Y</m> is another random variable and <m>X, Y</m> are independent, then:
+          <md>
+            <mrow> \Var(X + Y) = \Var(X) + \Var(Y). </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <statement>
+        <p>
+          Let <m>H_1, H_2, \dotsc, H_n</m> be indicators with parameter <m>p</m>.
+          Let <m>S = H_1 + \dotsb + H_n</m>, so <m>S \sim \Bin(n, p)</m>.
+          We know <m>\Var(H_i) = p(1-p)</m>, and <m>H_1, \dotsc, H_n</m> are independent.
+          So:
+          <md>
+            <mrow> \Var(S) \amp = \Var(H_1 + \dotsb + H_n) </mrow>
+            <mrow> \amp = \Var(H_1) + \dotsb + \Var(H_n) </mrow>
+            <mrow> \amp = p(1-p) + \dotsb + p(1-p) </mrow>
+            <mrow> \amp = np(1-p) </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
   </subsection>
 </section>
