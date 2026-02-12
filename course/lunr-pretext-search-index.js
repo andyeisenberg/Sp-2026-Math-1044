@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Tuesday, Feb 3",
-  "body": " Tuesday, Feb 3   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Variance  Question: How spread out are values? One answer we might try is to measure the average distance from the average value: To simplify notation, we'll write . Also, it's often usefull to square a term rather than take absolute value when we want to ensure a positive output, so we'll define...    Let be a random variable with . The variance of is:  is called the standard deviation .     "
+  "body": " Tuesday, Feb 3   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Variance  Question: How spread out are values? One answer we might try is to measure the average distance from the average value: To simplify notation, we'll write . Also, it's often usefull to square a term rather than take absolute value when we want to ensure a positive output, so we'll define...    Let be a random variable with . The variance of is:  is called the standard deviation .    We can write an alternative formula here: This formula is generally more useful for performing computations.    Let indicate event with .    Distribution for                  Distribution for                  Then and , so:       Let be the roll of a fair D6.    Distribution for                                  Distribution for                                  Then and , so:       Let with pdf .     WARNING!!! In general, variance is not linear! That is, But there are still relevant properties we can state here:    Let be a random variable and . Then: Moreover, if is another random variable and are independent, then:       Let be indicators with parameter . Let , so . We know , and are independent. So:      "
 },
 {
   "id": "def-variance",
@@ -782,6 +782,177 @@ var ptx_lunr_docs = [
   "number": "90",
   "title": "",
   "body": "  Let be a random variable with . The variance of is:  is called the standard deviation .   "
+},
+{
+  "id": "notes-02-03-3-5",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-5",
+  "type": "Example",
+  "number": "91",
+  "title": "",
+  "body": "  Let indicate event with .    Distribution for                  Distribution for                  Then and , so:    "
+},
+{
+  "id": "notes-02-03-3-6",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-6",
+  "type": "Example",
+  "number": "94",
+  "title": "",
+  "body": "  Let be the roll of a fair D6.    Distribution for                                  Distribution for                                  Then and , so:    "
+},
+{
+  "id": "notes-02-03-3-7",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-7",
+  "type": "Example",
+  "number": "97",
+  "title": "",
+  "body": "  Let with pdf .    "
+},
+{
+  "id": "notes-02-03-3-9",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-9",
+  "type": "Theorem",
+  "number": "98",
+  "title": "",
+  "body": "  Let be a random variable and . Then: Moreover, if is another random variable and are independent, then:    "
+},
+{
+  "id": "notes-02-03-3-10",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-10",
+  "type": "Example",
+  "number": "99",
+  "title": "",
+  "body": "  Let be indicators with parameter . Let , so . We know , and are independent. So:    "
+},
+{
+  "id": "notes-02-05",
+  "level": "1",
+  "url": "notes-02-05.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Feb 5",
+  "body": " Thursday, Feb 5   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Summary  Here are the expected value and variance formulas for common distributions. Some of these, we've shown justification for. Others requires techniques beyond the scope of the class to justify.   Expected Value and Variance Formulas    Distribution  Parameters  Expected Value  Variance    Indicator       Binomial       Geometric       Poisson       Exponential          Covariance    If are random variables with expected values of , then the covariance of and is:     Observe that: so covariance generalizes the variance formula to two variables. As with variance, there's an alternative formula more suited to doing computations:     Consider the joint distribution table:   Joint Distribution          0.2  0.1     0.05  0.65     From the table, we can calculate the marginal distributions: So and . Then:     Question: the formula makes it clear that variance cannot be negative, since squares are nonnegative. What about ?    In the previous example, since were both indicator random variables, the variances for each were simply equal to the sum of the second row\/column. Similarly, was equal to the entry in the table. Using two indicator random variables, significantly simplifies the covariance calculation, so we can vary the table and recalculate covariance quickly. Consider the following joint distribution:   Joint Distribution          0.1  0.4     0.3  0.2     Then:     Question: how do we interpret ? is positive when and negative when . is positive when and negative when . So the product is positive when are both larger or both smaller than their expected values, and negative when one is larger and one is smaller. That is, covariance tries to quantify the tendency of to get big\/small at the same time.   "
+},
+{
+  "id": "notes-02-05-3-3",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-3",
+  "type": "Table",
+  "number": "100",
+  "title": "Expected Value and Variance Formulas",
+  "body": " Expected Value and Variance Formulas    Distribution  Parameters  Expected Value  Variance    Indicator       Binomial       Geometric       Poisson       Exponential       "
+},
+{
+  "id": "notes-02-05-4-2",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-4-2",
+  "type": "Definition",
+  "number": "101",
+  "title": "",
+  "body": "  If are random variables with expected values of , then the covariance of and is:    "
+},
+{
+  "id": "notes-02-05-4-4",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-4-4",
+  "type": "Example",
+  "number": "102",
+  "title": "",
+  "body": "  Consider the joint distribution table:   Joint Distribution          0.2  0.1     0.05  0.65     From the table, we can calculate the marginal distributions: So and . Then:    "
+},
+{
+  "id": "notes-02-05-4-6",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-4-6",
+  "type": "Example",
+  "number": "104",
+  "title": "",
+  "body": "  In the previous example, since were both indicator random variables, the variances for each were simply equal to the sum of the second row\/column. Similarly, was equal to the entry in the table. Using two indicator random variables, significantly simplifies the covariance calculation, so we can vary the table and recalculate covariance quickly. Consider the following joint distribution:   Joint Distribution          0.1  0.4     0.3  0.2     Then:    "
+},
+{
+  "id": "notes-02-10",
+  "level": "1",
+  "url": "notes-02-10.html",
+  "type": "Section",
+  "number": "",
+  "title": "Tuesday, Feb 10",
+  "body": " Tuesday, Feb 10   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Likelihood  In probability theory, we start with some probability model and its parameter values, and we try to find the probabilities of seeing certain types of data. In statistics, we start with the collected data, and we try to find the most likely values of parameters for some underlying probability model.    An estimator is a way of estimating a parameter value based on data collected.      Suppose we flip a coin 100 times and see 52 heads. Let be the bias of the coin. Then we might estimate: (The notation is sometimes used to indicate an estimator for .)      If we see heads in flips, then the estimator is called the common sense estimator for the binomial distribution parameter .      An estimator is unbiased if .      Flip a coin 100 times, and let be the number of heads. Then . Let . Then: So , i.e., the common sense estimator is unbiased.      We perform an experiment and collect data. Let be an unknown parameter value. The likelihood function is:       Let . Suppose we see 52 heads. Then: In the first line, the variable represents the data. In the second line, the variable represents the parameter value. Our goal, given the collected data, is to find the maximum likelihood estimation (MLE) for the parameter value.   is a continuous function over a closed interval , so we use the Closed Interval Method. Now, we look for critical numbers in the interior of the interval: Finally, we test the critical numbers and the endpoints of the interval to find the max:   Check Candidate Locations for Max                     So is the MLE.  More generally, a similar calculation will show that, with heads in flips, the MLE will be .      Suppose we observe a cell, measuring the time until a toxin molecule leaves the cell. Then for some , with pdf If we see a toxin molecule leave at 0.3 min, what's the MLE for ? We want to maximize over , an open interval. So we'll use the \"Open Interval Method\". Then when . Checking values to the left and the right: So (and therefore is increasing) on , and (and therefore is decreasing) on . Now we can conclude that is the location of a global (and not just local) maximum value.  More generally, if the observed time is , then the MLE will be .  What if we had more data points? For example, suppose two toxin molecules leave the cell at min and min?   Waiting Times    Molecule  Time  Rate Estimate               How do we combine these data points? We could take the average of the rate estimates: Alternatively, we could average the times first, then create a new rate estimate from the average time: Both of these make some sense, but let's do a careful computation to be certain which way is correct (if either of them is!). Using the Open Interval Method: So when . Testing points to the left and right: Now ( is increasing) on , and ( is decreasing) on . Therefore, the MLE is .  Tracing the values and throughout the calculation, we can see that the value will generally match the number of waiting times collected, and the value will be the sum of the waiting times. So, generally, with collected waiting times of , the MLE will be:      "
+},
+{
+  "id": "notes-02-10-3-3",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-3",
+  "type": "Definition",
+  "number": "106",
+  "title": "",
+  "body": "  An estimator is a way of estimating a parameter value based on data collected.   "
+},
+{
+  "id": "notes-02-10-3-4",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-4",
+  "type": "Example",
+  "number": "107",
+  "title": "",
+  "body": "  Suppose we flip a coin 100 times and see 52 heads. Let be the bias of the coin. Then we might estimate: (The notation is sometimes used to indicate an estimator for .)   "
+},
+{
+  "id": "notes-02-10-3-5",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-5",
+  "type": "Definition",
+  "number": "108",
+  "title": "",
+  "body": "  If we see heads in flips, then the estimator is called the common sense estimator for the binomial distribution parameter .   "
+},
+{
+  "id": "notes-02-10-3-6",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-6",
+  "type": "Definition",
+  "number": "109",
+  "title": "",
+  "body": "  An estimator is unbiased if .   "
+},
+{
+  "id": "notes-02-10-3-7",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-7",
+  "type": "Example",
+  "number": "110",
+  "title": "",
+  "body": "  Flip a coin 100 times, and let be the number of heads. Then . Let . Then: So , i.e., the common sense estimator is unbiased.   "
+},
+{
+  "id": "notes-02-10-3-8",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-8",
+  "type": "Definition",
+  "number": "111",
+  "title": "",
+  "body": "  We perform an experiment and collect data. Let be an unknown parameter value. The likelihood function is:    "
+},
+{
+  "id": "notes-02-10-3-9",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-9",
+  "type": "Example",
+  "number": "112",
+  "title": "",
+  "body": "  Let . Suppose we see 52 heads. Then: In the first line, the variable represents the data. In the second line, the variable represents the parameter value. Our goal, given the collected data, is to find the maximum likelihood estimation (MLE) for the parameter value.   is a continuous function over a closed interval , so we use the Closed Interval Method. Now, we look for critical numbers in the interior of the interval: Finally, we test the critical numbers and the endpoints of the interval to find the max:   Check Candidate Locations for Max                     So is the MLE.  More generally, a similar calculation will show that, with heads in flips, the MLE will be .   "
+},
+{
+  "id": "notes-02-10-3-10",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-10",
+  "type": "Example",
+  "number": "114",
+  "title": "",
+  "body": "  Suppose we observe a cell, measuring the time until a toxin molecule leaves the cell. Then for some , with pdf If we see a toxin molecule leave at 0.3 min, what's the MLE for ? We want to maximize over , an open interval. So we'll use the \"Open Interval Method\". Then when . Checking values to the left and the right: So (and therefore is increasing) on , and (and therefore is decreasing) on . Now we can conclude that is the location of a global (and not just local) maximum value.  More generally, if the observed time is , then the MLE will be .  What if we had more data points? For example, suppose two toxin molecules leave the cell at min and min?   Waiting Times    Molecule  Time  Rate Estimate               How do we combine these data points? We could take the average of the rate estimates: Alternatively, we could average the times first, then create a new rate estimate from the average time: Both of these make some sense, but let's do a careful computation to be certain which way is correct (if either of them is!). Using the Open Interval Method: So when . Testing points to the left and right: Now ( is increasing) on , and ( is decreasing) on . Therefore, the MLE is .  Tracing the values and throughout the calculation, we can see that the value will generally match the number of waiting times collected, and the value will be the sum of the waiting times. So, generally, with collected waiting times of , the MLE will be:    "
 },
 {
   "id": "quiz-01",
@@ -905,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "92",
+  "number": "117",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
