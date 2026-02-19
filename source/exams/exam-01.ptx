@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="exam-01">
+  <title>Exam 1</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Show all relevant work.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          Write either True or False for each of the following statements.
+          No justification is required.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Let <m>A, B</m> be any sets.
+            Then <m>|A \cap B| = |A| \cdot |B|</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Let <m>A, B</m> be any events.
+            Then <m>\Pr(A \mid B) = \Pr(B \mid A)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Given a joint distribution for random variables <m>X</m> and <m>Y</m>, then it must be the case that <m>\Pr(X = 0, Y = 0) = \Pr(X = 0)\Pr(Y = 0)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose we flip a coin repeatedly until we first see heads and let <m>T</m> be the number of flips.
+            Then <m>\Pr(T = 2) \geq \Pr(T = 4)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            If molecules are observed leaving a cell after 1.5 minutes, 1.8 minutes, 2.1 minutes, 2.2 minutes, and 2.4 minutes, then the maximum likelihood estimation for the rate at which molecules leave the cell is <m>1/2</m> per minute.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose <m>\L(\theta)</m> is a likelihood function, and <m>\L(2) = 0.04</m>.
+            Then the probability that <m>\theta = 2</m> is <m>0.04</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the sample space <m>S = \{1, 2, 3, 4, 5\}</m> with probability distribution given in the table below.
+          Let <m>A = \{1, 2, 3\}</m> and <m>B = \{1, 3, 5\}</m>.
+          Calculate the following probabilities.
+        </p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor"><m>x</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>\Pr(x)</m></cell>
+            <cell><m>0.1</m></cell>
+            <cell><m>0.2</m></cell>
+            <cell><m>0.3</m></cell>
+            <cell><m>0.3</m></cell>
+            <cell><m>0.1</m></cell>
+          </row>
+        </tabular>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\Pr(A \cup B)</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>A\cup B = \{ 1, 2, 3, 5 \}</m>, so <m>\Pr(A\cup B) = 0.1 + 0.2 + 0.3 + 0.1 = \boxed{0.7}</m>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\Pr(A \cap B)</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>A\cap B = \{ 1, 3 \}</m>, so <m>\Pr(A\cap B) = 0.1 + 0.3 = \boxed{0.4}</m>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\Pr(A \mid B)</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>\Pr(A\mid B) = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{0.4}{0.1 + 0.3 + 0.1} = \frac{0.4}{0.5} = \boxed{0.8}</m>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the random variable <m>X</m> with probability distribution below.
+        </p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor"><m>x</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>\Pr(x)</m></cell>
+            <cell><m>0.2</m></cell>
+            <cell><m>0.3</m></cell>
+            <cell><m>0.1</m></cell>
+            <cell><m>0.25</m></cell>
+            <cell><m>0.15</m></cell>
+          </row>
+        </tabular>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Find <m>\E(X)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \E(X) \amp = (1)(0.2) + (2)(0.3) + (3)(0.1) + (4)(0.25) + (5)(0.15) = \boxed{2.85} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Find <m>\Var(X)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \E(X^2) \amp = (1)^2(0.2) + (2)^2(0.3) + (3)^2(0.1) + (4)^2(0.25) + (5)^2(0.15) = 10.05 </mrow>
+              <mrow> \Var(X) \amp = \E(X^2) - \left(\E(X)\right)^2 = 10.05 - (2.85)^2 =  \boxed{1.9275} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise workspace="2in">
+      <statement>
+        <p>
+          A diagnostic test is developed to detect a disease present in 2.1% of the population.
+          For a patient who has the disease, the test will accurately give a positive result 76% of the time.
+          When the patient does not have the disease, the test will accurately give a negative result 98.2% of the time.
+        </p>
+
+        <p>
+          For a patient who receives a negative test, what is the probability they do not have the disease?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Let <m>P</m> be the event of receiving a positive test result and <m>D</m> be the event of having the disease.
+          The given information is: <m>\Pr(D) = 0.021, \Pr(P\mid D) = 0.76</m>, and <m>\Pr(P^c \mid D^c) = 0.982</m>.
+          Then, using Bayes' Theorem:
+          <md>
+            <mrow> \Pr(D^c\mid P^c) \amp = \frac{\Pr(P^c \mid D^c)\Pr(D^c)}{\Pr(P^c \mid D^c)\Pr(D^c) + \Pr(P^c \mid D)\Pr(D)} </mrow>
+            <mrow> \amp = \frac{\Pr(P^c \mid D^c)(1 - \Pr(D))}{\Pr(P^c \mid D^c)(1 - \Pr(D)) + (1 - \Pr(P \mid D))\Pr(D)} </mrow>
+            <mrow> \amp = \frac{(0.982)(1 - 0.021)}{(0.982)(1 - 0.021) + (1 - 0.76)(0.021)}  </mrow>
+            <mrow> \amp \approx \boxed{0.995}  </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          In each of the following scenarios, state the maximum likelihood estimation for the unknown parameter indicated.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            A radioactive material is observed for 5 hours.
+            120 particle emissions are seen.
+            <m>\lambda</m> is the hourly rate of particle emissions.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            120 emissions per 5 hours is an hourly rate of <m>\boxed{\widehat{\lambda} = 120/5 = 24 \text{ per hour}}</m>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            In each of 5 trials, a coin is flipped until heads is seen.
+            The number of flips in each trial is 3, 4, 3, 5, and 6.
+            <m>p</m> is the probability of the coin coming up heads on a flip.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            There are <m>3 + 4 + 3 + 5 + 6 = 21</m> total flips, <m>5</m> of which are heads, so the MLE is <m>\boxed{\widehat{p} = \frac{5}{21}}</m>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          Let <m>X</m> be a continuous random variable with c.d.f.
+          <m>\displaystyle{F(x) = \frac{1}{8}(x^3 + 3x + 4)}</m>, where <m>x \in [-1, 1]</m>.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Find the p.d.f.
+            <m>f(x)</m> for <m>X</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>f(x) = F'(x) = \frac{1}{8}\left(3x^2 + 3\right) = \frac{3}{8}\left(x^2 + 1\right)</m>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Find <m>\E(X)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \E(X) \amp = \int_{-1}^1 x \cdot f(x)\ dx = \int_{-1}^1 x\cdot \frac{3}{8}\left(x^2 + 1\right)\ dx </mrow>
+              <mrow> \amp = \frac{3}{8} \int_{-1}^1 x^3 + x\ dx = \frac{3}{8} \left(\frac{x^4}{4} + \frac{x^2}{2}\right)\bigg|_{-1}^1 </mrow>
+              <mrow> \amp = \frac{3}{8} \left[\left(\frac{1}{4} + \frac{1}{2}\right) - \left( \frac{1}{4} + \frac{1}{2}\right)\right] = \boxed{0} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Find <m>\Var(X)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \E(X^2) \amp = \int_{-1}^1 x^2 \cdot f(x)\ dx = \int_{-1}^1 x^2\cdot \frac{3}{8}\left(x^2 + 1\right)\ dx </mrow>
+              <mrow> \amp = \frac{3}{8} \int_{-1}^1 x^4 + x^2\ dx = \frac{3}{8} \left(\frac{x^5}{5} + \frac{x^3}{3}\right)\bigg|_{-1}^1 </mrow>
+              <mrow> \amp = \frac{3}{8} \left[\left(\frac{1}{5} + \frac{1}{3}\right) - \left( \frac{-1}{5} - \frac{1}{3}\right)\right] = \frac{3}{8} \cdot \frac{16}{15} = \frac{2}{5} </mrow>
+              <mrow> \Var(X) \amp = \E(X^2) - (\E(X))^2 = \frac{2}{5} - 0^2 = \boxed{\frac{2}{5}} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Consider the joint distribution for <m>X</m> and <m>Y</m> below.
+          Are <m>X</m> and <m>Y</m> independent?
+        </p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 0</m></cell>
+            <cell right="minor"><m>X = 1</m></cell>
+            <cell><m>X = 2</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor"><m>0.1</m></cell>
+            <cell right="minor"><m>0.25</m></cell>
+            <cell><m>0.2</m></cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 2</m></cell>
+            <cell right="minor"><m>0.2</m></cell>
+            <cell right="minor"><m>0.1</m></cell>
+            <cell><m>0.15</m></cell>
+          </row>
+        </tabular>
+      </statement>
+
+      <solution>
+        <p>
+          <md>
+            <mrow> \Pr(X = 0, Y = 1) \amp = 0.1 </mrow>
+            <mrow> \Pr(X = 0) \amp = 0.1 + 0.2 = 0.3 </mrow>
+            <mrow> \Pr(Y = 1) \amp = 0.1 + 0.25 + 0.2 = 0.55 </mrow>
+            <mrow> \Pr(X = 0)\Pr(Y = 1) \amp = (0.3)(0.55) = 0.165 \neq 0.1, </mrow>
+          </md>
+          so <m>X, Y</m> are not independent.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise workspace="2in">
+      <statement>
+        <p>
+          Suppose a parameter <m>-1/2 \leq \theta \leq 1</m> has likelihood function <m>\L(\theta) = \theta^2 - \theta^3</m>.
+          Find the maximum likelihood estimation of <m>\theta</m>.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <m>\L</m> is a continuous function and <m>[-1/2, 1]</m> is a closed interval, so we use the CIM.
+          <md>
+            <mrow> \L'(\theta) \amp = 2\theta - 3\theta^2 </mrow>
+            <mrow> \L'(\theta) = 0 \text{ when } 0 \amp = 2\theta - 3\theta^2 </mrow>
+            <mrow> 0 \amp =\theta (2 - 3\theta) </mrow>
+            <mrow> \theta \amp = 0, \frac{2}{3} </mrow>
+          </md>
+          Then:
+        </p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor"><m>\theta</m></cell>
+            <cell><m>-1/2</m></cell>
+            <cell><m>2/3</m></cell>
+            <cell><m>1</m></cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>\L(\theta)</m></cell>
+            <cell><m>3/8</m></cell>
+            <cell><m>4/27</m></cell>
+            <cell><m>0</m></cell>
+          </row>
+        </tabular>
+
+        <p>
+          <m>3/8</m> is the largest value, so the MLE is <m>\boxed{\widehat{\theta} = -1/2}.</m>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>

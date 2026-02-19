@@ -41,6 +41,13 @@
      
     </chapter>
 
+    <chapter xml:id="exams">
+      <title>Exams</title>
+
+      <xi:include href="./exams/exam-01.ptx"/>
+     
+    </chapter>
+
     <chapter xml:id="recitations">
       <title>Recitations</title>
 
