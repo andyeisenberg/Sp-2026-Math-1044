@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: boulder                        *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exam 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Introduction to Probability and Statistics for the Life Sciences">
+<meta property="book:author" content="Andy Eisenberg">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Introduction to Probability and Statistics for the Life Sciences</span> <span class="subtitle">Spring 2026 MATH 1044</span></a></h1>
+<p class="byline">Andy Eisenberg</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="exams.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="exams.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="recitations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+
+
+\DeclareMathOperator{\Bin}{Bin}
+\DeclareMathOperator{\Geom}{Geom}
+\DeclareMathOperator{\Poiss}{Poiss}
+\DeclareMathOperator{\Exp}{Exp}
+
+
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\newcommand{\L}{\mathcal{L}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-materials" class="internal"><span class="title">Textbook and Other Required Materials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-grading" class="internal"><span class="title">Grading</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-notes.html" class="internal"><span class="title">Class Notes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-13.html" class="internal"><span class="title">Tuesday, Jan 13</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-13.html#subsec-Sets" class="internal"><span class="title">Sec 1.1: Sets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-13.html#subsec-Probability" class="internal"><span class="title">Sec 1.2: Probability</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-15.html" class="internal"><span class="title">Thursday, Jan 15</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Conditional-Probability" class="internal"><span class="title">Sec 1.3: Conditional Probability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Diagnostic-Testing" class="internal"><span class="title">Diagnostic Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-15.html#subsec-Independent-Events" class="internal"><span class="title">Sec 1.4: Independent Events</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-20.html" class="internal"><span class="title">Tuesday, Jan 20</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-20.html#subsec-hw1-review" class="internal"><span class="title">HW 1 Q5</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-20.html#subsec-Discrete-Random-Variables" class="internal"><span class="title">Sec 2.1: Random Variables</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-22.html" class="internal"><span class="title">Thursday, Jan 22</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-22.html#subsec-discrete-distributions" class="internal"><span class="title">Discrete Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-22.html#subsec-continuous-distributions" class="internal"><span class="title">Continuous Distributions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-27.html" class="internal"><span class="title">Tuesday, Jan 27</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-27.html#subsec-continuous-2" class="internal"><span class="title">Continuous Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-27.html#subsec-Joint-Distributions" class="internal"><span class="title">Joint Distributions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-01-29.html" class="internal"><span class="title">Thursday, Jan 29</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-01-29.html#notes-01-29-3" class="internal"><span class="title">Expected Value</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-02-03.html" class="internal"><span class="title">Tuesday, Feb 3</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-03.html#notes-02-03-3" class="internal"><span class="title">Variance</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-02-05.html" class="internal"><span class="title">Thursday, Feb 5</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-05.html#notes-02-05-3" class="internal"><span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-05.html#notes-02-05-4" class="internal"><span class="title">Covariance</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-02-10.html" class="internal"><span class="title">Tuesday, Feb 10</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-10.html#notes-02-10-3" class="internal"><span class="title">Likelihood</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="quizzes.html" class="internal"><span class="title">Quizzes</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="quiz-01.html" class="internal"><span class="title">Quiz 1</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="quiz-02.html" class="internal"><span class="title">Quiz 2</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="exams.html" class="internal"><span class="title">Exams</span></a></div>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="exam-01.html" class="internal"><span class="title">Exam 1</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="recitations.html" class="internal"><span class="title">Recitations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-calculus-review.html" class="internal"><span class="title">Calculus Review</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="review.html" class="internal"><span class="title">Exam Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="Exam-1-Review.html" class="internal"><span class="title">Exam 1 Review</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="Exam-1-Review.html#Exam-1-Review-3" class="internal"><span class="title">Allowed Materials</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="Exam-1-Review.html#Exam-1-Review-4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="worksheet" id="exam-01" data-margins="0.75in 0.75in 0.75in 0.75in"><h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exam 1</span><div class="print-links"><a href="exam-01-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="introduction" id="exam-01-2"><div class="para" id="exam-01-2-1">Show all relevant work.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="onepage" id="exam-01-3"><article class="exercise exercise-like" id="exam-01-3-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exam-01-3-1-1"><div class="para" id="exam-01-3-1-1-1">Write either True or False for each of the following statements. No justification is required.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="exam-01-3-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exam-01-3-1-2-1-1">Let <span class="process-math">\(A, B\)</span> be any sets. Then <span class="process-math">\(|A \cap B| = |A| \cdot |B|\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-3-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-3-1-2-2-1">False.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.a.1"><a href="#exam-01-3-1-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#exam-01-3-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="exam-01-3-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exam-01-3-1-3-1-1">Let <span class="process-math">\(A, B\)</span> be any events. Then <span class="process-math">\(\Pr(A \mid B) = \Pr(B \mid A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-3-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-3-1-3-2-1">False.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.b.1"><a href="#exam-01-3-1-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#exam-01-3-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><article class="task exercise-like" id="exam-01-3-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="exam-01-3-1-4-1-1">Given a joint distribution for random variables <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{,}\)</span> then it must be the case that <span class="process-math">\(\Pr(X = 0, Y = 0) = \Pr(X = 0)\Pr(Y = 0)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-3-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-3-1-4-2-1">False.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.c.1"><a href="#exam-01-3-1-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.c"><a href="#exam-01-3-1-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div></article><article class="task exercise-like" id="exam-01-3-1-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="exam-01-3-1-5-1-1">Suppose we flip a coin repeatedly until we first see heads and let <span class="process-math">\(T\)</span> be the number of flips. Then <span class="process-math">\(\Pr(T = 2) \geq \Pr(T = 4)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-3-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-3-1-5-2-1">True.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.d.1"><a href="#exam-01-3-1-5-2" title="Copy heading and permalink for Solution 1.d.1" aria-label="Copy heading and permalink for Solution 1.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.d"><a href="#exam-01-3-1-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div></article><article class="task exercise-like" id="exam-01-3-1-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="exam-01-3-1-6-1-1">If molecules are observed leaving a cell after 1.5 minutes, 1.8 minutes, 2.1 minutes, 2.2 minutes, and 2.4 minutes, then the maximum likelihood estimation for the rate at which molecules leave the cell is <span class="process-math">\(1/2\)</span> per minute.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-3-1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-3-1-6-2-1">True.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.e.1"><a href="#exam-01-3-1-6-2" title="Copy heading and permalink for Solution 1.e.1" aria-label="Copy heading and permalink for Solution 1.e.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.e"><a href="#exam-01-3-1-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div></article><article class="task exercise-like" id="exam-01-3-1-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="exam-01-3-1-7-1-1">Suppose <span class="process-math">\(\L(\theta)\)</span> is a likelihood function, and <span class="process-math">\(\L(2) = 0.04\text{.}\)</span> Then the probability that <span class="process-math">\(\theta = 2\)</span> is <span class="process-math">\(0.04\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-3-1-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-3-1-7-2-1">False.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-3-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.f.1"><a href="#exam-01-3-1-7-2" title="Copy heading and permalink for Solution 1.f.1" aria-label="Copy heading and permalink for Solution 1.f.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 1.f"><a href="#exam-01-3-1-7" title="Copy heading and permalink for Task 1.f" aria-label="Copy heading and permalink for Task 1.f">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#exam-01-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article></section><section class="onepage" id="exam-01-4"><article class="exercise exercise-like" id="exam-01-4-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exam-01-4-1-1">
+<div class="para" id="exam-01-4-1-1-1">Consider the sample space <span class="process-math">\(S = \{1, 2, 3, 4, 5\}\)</span> with probability distribution given in the table below. Let <span class="process-math">\(A = \{1, 2, 3\}\)</span> and <span class="process-math">\(B = \{1, 3, 5\}\text{.}\)</span> Calculate the following probabilities.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(\Pr(x)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
+</tr>
+</table></div>
+</div>
+<article class="task exercise-like" id="exam-01-4-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exam-01-4-1-2-1-1">
+<span class="process-math">\(\Pr(A \cup B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-4-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-4-1-2-2-1">
+<span class="process-math">\(A\cup B = \{ 1, 2, 3, 5 \}\text{,}\)</span> so <span class="process-math">\(\Pr(A\cup B) = 0.1 + 0.2 + 0.3 + 0.1 = \boxed{0.7}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.a.1"><a href="#exam-01-4-1-2-2" title="Copy heading and permalink for Solution 2.a.1" aria-label="Copy heading and permalink for Solution 2.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#exam-01-4-1-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="exam-01-4-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exam-01-4-1-3-1-1">
+<span class="process-math">\(\Pr(A \cap B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-4-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-4-1-3-2-1">
+<span class="process-math">\(A\cap B = \{ 1, 3 \}\text{,}\)</span> so <span class="process-math">\(\Pr(A\cap B) = 0.1 + 0.3 = \boxed{0.4}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.b.1"><a href="#exam-01-4-1-3-2" title="Copy heading and permalink for Solution 2.b.1" aria-label="Copy heading and permalink for Solution 2.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#exam-01-4-1-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="exam-01-4-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="exam-01-4-1-4-1-1">
+<span class="process-math">\(\Pr(A \mid B)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-4-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-4-1-4-2-1">
+<span class="process-math">\(\Pr(A\mid B) = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{0.4}{0.1 + 0.3 + 0.1} = \frac{0.4}{0.5} = \boxed{0.8}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-4-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.c.1"><a href="#exam-01-4-1-4-2" title="Copy heading and permalink for Solution 2.c.1" aria-label="Copy heading and permalink for Solution 2.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 2.c"><a href="#exam-01-4-1-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#exam-01-4-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article></section><section class="onepage" id="exam-01-5"><article class="exercise exercise-like" id="exam-01-5-1"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exam-01-5-1-1">
+<div class="para" id="exam-01-5-1-1-1">Consider the random variable <span class="process-math">\(X\)</span> with probability distribution below.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(\Pr(x)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.15\)</span></td>
+</tr>
+</table></div>
+</div>
+<article class="task exercise-like" id="exam-01-5-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exam-01-5-1-2-1-1">Find <span class="process-math">\(\E(X)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-5-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-5-1-2-2-1">
+<div class="displaymath process-math" id="exam-01-5-1-2-2-1-1">
+\begin{align*}
+\E(X) \amp = (1)(0.2) + (2)(0.3) + (3)(0.1) + (4)(0.25) + (5)(0.15) = \boxed{2.85} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.a.1"><a href="#exam-01-5-1-2-2" title="Copy heading and permalink for Solution 3.a.1" aria-label="Copy heading and permalink for Solution 3.a.1">🔗</a></div>
+</div></details></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 3.a"><a href="#exam-01-5-1-2" title="Copy heading and permalink for Task 3.a" aria-label="Copy heading and permalink for Task 3.a">🔗</a></div></article><article class="task exercise-like" id="exam-01-5-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exam-01-5-1-3-1-1">Find <span class="process-math">\(\Var(X)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-5-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-5-1-3-2-1">
+<div class="displaymath process-math" id="exam-01-5-1-3-2-1-1">
+\begin{align*}
+\E(X^2) \amp = (1)^2(0.2) + (2)^2(0.3) + (3)^2(0.1) + (4)^2(0.25) + (5)^2(0.15) = 10.05 \\
+\Var(X) \amp = \E(X^2) - \left(\E(X)\right)^2 = 10.05 - (2.85)^2 =  \boxed{1.9275} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.b.1"><a href="#exam-01-5-1-3-2" title="Copy heading and permalink for Solution 3.b.1" aria-label="Copy heading and permalink for Solution 3.b.1">🔗</a></div>
+</div></details></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 3.b"><a href="#exam-01-5-1-3" title="Copy heading and permalink for Task 3.b" aria-label="Copy heading and permalink for Task 3.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#exam-01-5-1" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div></article><article class="exercise exercise-like" id="exam-01-5-2"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exam-01-5-2-1-1">A diagnostic test is developed to detect a disease present in 2.1% of the population. For a patient who has the disease, the test will accurately give a positive result 76% of the time. When the patient does not have the disease, the test will accurately give a negative result 98.2% of the time.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="exam-01-5-2-1-2">For a patient who receives a negative test, what is the probability they do not have the disease?<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-5-2-2-1">
+<div class="para">Let <span class="process-math">\(P\)</span> be the event of receiving a positive test result and <span class="process-math">\(D\)</span> be the event of having the disease. The given information is: <span class="process-math">\(\Pr(D) = 0.021, \Pr(P\mid D) = 0.76\text{,}\)</span> and <span class="process-math">\(\Pr(P^c \mid D^c) = 0.982\text{.}\)</span> Then, using Bayes’ Theorem:</div>
+<div class="displaymath process-math" id="exam-01-5-2-2-1-5">
+\begin{align*}
+\Pr(D^c\mid P^c) \amp = \frac{\Pr(P^c \mid D^c)\Pr(D^c)}{\Pr(P^c \mid D^c)\Pr(D^c) + \Pr(P^c \mid D)\Pr(D)} \\
+\amp = \frac{\Pr(P^c \mid D^c)(1 - \Pr(D))}{\Pr(P^c \mid D^c)(1 - \Pr(D)) + (1 - \Pr(P \mid D))\Pr(D)} \\
+\amp = \frac{(0.982)(1 - 0.021)}{(0.982)(1 - 0.021) + (1 - 0.76)(0.021)}  \\
+\amp \approx \boxed{0.995}  
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.1"><a href="#exam-01-5-2-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details></div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#exam-01-5-2" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div></article></section><section class="onepage" id="exam-01-6"><article class="exercise exercise-like" id="exam-01-6-1"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exam-01-6-1-1"><div class="para" id="exam-01-6-1-1-1">In each of the following scenarios, state the maximum likelihood estimation for the unknown parameter indicated.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="exam-01-6-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exam-01-6-1-2-1-1">A radioactive material is observed for 5 hours. 120 particle emissions are seen. <span class="process-math">\(\lambda\)</span> is the hourly rate of particle emissions.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-6-1-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-6-1-2-2-1">120 emissions per 5 hours is an hourly rate of <span class="process-math">\(\boxed{\widehat{\lambda} = 120/5 = 24 \text{ per hour}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.a.1"><a href="#exam-01-6-1-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 5.a"><a href="#exam-01-6-1-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div></article><article class="task exercise-like" id="exam-01-6-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exam-01-6-1-3-1-1">In each of 5 trials, a coin is flipped until heads is seen. The number of flips in each trial is 3, 4, 3, 5, and 6. <span class="process-math">\(p\)</span> is the probability of the coin coming up heads on a flip.<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-6-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-6-1-3-2-1">There are <span class="process-math">\(3 + 4 + 3 + 5 + 6 = 21\)</span> total flips, <span class="process-math">\(5\)</span> of which are heads, so the MLE is <span class="process-math">\(\boxed{\widehat{p} = \frac{5}{21}}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.b.1"><a href="#exam-01-6-1-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 5.b"><a href="#exam-01-6-1-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#exam-01-6-1" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div></article><article class="exercise exercise-like" id="exam-01-6-2"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exam-01-6-2-1"><div class="para" id="exam-01-6-2-1-1">Let <span class="process-math">\(X\)</span> be a continuous random variable with c.d.f. <span class="process-math">\(\displaystyle{F(x) = \frac{1}{8}(x^3 + 3x + 4)}\text{,}\)</span> where <span class="process-math">\(x \in [-1, 1]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+<article class="task exercise-like" id="exam-01-6-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exam-01-6-2-2-1-1">Find the p.d.f. <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(X\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-6-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="exam-01-6-2-2-2-1">
+<span class="process-math">\(f(x) = F'(x) = \frac{1}{8}\left(3x^2 + 3\right) = \frac{3}{8}\left(x^2 + 1\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.a.1"><a href="#exam-01-6-2-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.a"><a href="#exam-01-6-2-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div></article><article class="task exercise-like" id="exam-01-6-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exam-01-6-2-3-1-1">Find <span class="process-math">\(\E(X)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-6-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-6-2-3-2-1">
+<div class="displaymath process-math" id="exam-01-6-2-3-2-1-1">
+\begin{align*}
+\E(X) \amp = \int_{-1}^1 x \cdot f(x)\ dx = \int_{-1}^1 x\cdot \frac{3}{8}\left(x^2 + 1\right)\ dx \\
+\amp = \frac{3}{8} \int_{-1}^1 x^3 + x\ dx = \frac{3}{8} \left(\frac{x^4}{4} + \frac{x^2}{2}\right)\bigg|_{-1}^1 \\
+\amp = \frac{3}{8} \left[\left(\frac{1}{4} + \frac{1}{2}\right) - \left( \frac{1}{4} + \frac{1}{2}\right)\right] = \boxed{0} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.b.1"><a href="#exam-01-6-2-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.b"><a href="#exam-01-6-2-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div></article><article class="task exercise-like" id="exam-01-6-2-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="exam-01-6-2-4-1-1">Find <span class="process-math">\(\Var(X)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-6-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-6-2-4-2-1">
+<div class="displaymath process-math" id="exam-01-6-2-4-2-1-1">
+\begin{align*}
+\E(X^2) \amp = \int_{-1}^1 x^2 \cdot f(x)\ dx = \int_{-1}^1 x^2\cdot \frac{3}{8}\left(x^2 + 1\right)\ dx \\
+\amp = \frac{3}{8} \int_{-1}^1 x^4 + x^2\ dx = \frac{3}{8} \left(\frac{x^5}{5} + \frac{x^3}{3}\right)\bigg|_{-1}^1 \\
+\amp = \frac{3}{8} \left[\left(\frac{1}{5} + \frac{1}{3}\right) - \left( \frac{-1}{5} - \frac{1}{3}\right)\right] = \frac{3}{8} \cdot \frac{16}{15} = \frac{2}{5} \\
+\Var(X) \amp = \E(X^2) - (\E(X))^2 = \frac{2}{5} - 0^2 = \boxed{\frac{2}{5}} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-6-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.c.1"><a href="#exam-01-6-2-4-2" title="Copy heading and permalink for Solution 6.c.1" aria-label="Copy heading and permalink for Solution 6.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 6.c"><a href="#exam-01-6-2-4" title="Copy heading and permalink for Task 6.c" aria-label="Copy heading and permalink for Task 6.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#exam-01-6-2" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div></article></section><section class="onepage" id="exam-01-7"><article class="exercise exercise-like" id="exam-01-7-1"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exam-01-7-1-1-1">Consider the joint distribution for <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> below. Are <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> independent?<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(X = 0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(X = 1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(X = 2\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(Y = 1\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0.25\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(0.2\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(Y = 2\)</span></td>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(0.2\)</span></td>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.15\)</span></td>
+</tr>
+</table></div>
+<div class="solutions"><details id="exam-01-7-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-7-1-2-1">
+<div class="displaymath process-math" id="exam-01-7-1-2-1-1">
+\begin{align*}
+\Pr(X = 0, Y = 1) \amp = 0.1 \\
+\Pr(X = 0) \amp = 0.1 + 0.2 = 0.3 \\
+\Pr(Y = 1) \amp = 0.1 + 0.25 + 0.2 = 0.55 \\
+\Pr(X = 0)\Pr(Y = 1) \amp = (0.3)(0.55) = 0.165 \neq 0.1, 
+\end{align*}
+</div>
+<div class="para">so <span class="process-math">\(X, Y\)</span> are not independent.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.1"><a href="#exam-01-7-1-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#exam-01-7-1" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div></article><article class="exercise exercise-like" id="exam-01-7-2"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exam-01-7-2-1-1">Suppose a parameter <span class="process-math">\(-1/2 \leq \theta \leq 1\)</span> has likelihood function <span class="process-math">\(\L(\theta) = \theta^2 - \theta^3\text{.}\)</span> Find the maximum likelihood estimation of <span class="process-math">\(\theta\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="exam-01-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="exam-01-7-2-2-1">
+<div class="para">
+<span class="process-math">\(\L\)</span> is a continuous function and <span class="process-math">\([-1/2, 1]\)</span> is a closed interval, so we use the CIM.</div>
+<div class="displaymath process-math" id="exam-01-7-2-2-1-3">
+\begin{align*}
+\L'(\theta) \amp = 2\theta - 3\theta^2 \\
+\L'(\theta) = 0 \text{ when } 0 \amp = 2\theta - 3\theta^2 \\
+0 \amp =\theta (2 - 3\theta) \\
+\theta \amp = 0, \frac{2}{3} 
+\end{align*}
+</div>
+<div class="para">Then:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exam-01-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\theta\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-1/2\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(2/3\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(\L(\theta)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(3/8\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(4/27\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="exam-01-7-2-2-3">
+<span class="process-math">\(3/8\)</span> is the largest value, so the MLE is <span class="process-math">\(\boxed{\widehat{\theta} = -1/2}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exam-01-7-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.1"><a href="#exam-01-7-2-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+</div></details></div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 8"><a href="#exam-01-7-2" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Exam 1"><a href="#exam-01" title="Copy heading and permalink for Worksheet: Exam 1" aria-label="Copy heading and permalink for Worksheet: Exam 1">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="exams.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="recitations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

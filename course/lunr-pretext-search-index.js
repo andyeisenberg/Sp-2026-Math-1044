@@ -1027,6 +1027,87 @@ var ptx_lunr_docs = [
   "body": "  Suppose a continuous random variable taking values in has cdf .     Find the pdf .           Find .         "
 },
 {
+  "id": "exam-01",
+  "level": "1",
+  "url": "exam-01.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 1",
+  "body": " Exam 1    Show all relevant work.       Write either True or False for each of the following statements. No justification is required.     Let be any sets. Then .    False.      Let be any events. Then .    False.      Given a joint distribution for random variables and , then it must be the case that .    False.      Suppose we flip a coin repeatedly until we first see heads and let be the number of flips. Then .    True.      If molecules are observed leaving a cell after 1.5 minutes, 1.8 minutes, 2.1 minutes, 2.2 minutes, and 2.4 minutes, then the maximum likelihood estimation for the rate at which molecules leave the cell is per minute.    True.      Suppose is a likelihood function, and . Then the probability that is .    False.         Consider the sample space with probability distribution given in the table below. Let and . Calculate the following probabilities.                             , so             , so                      Consider the random variable with probability distribution below.                       Find .           Find .            A diagnostic test is developed to detect a disease present in 2.1% of the population. For a patient who has the disease, the test will accurately give a positive result 76% of the time. When the patient does not have the disease, the test will accurately give a negative result 98.2% of the time.  For a patient who receives a negative test, what is the probability they do not have the disease?    Let be the event of receiving a positive test result and be the event of having the disease. The given information is: , and . Then, using Bayes' Theorem:         In each of the following scenarios, state the maximum likelihood estimation for the unknown parameter indicated.     A radioactive material is observed for 5 hours. 120 particle emissions are seen. is the hourly rate of particle emissions.    120 emissions per 5 hours is an hourly rate of       In each of 5 trials, a coin is flipped until heads is seen. The number of flips in each trial is 3, 4, 3, 5, and 6. is the probability of the coin coming up heads on a flip.    There are total flips, of which are heads, so the MLE is        Let be a continuous random variable with c.d.f. , where .     Find the p.d.f. for .           Find .           Find .              Consider the joint distribution for and below. Are and independent?                         so are not independent.      Suppose a parameter has likelihood function . Find the maximum likelihood estimation of .     is a continuous function and is a closed interval, so we use the CIM. Then:                 is the largest value, so the MLE is      "
+},
+{
+  "id": "exam-01-3-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Write either True or False for each of the following statements. No justification is required.     Let be any sets. Then .    False.      Let be any events. Then .    False.      Given a joint distribution for random variables and , then it must be the case that .    False.      Suppose we flip a coin repeatedly until we first see heads and let be the number of flips. Then .    True.      If molecules are observed leaving a cell after 1.5 minutes, 1.8 minutes, 2.1 minutes, 2.2 minutes, and 2.4 minutes, then the maximum likelihood estimation for the rate at which molecules leave the cell is per minute.    True.      Suppose is a likelihood function, and . Then the probability that is .    False.    "
+},
+{
+  "id": "exam-01-4-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the sample space with probability distribution given in the table below. Let and . Calculate the following probabilities.                             , so             , so                 "
+},
+{
+  "id": "exam-01-5-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Consider the random variable with probability distribution below.                       Find .           Find .         "
+},
+{
+  "id": "exam-01-5-2",
+  "level": "2",
+  "url": "exam-01.html#exam-01-5-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  A diagnostic test is developed to detect a disease present in 2.1% of the population. For a patient who has the disease, the test will accurately give a positive result 76% of the time. When the patient does not have the disease, the test will accurately give a negative result 98.2% of the time.  For a patient who receives a negative test, what is the probability they do not have the disease?    Let be the event of receiving a positive test result and be the event of having the disease. The given information is: , and . Then, using Bayes' Theorem:    "
+},
+{
+  "id": "exam-01-6-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-6-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  In each of the following scenarios, state the maximum likelihood estimation for the unknown parameter indicated.     A radioactive material is observed for 5 hours. 120 particle emissions are seen. is the hourly rate of particle emissions.    120 emissions per 5 hours is an hourly rate of       In each of 5 trials, a coin is flipped until heads is seen. The number of flips in each trial is 3, 4, 3, 5, and 6. is the probability of the coin coming up heads on a flip.    There are total flips, of which are heads, so the MLE is     "
+},
+{
+  "id": "exam-01-6-2",
+  "level": "2",
+  "url": "exam-01.html#exam-01-6-2",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Let be a continuous random variable with c.d.f. , where .     Find the p.d.f. for .           Find .           Find .         "
+},
+{
+  "id": "exam-01-7-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-7-1",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Consider the joint distribution for and below. Are and independent?                         so are not independent.   "
+},
+{
+  "id": "exam-01-7-2",
+  "level": "2",
+  "url": "exam-01.html#exam-01-7-2",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Suppose a parameter has likelihood function . Find the maximum likelihood estimation of .     is a continuous function and is a closed interval, so we use the CIM. Then:                 is the largest value, so the MLE is    "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
