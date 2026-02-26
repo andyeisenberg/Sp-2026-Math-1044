@@ -62,7 +62,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "_static/pretext/js/lib"
+      "pretext": "_static/pretext/js"
     }
   },
   "startup": {
@@ -79,7 +79,7 @@ window.MathJax = {
 <meta property="og:type" content="book">
 <meta property="book:title" content="Introduction to Probability and Statistics for the Life Sciences">
 <meta property="book:author" content="Andy Eisenberg">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -101,16 +101,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.14';
+eBookConfig.runestone_version = '7.11.15';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.529fd9398bfbd03e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body class="pretext book ignore-math">
@@ -146,6 +146,7 @@ eBookConfig.enable_chatcodes =  false;
 \DeclareMathOperator{\Geom}{Geom}
 \DeclareMathOperator{\Poiss}{Poiss}
 \DeclareMathOperator{\Exp}{Exp}
+\DeclareMathOperator{\Norm}{N}
 
 
 \DeclareMathOperator{\E}{E}
@@ -230,6 +231,17 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="notes-02-10.html" class="internal"><span class="title">Tuesday, Feb 10</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-10.html#notes-02-10-3" class="internal"><span class="title">Likelihood</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-02-19.html" class="internal"><span class="title">Thursday, Feb 19</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-19.html#notes-02-19-3" class="internal"><span class="title">Central Limit Theorem</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-02-24.html" class="internal"><span class="title">Tuesday, Feb 24</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-24.html#notes-02-24-3" class="internal"><span class="title">More Central Limit Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-02-24.html#notes-02-24-4" class="internal"><span class="title">Confidence Intervals</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -357,7 +369,7 @@ eBookConfig.enable_chatcodes =  false;
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 4"><a href="#Exam-1-Review-4-4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div></article><article class="exercise exercise-like" id="Exam-1-Review-4-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="Exam-1-Review-4-5-1-1">Consider the sample space <span class="process-math">\(\Omega = \{1, 2, 3, 4, 5, 6, 7, 8\}\)</span> with probability distribution below. Calculate the probabilities of <span class="process-math">\(A = \{1, 3, 7, 8\}\text{,}\)</span> <span class="process-math">\(B = \{2, 3, 6, 7\}\text{,}\)</span> <span class="process-math">\(A\cup B\text{,}\)</span> and <span class="process-math">\(A \cap B\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <figure class="table table-like" id="Exam-1-Review-4-5-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">118<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 118: "><a href="#Exam-1-Review-4-5-1-2" title="Copy heading and permalink for Table 118: " aria-label="Copy heading and permalink for Table 118: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div> <figure class="table table-like" id="Exam-1-Review-4-5-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">127<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 127: "><a href="#Exam-1-Review-4-5-1-2" title="Copy heading and permalink for Table 127: " aria-label="Copy heading and permalink for Table 127: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Pr(x)\)</span></td>
@@ -408,7 +420,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="Exam-1-Review-4-6-1-1">Suppose a die has the values <span class="process-math">\(1, 2, 3, 4, 5, 6\)</span> on the faces, but the die is not fair. Instead, the probabilities scale by the same amount as the face values. For example, a result of 4 is twice as likely as a result of 2, since 4 is twice as large as 2; a result of 6 is six times more likely than a result of 1; and so on. Write a probability distribution table for this die.<div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="Exam-1-Review-4-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
-<figure class="table table-like" id="Exam-1-Review-4-6-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">119<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Probability Distribution for a Linearly Scaled Die<div class="autopermalink" data-description="Table 119: Probability Distribution for a Linearly Scaled Die"><a href="#Exam-1-Review-4-6-2-1" title="Copy heading and permalink for Table 119: Probability Distribution for a Linearly Scaled Die" aria-label="Copy heading and permalink for Table 119: Probability Distribution for a Linearly Scaled Die">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="Exam-1-Review-4-6-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">128<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Probability Distribution for a Linearly Scaled Die<div class="autopermalink" data-description="Table 128: Probability Distribution for a Linearly Scaled Die"><a href="#Exam-1-Review-4-6-2-1" title="Copy heading and permalink for Table 128: Probability Distribution for a Linearly Scaled Die" aria-label="Copy heading and permalink for Table 128: Probability Distribution for a Linearly Scaled Die">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Pr(x)\)</span></td>
@@ -443,7 +455,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="Exam-1-Review-4-7-1-1">Suppose a die has the values <span class="process-math">\(1, 2, 3, 4, 5, 6\)</span> on the faces, but the die is not fair. Instead, each even value has an equal probability, each odd value has an equal probability, and the even values are each twice as likely as the odd values to appear on a roll. Write a probability distribution table for this die.<div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="Exam-1-Review-4-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
-<figure class="table table-like" id="Exam-1-Review-4-7-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">120<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Probability Distribution for an Even-biased Die<div class="autopermalink" data-description="Table 120: Probability Distribution for an Even-biased Die"><a href="#Exam-1-Review-4-7-2-1" title="Copy heading and permalink for Table 120: Probability Distribution for an Even-biased Die" aria-label="Copy heading and permalink for Table 120: Probability Distribution for an Even-biased Die">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="Exam-1-Review-4-7-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">129<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Probability Distribution for an Even-biased Die<div class="autopermalink" data-description="Table 129: Probability Distribution for an Even-biased Die"><a href="#Exam-1-Review-4-7-2-1" title="Copy heading and permalink for Table 129: Probability Distribution for an Even-biased Die" aria-label="Copy heading and permalink for Table 129: Probability Distribution for an Even-biased Die">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Pr(x)\)</span></td>
@@ -637,7 +649,7 @@ A\cap B \amp = \{HHH, HHT\}
 <div class="para" id="Exam-1-Review-4-13-1-1">Let <span class="process-math">\(A = \{1, 2, 3\}\)</span> and <span class="process-math">\(B = \{3, 4, 5\}\)</span> be events in the sample space <span class="process-math">\(\Omega = \{1, 2, 3, 4, 5, 6\}\text{.}\)</span> Create a probability distribution for <span class="process-math">\(\Omega\)</span> so that <span class="process-math">\(A, B\)</span> are independent.<div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="Exam-1-Review-4-13-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
-<figure class="table table-like" id="Exam-1-Review-4-13-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">121<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Example Distribution<div class="autopermalink" data-description="Table 121: Example Distribution"><a href="#Exam-1-Review-4-13-2-1" title="Copy heading and permalink for Table 121: Example Distribution" aria-label="Copy heading and permalink for Table 121: Example Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="Exam-1-Review-4-13-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">130<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Example Distribution<div class="autopermalink" data-description="Table 130: Example Distribution"><a href="#Exam-1-Review-4-13-2-1" title="Copy heading and permalink for Table 130: Example Distribution" aria-label="Copy heading and permalink for Table 130: Example Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Pr(x)\)</span></td>
@@ -762,7 +774,7 @@ A\cap B \amp = \{HHH, HHT\}
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 20"><a href="#Exam-1-Review-4-19" title="Copy heading and permalink for Exercise 20" aria-label="Copy heading and permalink for Exercise 20">🔗</a></div></article><article class="exercise exercise-like" id="Exam-1-Review-4-20"><h4 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="Exam-1-Review-4-20-1-1">Consider <span class="process-math">\(X, Y\)</span> with the joint distribution table below. Are <span class="process-math">\(X, Y\)</span> independent?<div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <figure class="table table-like" id="Exam-1-Review-4-20-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">122<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Joint distribution for <span class="process-math">\(X, Y\)</span><div class="autopermalink" data-description="Table 122: Joint distribution for X, Y"><a href="#Exam-1-Review-4-20-1-2" title="Copy heading and permalink for Table 122: Joint distribution for X, Y" aria-label="Copy heading and permalink for Table 122: Joint distribution for X, Y">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div> <figure class="table table-like" id="Exam-1-Review-4-20-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">131<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Joint distribution for <span class="process-math">\(X, Y\)</span><div class="autopermalink" data-description="Table 131: Joint distribution for X, Y"><a href="#Exam-1-Review-4-20-1-2" title="Copy heading and permalink for Table 131: Joint distribution for X, Y" aria-label="Copy heading and permalink for Table 131: Joint distribution for X, Y">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(X = 0\)</span></td>
@@ -797,7 +809,7 @@ A\cap B \amp = \{HHH, HHT\}
 <div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="Exam-1-Review-4-21-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
-<figure class="table table-like" id="Exam-1-Review-4-21-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">123<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Joint Distribution<div class="autopermalink" data-description="Table 123: Joint Distribution"><a href="#Exam-1-Review-4-21-2-1" title="Copy heading and permalink for Table 123: Joint Distribution" aria-label="Copy heading and permalink for Table 123: Joint Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="Exam-1-Review-4-21-2-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">132<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Joint Distribution<div class="autopermalink" data-description="Table 132: Joint Distribution"><a href="#Exam-1-Review-4-21-2-1" title="Copy heading and permalink for Table 132: Joint Distribution" aria-label="Copy heading and permalink for Table 132: Joint Distribution">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(X = 0\)</span></td>
@@ -820,7 +832,7 @@ A\cap B \amp = \{HHH, HHT\}
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 22"><a href="#Exam-1-Review-4-21" title="Copy heading and permalink for Exercise 22" aria-label="Copy heading and permalink for Exercise 22">🔗</a></div></article><article class="exercise exercise-like" id="Exam-1-Review-4-22"><h4 class="heading"><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="Exam-1-Review-4-22-1-1">Consider a random variable <span class="process-math">\(X\)</span> with probability distribution below. Find <span class="process-math">\(\E(X)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <figure class="table table-like" id="Exam-1-Review-4-22-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">124<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 124: "><a href="#Exam-1-Review-4-22-1-2" title="Copy heading and permalink for Table 124: " aria-label="Copy heading and permalink for Table 124: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div> <figure class="table table-like" id="Exam-1-Review-4-22-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">133<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 133: "><a href="#Exam-1-Review-4-22-1-2" title="Copy heading and permalink for Table 133: " aria-label="Copy heading and permalink for Table 133: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Pr(X = x)\)</span></th>
@@ -929,7 +941,7 @@ A\cap B \amp = \{HHH, HHT\}
 </div></details></div>
 <div class="autopermalink" data-description="Exercise 28"><a href="#Exam-1-Review-4-27" title="Copy heading and permalink for Exercise 28" aria-label="Copy heading and permalink for Exercise 28">🔗</a></div></article><article class="exercise exercise-like" id="Exam-1-Review-4-28"><h4 class="heading"><span class="codenumber">29<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="Exam-1-Review-4-28-1-1">Consider a random variable <span class="process-math">\(X\)</span> with probability distribution below. Find <span class="process-math">\(\Var(X)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Exam-1-Review-4-28-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <figure class="table table-like" id="Exam-1-Review-4-28-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">125<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 125: "><a href="#Exam-1-Review-4-28-1-2" title="Copy heading and permalink for Table 125: " aria-label="Copy heading and permalink for Table 125: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div> <figure class="table table-like" id="Exam-1-Review-4-28-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">134<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 134: "><a href="#Exam-1-Review-4-28-1-2" title="Copy heading and permalink for Table 134: " aria-label="Copy heading and permalink for Table 134: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
 <th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(\Pr(X = x)\)</span></th>

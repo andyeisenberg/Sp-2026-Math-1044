@@ -955,6 +955,114 @@ var ptx_lunr_docs = [
   "body": "  Suppose we observe a cell, measuring the time until a toxin molecule leaves the cell. Then for some , with pdf If we see a toxin molecule leave at 0.3 min, what's the MLE for ? We want to maximize over , an open interval. So we'll use the \"Open Interval Method\". Then when . Checking values to the left and the right: So (and therefore is increasing) on , and (and therefore is decreasing) on . Now we can conclude that is the location of a global (and not just local) maximum value.  More generally, if the observed time is , then the MLE will be .  What if we had more data points? For example, suppose two toxin molecules leave the cell at min and min?   Waiting Times    Molecule  Time  Rate Estimate               How do we combine these data points? We could take the average of the rate estimates: Alternatively, we could average the times first, then create a new rate estimate from the average time: Both of these make some sense, but let's do a careful computation to be certain which way is correct (if either of them is!). Using the Open Interval Method: So when . Testing points to the left and right: Now ( is increasing) on , and ( is decreasing) on . Therefore, the MLE is .  Tracing the values and throughout the calculation, we can see that the value will generally match the number of waiting times collected, and the value will be the sum of the waiting times. So, generally, with collected waiting times of , the MLE will be:    "
 },
 {
+  "id": "notes-02-19",
+  "level": "1",
+  "url": "notes-02-19.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Feb 19",
+  "body": " Thursday, Feb 19   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    Central Limit Theorem    A continuous random variable has the normal distribution with mean and variance if it has pdf: We'll write .  The specific distribution is called the standard normal distribution , and its pdf has the notation:     If , then: Unfortunately, has no elementary antiderivative. But we know represents the area under the graph , and this area can be approximated to arbitrary precision.    Suppose are independent and identically distributed (or i.i.d. ) with finite expected value and finite variance . Define: Then, for large enough :     We'll use two general rules of thumb for determining whether the number of measurements is large enough for the approximation to be a good one:        If , then should be large enough so that there are at least 5 heads and 5 tails.     We'll omit a proof of , but we can at least check that the expected values and variances of are correct. Given :     Suppose we flip a fair coin 100 times, and let be the number of heads. Estimate .  Since , we know: So . Then: but we can't compute this integral.  Instead, we can standardize by shifting and scaling: Then . Values of are called -scores , sometimes indicated by an asterisk. (I.e., if is a value of , then is the corresponding -score.) Now: Now, we still can't compute the value of the integral. However, there's a huge benefit to translating to the standard normal distribution, regardless of which normal distribution we used to approximate . We can approximate integrals like to abritrary precision and record the results in a table. Then, we can look up the values when needed. We don't need to redo our approximations for different normal distributions, we just standardize whatever normal distribution we come across.  So:     TODO: complex image introducing the idea of the continuity correction .  We can make the approximation more accurate by extending the range of -values by half a unit in each direction:    "
+},
+{
+  "id": "notes-02-19-3-2",
+  "level": "2",
+  "url": "notes-02-19.html#notes-02-19-3-2",
+  "type": "Definition",
+  "number": "116",
+  "title": "",
+  "body": "  A continuous random variable has the normal distribution with mean and variance if it has pdf: We'll write .  The specific distribution is called the standard normal distribution , and its pdf has the notation:    "
+},
+{
+  "id": "thm-CLT",
+  "level": "2",
+  "url": "notes-02-19.html#thm-CLT",
+  "type": "Theorem",
+  "number": "117",
+  "title": "",
+  "body": "  Suppose are independent and identically distributed (or i.i.d. ) with finite expected value and finite variance . Define: Then, for large enough :    "
+},
+{
+  "id": "notes-02-19-3-7",
+  "level": "2",
+  "url": "notes-02-19.html#notes-02-19-3-7",
+  "type": "Example",
+  "number": "118",
+  "title": "",
+  "body": "  Suppose we flip a fair coin 100 times, and let be the number of heads. Estimate .  Since , we know: So . Then: but we can't compute this integral.  Instead, we can standardize by shifting and scaling: Then . Values of are called -scores , sometimes indicated by an asterisk. (I.e., if is a value of , then is the corresponding -score.) Now: Now, we still can't compute the value of the integral. However, there's a huge benefit to translating to the standard normal distribution, regardless of which normal distribution we used to approximate . We can approximate integrals like to abritrary precision and record the results in a table. Then, we can look up the values when needed. We don't need to redo our approximations for different normal distributions, we just standardize whatever normal distribution we come across.  So:    "
+},
+{
+  "id": "notes-02-19-3-8",
+  "level": "2",
+  "url": "notes-02-19.html#notes-02-19-3-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "continuity correction "
+},
+{
+  "id": "notes-02-24",
+  "level": "1",
+  "url": "notes-02-24.html",
+  "type": "Section",
+  "number": "",
+  "title": "Tuesday, Feb 24",
+  "body": " Tuesday, Feb 24   This is an outline of the topics we covered in class. These notes are not a substitute for your own note-taking. I highly recommend that you take your own notes during class. If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.    More Central Limit Theorem    Suppose we roll a fair D6 100 times, and let be the average of the rolls. Estimate .  Let be each roll's result. Then we have previously calculated . We have: So, by the CLT, . Even though takes on decimal values, it's still a discrete random variable. The sum of the rolls can only take on integer values, so will take on the values . Last time, we described the continuity correction as \"extending the range by half a unit's width in each direction\". Here, the width of one unit is . So:       Confidence Intervals  Idea: suppose we collected (i.i.d.) measurements which have some population mean and variance . We calculate the average: and we want to estimate the value of from the collected data. Previously, we've discussed the MLE, the single most likely estimate of the parameter. Now, we'd like to give a range where we can say something like: \"we are 95% confident that .\"  From the CLT, if is large enough, we approximate . We can think of an interval centered at as a collection of numbers within a certain distance of . We'd like to choose a distance so that our measured is within of . We can shift our point of view here: if is within of , then is within of .  TODO: image  To pick the distance , we want to make our interval large enough so that there's only a small amount of area under the normal curve outside of the interval. So:   Pick some value (representing the area under the curve outside the interval)    Let (this is the standardized -score of the right-hand side of the interval)    Then, the interval will be:      For , we'll have . So:    The 95% confidence limits are given by:       The term is called the standard error of the mean . (It's the standard deviation of .)    We don't know the true value of , just like we don't know the true value of . So we'll have to use our sample of measurements to estimate , and then use that estimate to give us our range of values for .    Let be (i.i.d.) measurements. Then the sample mean is: and the sample variance is:     Why here? It turns out that, as defined above, is an unbiased estimator for , whereas it wouldn't be if we divided by instead. (We'll ommit both the calculation justifying this and a more conceptual explanation for now.)  So, we can adjust the confidence limits from the theorem:     Suppose we're given measurements below.                            We're just practicing the computation here, so we'll pretend that 5 measurements is large enough for the CLT to apply.     This way of computing confidence limits only applies if we can think of the parameter we're estimating as a mean.    Suppose we flip a coin 100 times and see 40 heads. Find a 98% confidence interval for the bias .  Let indicate heads on each flip. Let and . Then: So a 98% confidence interval for is also a 98% confidence interval for .  In this setting, we can simplify the computation of and , using our knowledge of the binomial distribution . So and . We don't know the value of , so we'll use the MLE . So:   For a 98% confidence interval, we have , so: Then, the confidence limits are: For comparison, the 95% confidence limits are:      "
+},
+{
+  "id": "notes-02-24-3-2",
+  "level": "2",
+  "url": "notes-02-24.html#notes-02-24-3-2",
+  "type": "Example",
+  "number": "119",
+  "title": "",
+  "body": "  Suppose we roll a fair D6 100 times, and let be the average of the rolls. Estimate .  Let be each roll's result. Then we have previously calculated . We have: So, by the CLT, . Even though takes on decimal values, it's still a discrete random variable. The sum of the rolls can only take on integer values, so will take on the values . Last time, we described the continuity correction as \"extending the range by half a unit's width in each direction\". Here, the width of one unit is . So:    "
+},
+{
+  "id": "notes-02-24-4-7",
+  "level": "2",
+  "url": "notes-02-24.html#notes-02-24-4-7",
+  "type": "Theorem",
+  "number": "120",
+  "title": "",
+  "body": "  The 95% confidence limits are given by:    "
+},
+{
+  "id": "notes-02-24-4-8",
+  "level": "2",
+  "url": "notes-02-24.html#notes-02-24-4-8",
+  "type": "Definition",
+  "number": "121",
+  "title": "",
+  "body": "  The term is called the standard error of the mean . (It's the standard deviation of .)   "
+},
+{
+  "id": "notes-02-24-4-10",
+  "level": "2",
+  "url": "notes-02-24.html#notes-02-24-4-10",
+  "type": "Definition",
+  "number": "122",
+  "title": "",
+  "body": "  Let be (i.i.d.) measurements. Then the sample mean is: and the sample variance is:    "
+},
+{
+  "id": "notes-02-24-4-13",
+  "level": "2",
+  "url": "notes-02-24.html#notes-02-24-4-13",
+  "type": "Example",
+  "number": "123",
+  "title": "",
+  "body": "  Suppose we're given measurements below.                            We're just practicing the computation here, so we'll pretend that 5 measurements is large enough for the CLT to apply.    "
+},
+{
+  "id": "notes-02-24-4-15",
+  "level": "2",
+  "url": "notes-02-24.html#notes-02-24-4-15",
+  "type": "Example",
+  "number": "124",
+  "title": "",
+  "body": "  Suppose we flip a coin 100 times and see 40 heads. Find a 98% confidence interval for the bias .  Let indicate heads on each flip. Let and . Then: So a 98% confidence interval for is also a 98% confidence interval for .  In this setting, we can simplify the computation of and , using our knowledge of the binomial distribution . So and . We don't know the value of , so we'll use the MLE . So:   For a 98% confidence interval, we have , so: Then, the confidence limits are: For comparison, the 95% confidence limits are:    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
@@ -1157,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "117",
+  "number": "126",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
