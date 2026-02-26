@@ -19,6 +19,7 @@
     \DeclareMathOperator{\Geom}{Geom}
     \DeclareMathOperator{\Poiss}{Poiss}
     \DeclareMathOperator{\Exp}{Exp}
+    \DeclareMathOperator{\Norm}{N}
 
     <!-- other notation -->
     \DeclareMathOperator{\E}{E}

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-24">
+  <title>Tuesday, Feb 24</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>More Central Limit Theorem</title>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we roll a fair D6 100 times, and let <m>m</m> be the average of the rolls.
+          Estimate <m>\Pr(3.45 \leq m \leq 3.55)</m>.
+        </p>
+
+        <p>
+          Let <m>R_1, \dotsc, R_{100}</m> be each roll's result.
+          Then we have previously calculated <m>\E(R_i) = 3.5, \Var(R_i) = \frac{35}{12}</m>.
+          We have:
+          <md>
+            <mrow> m \amp = \frac{R_1 + \dotsb + R_{100}}{100}. </mrow>
+            <mrow> \E(m) \amp = \E\left(\frac{R_1 + \dotsb + R_{100}}{100}\right) </mrow>
+            <mrow>  \amp =  \frac{1}{100}\left[\E(R_1) + \dotsb + \E(R_{100})\right] </mrow>
+            <mrow>  \amp =  \frac{1}{100}(100)(3.5) </mrow>
+            <mrow>  \amp =  3.5 </mrow>
+            <mrow> \Var(m) \amp = \Var\left(\frac{R_1 + \dotsb + R_{100}}{100}\right) </mrow>
+            <mrow> \amp = \frac{1}{100^2} \left[\Var(R_1) + \dotsb + \Var(R_{100}) \right] </mrow>
+            <mrow> \amp = \frac{1}{100^2} (100)\left(\frac{35}{12}\right) </mrow>
+            <mrow> \amp = \frac{35}{1200} </mrow>
+          </md>
+          So, by the CLT, <m>m \approx \Norm\left(3.5, \frac{35}{1200}\right)</m>.
+          Even though <m>m</m> takes on decimal values, it's still a discrete random variable.
+          The sum of the rolls can only take on integer values, so <m>m</m> will take on the values <m>1.00, 1.01, \dotsc, 5.99, 6.00</m>.
+          Last time, we described the continuity correction as "extending the range by half a unit's width in each direction".
+          Here, the width of one unit is <m>0.01</m>.
+          So:
+          <md>
+            <mrow> \Pr(3.45 \leq m \leq 3.55) \amp \approx \Pr\left( \frac{3.4445 - 3.5}{\sqrt{35/1200}} \leq Z \leq \frac{3.555 - 3.5}{\sqrt{35/1200}}\right) </mrow>
+            <mrow> \amp \approx \Pr(-0.32 \leq Z \leq 0.32) </mrow>
+            <mrow> \amp = \Phi(0.32) - \Phi(-0.32) </mrow>
+            <mrow> \amp \approx 0.6255 - 0.3745 </mrow>
+            <mrow> \amp = 0.2510. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Confidence Intervals</title>
+
+    <p>
+      Idea: suppose we collected (i.i.d.) measurements <m>X_1, \dotsc, X_n</m> which have some population mean <m>\mu</m> and variance <m>\sigma^2</m>.
+      We calculate the average:
+      <md>
+        <mrow> A_n = \frac{A_1 + \dotsb + A_n}{n} </mrow>
+      </md>
+      and we want to estimate the value of <m>\mu</m> from the collected data.
+      Previously, we've discussed the MLE, the single most likely estimate of the parameter.
+      Now, we'd like to give a range <m>[\mu_{\ell}, \mu_h]</m> where we can say something like: "we are 95% confident that <m>\mu \in [\mu_{\ell}, \mu_h]</m>."
+    </p>
+
+    <p>
+      From the CLT, if <m>n</m> is large enough, we approximate <m>A_n \approx \Norm\left(\mu, \frac{\sigma^2}{n}\right)</m>.
+      We can think of an interval centered at <m>\mu</m> as a collection of numbers within a certain distance <m>d</m> of <m>\mu</m>.
+      We'd like to choose a distance so that our measured <m>A_n</m> is within <m>d</m> of <m>\mu</m>.
+      We can shift our point of view here: if <m>A_n</m> is within <m>d</m> of <m>\mu</m>, then <m>\mu</m> is within <m>d</m> of <m>A_n</m>.
+    </p>
+
+    <p>
+      TODO: image
+    </p>
+
+    <p>
+      To pick the distance <m>d</m>, we want to make our interval large enough so that there's only a small amount of area under the normal curve outside of the interval.
+      So:
+      <ol>
+        <li>
+          <p>
+            Pick some value <m>\alpha \in (0, 1)</m> (representing the area under the curve outside the interval)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Let <m>c_{\alpha} = \Phi^{-1}\left(1 - \frac{\alpha}{2}\right)</m> (this is the standardized <m>z</m>-score of the right-hand side of the interval)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Then, the interval will be:
+            <md>
+              <mrow> \left[A_n - c_{\alpha} \sqrt{\frac{\sigma^2}{n}}, A_n + c_{\alpha} \sqrt{\frac{\sigma^2}{n}}\right]. </mrow>
+            </md>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      For <m>\alpha = 0.05</m>, we'll have <m>c_{\alpha} = \Phi^{-1}\left(1 - \frac{0.05}{2}\right) = \Phi^{-1}(0.975) = 1.96</m>.
+      So:
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          The 95% confidence limits are given by:
+          <md>
+            <mrow> \mu_{\ell} \amp = A_n - 1.96 \sqrt{\frac{\sigma^2}{n}} </mrow>
+            <mrow> \mu_{h} \amp = A_n + 1.96 \sqrt{\frac{\sigma^2}{n}} </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <definition>
+      <statement>
+        <p>
+          The term <m>\sqrt{\frac{\sigma^2}{n}}</m> is called the <term>standard error of the mean</term>.
+          (It's the standard deviation of <m>A_n</m>.)
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      We don't know the true value of <m>\sigma^2</m>, just like we don't know the true value of <m>\mu</m>.
+      So we'll have to use our sample of measurements to estimate <m>\sigma^2</m>, and then use that estimate to give us our range of values for <m>\mu</m>.
+    </p>
+
+    <definition>
+      <statement>
+        <p>
+          Let <m>X_1, \dotsc, X_n</m> be (i.i.d.) measurements.
+          Then the <term>sample mean</term> is:
+          <md>
+            <mrow> A_n = \frac{X_1 + \dotsb + X_n}{n} </mrow>
+          </md>
+          and the <term>sample variance</term> is:
+          <md>
+            <mrow> s^2 = \frac{\sum (X_i - A_n)^2}{n - 1} = \frac{\left(\sum X_i^2\right) - n(A_n^2)}{n - 1} </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Why <m>n - 1</m> here? It turns out that, as defined above, <m>s^2</m> is an unbiased estimator for <m>\sigma^2</m>, whereas it wouldn't be if we divided by <m>n</m> instead.
+      (We'll ommit both the calculation justifying this and a more conceptual explanation for now.)
+    </p>
+
+    <p>
+      So, we can adjust the confidence limits from the theorem:
+      <md>
+        <mrow> \mu_{\ell} \amp = A_n - 1.96 \sqrt{\frac{s^2}{n}} </mrow>
+        <mrow> \mu_{h} \amp = A_n + 1.96 \sqrt{\frac{s^2}{n}} </mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we're given measurements <m>X_1, X_2, X_3, X_4, X_5</m> below.
+        </p>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell><m>i</m></cell>
+            <cell><m>X_i</m></cell>
+          </row>
+
+          <row>
+            <cell><m>1</m></cell>
+            <cell><m>19.2</m></cell>
+          </row>
+
+          <row>
+            <cell><m>2</m></cell>
+            <cell><m>20.1</m></cell>
+          </row>
+
+          <row>
+            <cell><m>3</m></cell>
+            <cell><m>21.3</m></cell>
+          </row>
+
+          <row>
+            <cell><m>4</m></cell>
+            <cell><m>20.7</m></cell>
+          </row>
+
+          <row>
+            <cell><m>5</m></cell>
+            <cell><m>19.8</m></cell>
+          </row>
+        </tabular>
+
+        <p>
+          We're just practicing the computation here, so we'll pretend that 5 measurements is large enough for the CLT to apply.
+          <md>
+            <mrow> A_n \amp = \frac{19.2 + \dotsb + 19.8}{5} = 20.22 </mrow>
+            <mrow>\sum X_i^2 \amp = 19.2^2 + \dotsb + 19.8^2 = 2046.87 </mrow>
+            <mrow> s^2 \amp = \frac{2046.87 - 5(20.22^2)}{4} = 0.657 </mrow>
+            <mrow> \sqrt{\frac{s^2}{n}} \amp = \sqrt{\frac{0.657}{5}} \approx 0.362 </mrow>
+            <mrow> \mu_{\ell} \amp = 20.22 - 1.96(0.362) \approx 19.51 </mrow>
+            <mrow> \mu_{h} \amp = 20.22 + 1.96(0.362) \approx 20.93 </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      This way of computing confidence limits only applies if we can think of the parameter we're estimating as a mean.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we flip a coin 100 times and see 40 heads.
+          Find a 98% confidence interval for the bias <m>p</m>.
+        </p>
+
+        <p>
+          Let <m>H_1, \dotsc, H_{100}</m> indicate heads on each flip.
+          Let <m>S_{100} = H_1 + \dotsb + H_{100}</m> and <m>A_n = \frac{S_n}{n}</m>.
+          Then:
+          <md>
+            <mrow> \E(A_n) \amp = \E\left(\frac{S_n}{n}\right) = \frac{1}{n}\E(S_n) = \frac{1}{n} np = p </mrow>
+          </md>
+          So a 98% confidence interval for <m>p</m> is also a 98% confidence interval for <m>p</m>.
+        </p>
+
+        <p>
+          In this setting, we can simplify the computation of <m>s^2</m> and <m>\sqrt{\frac{s^2}{n}}</m>, using our knowledge of the binomial distribution <m>S_n</m>.
+          <md>
+            <mrow> \Var(S_n) \amp = np(1 - p) </mrow>
+            <mrow> \Var(A_n) \amp = \Var\left(\frac{S_n}{n}\right) = \frac{1}{n^2} \Var(S_n) = \frac{1}{n^2} np(1-p) = \frac{p(1-p)}{n} </mrow>
+          </md>
+          So <m>s^2 = p(1 - p)</m> and <m>\sqrt{\frac{s^2}{n}} = \sqrt{\frac{p(1-p)}{n}}</m>.
+          We don't know the value of <m>p</m>, so we'll use the MLE <m>\widehat{p} = \frac{40}{100} = 0.4</m>.
+          So:
+          <md>
+            <mrow> \sqrt{\frac{s^2}{n}} = \sqrt{\frac{(0.4)(0.6)}{100}} \approx 0.049. </mrow>
+          </md>
+        </p>
+
+        <p>
+          For a 98% confidence interval, we have <m>\alpha = 1 - 0.98 = 0.02</m>, so:
+          <md>
+            <mrow> c_{\alpha} = \Phi^{-1}\left(1 - \frac{\alpha}{2}\right) = \Phi^{-1}(0.99) \approx 2.33. </mrow>
+          </md>
+          Then, the confidence limits are:
+          <md>
+            <mrow> p_{\ell} \amp = 0.4 - 2.33(0.049) \approx 0.286 </mrow>
+            <mrow> p_{h} \amp = 0.4 + 2.33(0.049) \approx 0.514 </mrow>
+          </md>
+          For comparison, the 95% confidence limits are:
+          <md>
+            <mrow> p_{\ell} \amp = 0.4 - 1.96(0.049) \approx 0.304 </mrow>
+            <mrow> p_{h} \amp = 0.4 + 1.96(0.049) \approx 0.496 </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

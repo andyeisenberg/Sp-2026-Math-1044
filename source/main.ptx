@@ -31,6 +31,8 @@
       <xi:include href="./notes/2-3.ptx" />
       <xi:include href="./notes/2-5.ptx" />
       <xi:include href="./notes/2-10.ptx" />
+      <xi:include href="./notes/2-19.ptx" />
+      <xi:include href="./notes/2-24.ptx" />
     </chapter>
 
     <chapter xml:id="quizzes">

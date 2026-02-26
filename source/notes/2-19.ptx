@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-19">
+  <title>Thursday, Feb 19</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered in class.
+      These notes are <em>not</em> a substitute for your own note-taking.
+      I highly recommend that you take your own notes during class.
+      If you ever miss a class for any reason, reach out to another student in class to get a copy of their notes.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Central Limit Theorem</title>
+
+    <definition>
+      <statement>
+        <p>
+          A continuous random variable <m>X</m> has the <term>normal distribution</term> with mean <m>\mu</m> and variance <m>\sigma^2</m> if it has pdf:
+          <md>
+            <mrow> f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi \sigma^2}} e^{\frac{-(x - \mu)^2}{2\sigma^2}} </mrow>
+          </md>
+          We'll write <m>X \sim \Norm(\mu, \sigma^2)</m>.
+        </p>
+
+        <p>
+          The specific distribution <m>\Norm(0, 1)</m> is called the <term>standard normal distribution</term>, and its pdf has the notation:
+          <md>
+            <mrow> f(x; 0, 1) = \phi(x). </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      If <m>X \sim \Norm(\mu, \sigma^2)</m>, then:
+      <md>
+        <mrow> \Pr(a \leq X \leq b) = \int_a^b f(x; \mu, \sigma^2)\ dx. </mrow>
+      </md>
+      Unfortunately, <m>e^{-x^2}</m> has no elementary antiderivative.
+      But we know <m>\int_a^b f(x)\ dx</m> represents the area under the graph <m>y = f(x; \mu, \sigma^2)</m>, and this area can be approximated to arbitrary precision.
+    </p>
+
+    <theorem xml:id="thm-CLT">
+      <statement>
+        <p>
+          Suppose <m>X_1, \dotsc, X_n</m> are <term>independent and identically distributed</term> (or <term>i.i.d.</term>) with finite expected value <m>\mu</m> and finite variance <m>\sigma^2</m>.
+          Define:
+          <md>
+            <mrow> S_n \amp = X_1 + X_2 + \dotsb + X_n </mrow>
+            <mrow> A_n \amp = \frac{X_1 + X_2 + \dotsb + X_n}{n} = \frac{S_n}{n} </mrow>
+          </md>
+          Then, for large enough <m>n</m>:
+          <md>
+            <mrow> S_n \amp \approx \Norm(n\mu, n\sigma^2) </mrow>
+            <mrow> A_n \amp \approx \Norm\left(\mu, \frac{\sigma^2}{n}\right) </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      We'll use two general rules of thumb for determining whether the number of measurements <m>n</m> is large enough for the approximation to be a good one:
+      <ol>
+        <li>
+          <p>
+            <m>n \geq 30</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>S\sim \Bin(n, p)</m>, then <m>n</m> should be large enough so that there are at least 5 heads and 5 tails.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      We'll omit a proof of <xref ref="thm-CLT"/>, but we can at least check that the expected values and variances of <m>S_n, A_n</m> are correct.
+      Given <m>\E(X_i) = \mu, \Var(X_i) = \sigma^2</m>:
+      <md>
+        <mrow> \E(S_n) \amp = \E(X_1 + \dotsb + X_n) </mrow>
+        <mrow> \amp = \E(X_1) + \dotsb + \E(X_n) </mrow>
+        <mrow> \amp = \mu + \dotsb + \mu </mrow>
+        <mrow> \amp = n \mu. \checkmark </mrow>
+        <mrow> \Var(S_n) \amp = \Var(X_1 + \dotsb + X_n) </mrow>
+        <mrow> \amp = \Var(X_1) + \dotsb + \Var(X_n) </mrow>
+        <mrow> \amp = \sigma^2 + \dotsb + \sigma^2 </mrow>
+        <mrow> \amp = n \sigma^2. \checkmark </mrow>
+        <mrow> \E(A_n) \amp = \E\left(\frac{S_n}{n}\right) </mrow>
+        <mrow> \amp = \frac{1}{n} \E(S_n) </mrow>
+        <mrow> \amp = \frac{1}{n} n \mu </mrow>
+        <mrow> \amp = \frac{1}{n} n \mu </mrow>
+        <mrow> \amp = \mu. \checkmark </mrow>
+        <mrow> \Var(A_n) \amp = \Var\left(\frac{S_n}{n}\right) </mrow>
+        <mrow> \amp = \frac{1}{n^2} \Var(S_n) </mrow>
+        <mrow> \amp = \frac{1}{n^2} n \sigma^2 </mrow>
+        <mrow> \amp = \frac{\sigma^2}{n}. \checkmark </mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose we flip a fair coin 100 times, and let <m>S</m> be the number of heads.
+          Estimate <m>\Pr(40 \leq S \leq 60)</m>.
+        </p>
+
+        <p>
+          Since <m>S \sim \Bin(n, p)</m>, we know:
+          <md>
+            <mrow> \E(S) \amp = np = (100)(0.5) = 50 </mrow>
+            <mrow> \Var(S) \amp = np(1-p) = (100)(0.5)(1 - 0.5) = 25 </mrow>
+          </md>
+          So <m>S \approx \Norm(50, 25)</m>.
+          Then:
+          <md>
+            <mrow> \Pr(40 \leq S \leq 60) \approx \int_{40}^{60} f(x; 50, 25)\ dx, </mrow>
+          </md>
+          but we can't compute this integral.
+        </p>
+
+        <p>
+          Instead, we can <term>standardize</term> by shifting and scaling:
+          <md>
+            <mrow> Z = \frac{S - 50}{\sqrt{25}} = \frac{S - 50}{5}. </mrow>
+          </md>
+          Then <m>Z \sim \Norm(0, 1)</m>.
+          Values of <m>Z</m> are called <term><m>z</m>-scores</term>, sometimes indicated by an asterisk.
+          (I.e., if <m>a</m> is a value of <m>S</m>, then <m>a^*</m> is the corresponding <m>z</m>-score.) Now:
+          <md>
+            <mrow> \Pr(40 \leq S \leq 60) \amp \approx \Pr\left(\frac{40 - 50}{5} \leq Z \leq \frac{60 - 50}{5}\right) </mrow>
+            <mrow> \amp = \Pr(-2 \leq Z \leq 2) </mrow>
+            <mrow> \amp = \int_{-2}^2 \phi(x)\ dx. </mrow>
+          </md>
+          Now, we still can't compute the value of the integral.
+          However, there's a huge benefit to translating to the standard normal distribution, regardless of <em>which</em> normal distribution we used to approximate <m>S</m>.
+          We can approximate integrals like <m>\int_a^b \phi(x)\ dx</m> to abritrary precision and record the results in a table.
+          Then, we can look up the values when needed.
+          We don't need to redo our approximations for different normal distributions, we just standardize whatever normal distribution we come across.
+        </p>
+
+        <p>
+          So:
+          <md>
+            <mrow> \Pr(40 \leq S \leq 60) \amp \approx \Pr(-2 \leq Z \leq 2) </mrow>
+            <mrow> \amp = \Phi(2) - \Phi(-2) </mrow>
+            <mrow> \amp \approx 0.9772 - 0.0228 </mrow>
+            <mrow> \amp \approx 0.9544. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      TODO: complex image introducing the idea of the <term>continuity correction</term>.
+    </p>
+
+    <p>
+      We can make the approximation more accurate by extending the range of <m>S</m>-values by half a unit in each direction:
+      <md>
+        <mrow> \Pr(40 \leq S \leq 60) \amp \approx \Pr\left(\frac{39.5 - 50}{5} \leq Z \leq \frac{60.5 - 50}{5}\right) </mrow>
+        <mrow> \amp = \Pr(-2.1 \leq Z \leq 2.1) </mrow>
+        <mrow> \amp = \Phi(2.1) - \Phi(-2.1) </mrow>
+        <mrow> \amp \approx 0.9821 - 0.0179 </mrow>
+        <mrow> \amp \approx 0.9642. </mrow>
+      </md>
+    </p>
+  </subsection>
+</section>
