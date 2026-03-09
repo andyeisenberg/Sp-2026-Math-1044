@@ -469,6 +469,7 @@
           <row bottom="minor">
             <cell right="minor"><m>\theta</m></cell>
             <cell><m>-1/2</m></cell>
+            <cell><m>0</m></cell>
             <cell><m>2/3</m></cell>
             <cell><m>1</m></cell>
           </row>
@@ -476,6 +477,7 @@
           <row>
             <cell right="minor"><m>\L(\theta)</m></cell>
             <cell><m>3/8</m></cell>
+            <cell><m>0</m></cell>
             <cell><m>4/27</m></cell>
             <cell><m>0</m></cell>
           </row>
