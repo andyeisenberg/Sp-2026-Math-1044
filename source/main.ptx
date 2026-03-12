@@ -62,7 +62,14 @@
       <title>Exam Review</title>
 
       <xi:include href="./review/Exam-1-Review.ptx"/>
+
+    </chapter>
      
+    <chapter xml:id="fun">
+      <title>Just for Fun</title>
+
+      <xi:include href="./fun/boxes.ptx"/>
+
     </chapter>
 
 
