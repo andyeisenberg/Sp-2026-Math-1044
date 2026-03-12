@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-03" margin="0.5in">
+  <title>Quiz 3</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes or textbooks is not allowed.
+      You may use a scientific calculator, not a graphing calculator or phone app.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          Write either True or False for each of the following statements.
+          No justification is required.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose a parameter <m>\theta \in (-\infty, \infty)</m> has likelihood function <m>\mathcal{L}(\theta)</m> with <m>\L'(\theta) = (1 - \theta)e^{\theta}</m>.
+            Then the maximum likelihood estimation is <m>\widehat{\theta} = 1</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose <m>X_1, \dotsc, X_n</m> are random variables, and <m>S = X_1 + \dotsb + X_n</m>.
+            Then, for sufficiently large <m>n</m>, <m>S \approx \operatorname{N}(0, 1)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Suppose we collect data to estimate the value of a parameter <m>\theta</m>.
+            Based on the collected data, we find a 95% confidence interval <m>[a, b]</m> and a 90% confidence interval <m>[c, d]</m>.
+            Then <m>a \leq c \leq d \leq b</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          The heights of five plants are measured and recorded below.
+          Find the sample mean, sample variance, and a 95% confidence interval around the sample mean for the heights of the plants.
+          (Pretend that 5 measurements is enough for the CLT to apply.)
+        </p>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>Plant <m>i</m></cell>
+            <cell><m>H_i</m> (in)</cell>
+          </row>
+
+          <row>
+            <cell><m>1</m></cell>
+            <cell><m>13</m></cell>
+          </row>
+
+          <row>
+            <cell><m>2</m></cell>
+            <cell><m>14</m></cell>
+          </row>
+
+          <row>
+            <cell><m>3</m></cell>
+            <cell><m>10</m></cell>
+          </row>
+
+          <row>
+            <cell><m>4</m></cell>
+            <cell><m>15</m></cell>
+          </row>
+
+          <row>
+            <cell><m>5</m></cell>
+            <cell><m>17</m></cell>
+          </row>
+        </tabular>
+      </statement>
+
+      <solution>
+        <p>
+          Let <m>A = \frac{H_1 + \dotsb + H_5}{5}</m> be the average height of the sample.
+          Then:
+          <md>
+            <mrow> A \amp = 13.8 \amp s^2 \amp = \frac{\sum H_i^2 - n(A^2)}{n - 1} = \frac{979 - 5(13.8^2)}{4} = 6.7 </mrow>
+            <mrow> \sum H_i^2 \amp = 979 \amp \sqrt{\frac{s^2}{n}} \amp = \sqrt{\frac{6.7}{5}} \approx 1.16 </mrow>
+          </md>
+          So the 95% confidence limits are:
+          <md>
+            <mrow> \mu_{\ell} \amp = 13.8 - 1.96(1.16) \approx \boxed{11.53} </mrow>
+            <mrow> \mu_{h} \amp = 13.8 + 1.96(1.16) \approx \boxed{16.07} </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Suppose a coin comes up heads with probability 0.6.
+          We flip the coin 80 times, and let <m>S</m> be the number of heads.
+          Estimate <m>\Pr(42 \leq S \leq 50)</m>.
+          (Use a continuity correction if appropriate.)
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <m>S \sim \Bin(80, 0.6)</m>, so <m>\E(S) = (80)(0.6) = 48</m> and <m>\Var(S) = (80)(0.6)(0.4) = 19.2</m>. By the CLT, <m>S \approx \Norm(48, 19.2)</m>, so:
+          <md>
+            <mrow> \Pr(42 \leq S \leq 50) \amp \approx \Pr\left( \frac{41.5 - 48}{\sqrt{19.2}} \leq Z \leq \frac{50.5 - 48}{\sqrt{19.2}}\right) </mrow>
+            <mrow> \amp \approx \Pr(-1.48 \leq Z \leq 0.57) </mrow>
+            <mrow> \amp = \Phi(0.57) - \Phi(-1.48) </mrow>
+            <mrow> \amp \approx 0.7157 - 0.0694 </mrow>
+            <mrow> \amp = \boxed{0.6463} </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <table>
+      <title><m>\Phi(z)</m> Values</title>
+
+      <tabular halign="center">
+        <row bottom="minor" header="yes">
+          <cell><m>z</m></cell>
+          <cell>0.00</cell>
+          <cell>0.01</cell>
+          <cell>0.02</cell>
+          <cell>0.03</cell>
+          <cell>0.04</cell>
+          <cell>0.05</cell>
+          <cell>0.06</cell>
+          <cell>0.07</cell>
+          <cell>0.08</cell>
+          <cell>0.09</cell>
+        </row>
+
+        <row>
+          <cell> −1.6 </cell>
+          <cell> 0.0548 </cell>
+          <cell> 0.0537 </cell>
+          <cell> 0.0526 </cell>
+          <cell> 0.0516 </cell>
+          <cell> 0.0505 </cell>
+          <cell> 0.0495 </cell>
+          <cell> 0.0485 </cell>
+          <cell> 0.0475 </cell>
+          <cell> 0.0465 </cell>
+          <cell> 0.0455 </cell>
+        </row>
+
+        <row>
+          <cell> −1.5 </cell>
+          <cell> 0.0668 </cell>
+          <cell> 0.0655 </cell>
+          <cell> 0.0643 </cell>
+          <cell> 0.0630 </cell>
+          <cell> 0.0618 </cell>
+          <cell> 0.0606 </cell>
+          <cell> 0.0594 </cell>
+          <cell> 0.0582 </cell>
+          <cell> 0.0571 </cell>
+          <cell> 0.0559 </cell>
+        </row>
+
+        <row>
+          <cell> −1.4 </cell>
+          <cell> 0.0808 </cell>
+          <cell> 0.0793 </cell>
+          <cell> 0.0778 </cell>
+          <cell> 0.0764 </cell>
+          <cell> 0.0749 </cell>
+          <cell> 0.0735 </cell>
+          <cell> 0.0721 </cell>
+          <cell> 0.0708 </cell>
+          <cell> 0.0694 </cell>
+          <cell> 0.0681 </cell>
+        </row>
+
+        <row>
+          <cell> −1.3 </cell>
+          <cell> 0.0968 </cell>
+          <cell> 0.0951 </cell>
+          <cell> 0.0934 </cell>
+          <cell> 0.0918 </cell>
+          <cell> 0.0901 </cell>
+          <cell> 0.0885 </cell>
+          <cell> 0.0869 </cell>
+          <cell> 0.0853 </cell>
+          <cell> 0.0838 </cell>
+          <cell> 0.0823 </cell>
+        </row>
+
+        <row bottom="minor">
+          <cell> −1.2 </cell>
+          <cell> 0.1151 </cell>
+          <cell> 0.1131 </cell>
+          <cell> 0.1112 </cell>
+          <cell> 0.1093 </cell>
+          <cell> 0.1075 </cell>
+          <cell> 0.1056 </cell>
+          <cell> 0.1038 </cell>
+          <cell> 0.1020 </cell>
+          <cell> 0.1003 </cell>
+          <cell> 0.0985 </cell>
+        </row>
+
+        <row>
+          <cell> 0.2 </cell>
+          <cell> 0.5793 </cell>
+          <cell> 0.5832 </cell>
+          <cell> 0.5871 </cell>
+          <cell> 0.5910 </cell>
+          <cell> 0.5948 </cell>
+          <cell> 0.5987 </cell>
+          <cell> 0.6026 </cell>
+          <cell> 0.6064 </cell>
+          <cell> 0.6103 </cell>
+          <cell> 0.6141 </cell>
+        </row>
+
+        <row>
+          <cell> 0.3 </cell>
+          <cell> 0.6179 </cell>
+          <cell> 0.6217 </cell>
+          <cell> 0.6255 </cell>
+          <cell> 0.6293 </cell>
+          <cell> 0.6331 </cell>
+          <cell> 0.6368 </cell>
+          <cell> 0.6406 </cell>
+          <cell> 0.6443 </cell>
+          <cell> 0.6480 </cell>
+          <cell> 0.6517 </cell>
+        </row>
+
+        <row>
+          <cell> 0.4 </cell>
+          <cell> 0.6554 </cell>
+          <cell> 0.6591 </cell>
+          <cell> 0.6628 </cell>
+          <cell> 0.6664 </cell>
+          <cell> 0.6700 </cell>
+          <cell> 0.6736 </cell>
+          <cell> 0.6772 </cell>
+          <cell> 0.6808 </cell>
+          <cell> 0.6844 </cell>
+          <cell> 0.6879 </cell>
+        </row>
+
+        <row>
+          <cell> 0.5 </cell>
+          <cell> 0.6915 </cell>
+          <cell> 0.6950 </cell>
+          <cell> 0.6985 </cell>
+          <cell> 0.7019 </cell>
+          <cell> 0.7054 </cell>
+          <cell> 0.7088 </cell>
+          <cell> 0.7123 </cell>
+          <cell> 0.7157 </cell>
+          <cell> 0.7190 </cell>
+          <cell> 0.7224 </cell>
+        </row>
+
+        <row>
+          <cell> 0.6 </cell>
+          <cell> 0.7257 </cell>
+          <cell> 0.7291 </cell>
+          <cell> 0.7324 </cell>
+          <cell> 0.7357 </cell>
+          <cell> 0.7389 </cell>
+          <cell> 0.7422 </cell>
+          <cell> 0.7454 </cell>
+          <cell> 0.7486 </cell>
+          <cell> 0.7517 </cell>
+          <cell> 0.7549 </cell>
+        </row>
+      </tabular>
+    </table>
+  </page>
+</worksheet>
