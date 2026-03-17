@@ -22,7 +22,7 @@
           Box 1 contains $1000.
           Box 2 is a mystery box containing a secret amount of money.
           Bob will offer you the choice:
-          <ol>
+          <ul>
             <li>
               <p>
                 You can take the mystery box alone, or
@@ -34,14 +34,11 @@
                 You can take both boxes.
               </p>
             </li>
-          </ol>
+          </ul>
           Bob is very accurate at predicting ahead of time what people will do.
           If Bob thinks that you'll choose to take only the mystery box, he'll put $1 million dollars in the mystery box.
           If Bob thinks that you'll choose to take both boxes, he'll put nothing in the mystery box.
-          Bob made his prediction and placed $1 million or $0 in the mystery box before you entered the rooms and learned the rules of the game.
-        </p>
-
-        <p>
+          Bob made his prediction and placed either $1 million or $0 in the mystery box before you entered the room.
           Would you take just the mystery box? Or would you take both boxes?
         </p>
       </introduction>
