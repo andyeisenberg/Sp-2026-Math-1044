@@ -1673,6 +1673,24 @@ var ptx_lunr_docs = [
   "number": "38",
   "title": "",
   "body": "  Suppose a parameter takes values in with likelihood function . Find the maximum likelihood estimation of .   "
+},
+{
+  "id": "boxes",
+  "level": "1",
+  "url": "boxes.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Boxes",
+  "body": " Boxes    The following is not for credit and will not be covered on any quiz or exam. This is just for fun.       A superintelligent robot named Bob waits in a room with two boxes. Box 1 contains $1000. Box 2 is a mystery box containing a secret amount of money. Bob will offer you the choice:   You can take the mystery box alone, or    You can take both boxes.   Bob is very accurate at predicting ahead of time what people will do. If Bob thinks that you'll choose to take only the mystery box, he'll put $1 million dollars in the mystery box. If Bob thinks that you'll choose to take both boxes, he'll put nothing in the mystery box. Bob made his prediction and placed either $1 million or $0 in the mystery box before you entered the room. Would you take just the mystery box? Or would you take both boxes?     Let be the probability that Bob accurately predicts your choice. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?      Let be the probability that Bob predicts that you'll take both boxes. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?      "
+},
+{
+  "id": "boxes-3-1",
+  "level": "2",
+  "url": "boxes.html#boxes-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A superintelligent robot named Bob waits in a room with two boxes. Box 1 contains $1000. Box 2 is a mystery box containing a secret amount of money. Bob will offer you the choice:   You can take the mystery box alone, or    You can take both boxes.   Bob is very accurate at predicting ahead of time what people will do. If Bob thinks that you'll choose to take only the mystery box, he'll put $1 million dollars in the mystery box. If Bob thinks that you'll choose to take both boxes, he'll put nothing in the mystery box. Bob made his prediction and placed either $1 million or $0 in the mystery box before you entered the room. Would you take just the mystery box? Or would you take both boxes?     Let be the probability that Bob accurately predicts your choice. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?      Let be the probability that Bob predicts that you'll take both boxes. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?    "
 }
 ]
 
