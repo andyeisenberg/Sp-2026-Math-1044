@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-04" margin="0.5in">
+  <title>Quiz 4</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes or textbooks is not allowed.
+      You may use a scientific calculator, not a graphing calculator or phone app.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          Suppose we have a coin that we're told is not fair and has a probability of <m>\theta = 0.6</m> of coming up heads.
+          We suspect the probability is even higher than this.
+        </p>
+
+        <p>
+          Throughout the following parts, do <em>not</em> use a normal approximation.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            We flip the coin 10 times and see 9 heads.
+            Should we use a 1-tailed test or a 2-tailed test? Find the <m>p</m>-value.
+            Do we have strong enough evidence to reject the null hypothesis at a 0.05 significance level?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            Using a 1-tailed test, the <m>p</m>-value is <m>\Pr( \geq 9 \text{ heads})</m>:
+            <md>
+              <mrow> \Pr(9 \text{ heads}) \amp = {10 \choose 9} (0.6)^9 (1 - 0.6)^{10 - 9} = 10(0.6)^9(0.4)^1 \approx 0.04 </mrow>
+              <mrow> \Pr(10 \text{ heads}) \amp = {10 \choose 10} (0.6)^{10} (1 - 0.6)^{10 - 10} = 1(0.6)^{10}(0.4)^{0} \approx 0.006 </mrow>
+            </md>
+            The <m>p</m>-value is the sum: <m>\Pr(\geq 9 \text{ heads}) \approx 0.046 \lt 0.05</m>, so we can reject the null hypothesis.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            What is the minimum number of heads we would need to see in 10 flips to reject the null hypothesis?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            We saw in part (a) that at least 9 heads is enough to reject.
+            Then:
+            <md>
+              <mrow> \Pr(8 \text{ heads}) = {10 \choose 8} (0.6)^8 (1 - 0.6)^{10 - 8} = 45(0.6)^8(0.4)^2 \approx 0.121 </mrow>
+            </md>
+            Adding to the previous probabilities, <m>\Pr(\geq 8 \text{ heads}) \approx 0.046 + 0.121 = 0.167 \gt 0.05</m>.
+            So 8 heads would not be enough to reject the null hypothesis, therefore the minimum number of heads to reject would be 9.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            What is the power of the test if the true value of the parameter is <m>\theta = 0.8</m>?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            With <m>\theta = 0.8</m>:
+            <md>
+              <mrow> \Pr(9 \text{ heads}) \amp = {10 \choose 9} (0.8)^9 (1 - 0.8)^{10 - 9} = 10(0.8)^9(0.2)^1 \approx 0.268 </mrow>
+              <mrow> \Pr(10 \text{ heads}) \amp = {10 \choose 10} (0.8)^{10} (1 - 0.8)^{10 - 10} = 1(0.8)^{10}(0.2)^{0} \approx 0.107 </mrow>
+            </md>
+            So the power of the test is <m>0.268 + 0.107 = 0.375</m>.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
