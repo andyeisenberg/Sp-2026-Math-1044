@@ -1180,6 +1180,24 @@ var ptx_lunr_docs = [
   "body": " Values     0.00  0.01  0.02  0.03  0.04  0.05  0.06  0.07  0.08  0.09    −1.6  0.0548  0.0537  0.0526  0.0516  0.0505  0.0495  0.0485  0.0475  0.0465  0.0455    −1.5  0.0668  0.0655  0.0643  0.0630  0.0618  0.0606  0.0594  0.0582  0.0571  0.0559    −1.4  0.0808  0.0793  0.0778  0.0764  0.0749  0.0735  0.0721  0.0708  0.0694  0.0681    −1.3  0.0968  0.0951  0.0934  0.0918  0.0901  0.0885  0.0869  0.0853  0.0838  0.0823    −1.2  0.1151  0.1131  0.1112  0.1093  0.1075  0.1056  0.1038  0.1020  0.1003  0.0985    0.2  0.5793  0.5832  0.5871  0.5910  0.5948  0.5987  0.6026  0.6064  0.6103  0.6141    0.3  0.6179  0.6217  0.6255  0.6293  0.6331  0.6368  0.6406  0.6443  0.6480  0.6517    0.4  0.6554  0.6591  0.6628  0.6664  0.6700  0.6736  0.6772  0.6808  0.6844  0.6879    0.5  0.6915  0.6950  0.6985  0.7019  0.7054  0.7088  0.7123  0.7157  0.7190  0.7224    0.6  0.7257  0.7291  0.7324  0.7357  0.7389  0.7422  0.7454  0.7486  0.7517  0.7549    "
 },
 {
+  "id": "quiz-04",
+  "level": "1",
+  "url": "quiz-04.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 4",
+  "body": " Quiz 4    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       Suppose we have a coin that we're told is not fair and has a probability of of coming up heads. We suspect the probability is even higher than this.  Throughout the following parts, do not use a normal approximation.     We flip the coin 10 times and see 9 heads. Should we use a 1-tailed test or a 2-tailed test? Find the -value. Do we have strong enough evidence to reject the null hypothesis at a 0.05 significance level?    Using a 1-tailed test, the -value is : The -value is the sum: , so we can reject the null hypothesis.      What is the minimum number of heads we would need to see in 10 flips to reject the null hypothesis?    We saw in part (a) that at least 9 heads is enough to reject. Then: Adding to the previous probabilities, . So 8 heads would not be enough to reject the null hypothesis, therefore the minimum number of heads to reject would be 9.      What is the power of the test if the true value of the parameter is ?    With : So the power of the test is .      "
+},
+{
+  "id": "quiz-04-3-1",
+  "level": "2",
+  "url": "quiz-04.html#quiz-04-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose we have a coin that we're told is not fair and has a probability of of coming up heads. We suspect the probability is even higher than this.  Throughout the following parts, do not use a normal approximation.     We flip the coin 10 times and see 9 heads. Should we use a 1-tailed test or a 2-tailed test? Find the -value. Do we have strong enough evidence to reject the null hypothesis at a 0.05 significance level?    Using a 1-tailed test, the -value is : The -value is the sum: , so we can reject the null hypothesis.      What is the minimum number of heads we would need to see in 10 flips to reject the null hypothesis?    We saw in part (a) that at least 9 heads is enough to reject. Then: Adding to the previous probabilities, . So 8 heads would not be enough to reject the null hypothesis, therefore the minimum number of heads to reject would be 9.      What is the power of the test if the true value of the parameter is ?    With : So the power of the test is .    "
+},
+{
   "id": "exam-01",
   "level": "1",
   "url": "exam-01.html",
