@@ -1693,6 +1693,159 @@ var ptx_lunr_docs = [
   "body": "  Suppose a parameter takes values in with likelihood function . Find the maximum likelihood estimation of .   "
 },
 {
+  "id": "Exam-2-Review",
+  "level": "1",
+  "url": "Exam-2-Review.html",
+  "type": "Section",
+  "number": "",
+  "title": "Exam 2 Review",
+  "body": " Exam 2 Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, February 12. Your recitation this week will also be exam review.    Allowed Materials  You will be allowed to use a scientific calculator ( not a graphing calculator, not a calculator app on your phone). You may not share a calculator with another student; you must use your own calculator.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.      Suppose a coin has probability 0.4 of coming up heads, and we flip the coin 100 times. Let be the number of heads. Estimate the probability that .           Suppose a fair die is rolled 100 times, and let be the average value of the rolls. Estimate the probability that .           The heights of men in the US have a mean of 69 in and a variance of about 9 in , and the heights of women in the US have a mean of 63.5 in with a variance of 6.25 in .     Suppose the heights of 30 men are sampled, and a sample mean is taken. Find the expected value and variance of .     and .      Estimate the probability that .     .      If the sampled group was women, estimate the probability that .     and . .       Suppose we flip a coin 100 times and count 60 heads. Let be the (unknown) probability that the coin comes up heads on a flip. Give an approximate 95% confidence interval for the value of .     .      Suppose in a sample of 100 people, 12 are left-handed.     Give a 95% confidence interval for the proportion of left-handed people.     .      Give a 90% confidence interval.     .       The weights of five mice are measured and recorded below. Give a 95% confidence interval for the sample mean weight of mice. (Pretend 5 measurements is large enough for the CLT to apply.)      mouse  weight (g)    1  26    2  32    3  33    4  20    5  29            .      The heights of five plants are measured and recorded below. Give a 95% confidence interval around the sample mean for the heights of the plants. (Pretend 5 measurements is large enough for the CLT to apply.)      plant  height (in)    1  15    2  14    3  18    4  21    5  17            .      In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test.     We have a coin which we've flipped many times, seeing an above-average number of heads. We suspect the coin comes up heads more often than a fair coin would.      We find a coin on the street and wonder whether or not it's a fair coin.      We suspect there will be a difference in average weight of mice caught during the summer versus during the winter.      In a medical study, a group of patients are gathered and the proportion experiencing particular symptoms is measured. A new drug intended to eliminate these symptoms is administered, after which the proportion experiencing symptoms is measured again.       Suppose we find a coin and wonder whether it's fair. As a first test, we decide to flip the coin 200 times and count the number of heads. If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?      Suppose we have a coin which we suspect comes up heads more often than a fair coin would. As a first test, we decide to flip the coin 200 times and count the number of heads. If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?      Suppose we find a six-sided die and wonder whether it's fair. As a first test, we decide to roll the die 100 times and count the number of times it comes up 1. If we roll 22 1's, should we accept or reject the null hypothesis of a fair die at a significance level of 0.05?      Suppose a particular plant when grown outdoors has an average height of 39 in with a variance of 20 in . We suspect that growing this plant in a greenhouse will increase its height. A sample of 50 plants grown in a greenhouse has an average height of 40 in. Is this significant enough data to reject the null hypothesis of equal means at the significance level?      A farmer is testing an experimental new plant fertilizer that is supposed to increase the weight of a particular apple variety. A control sample of 25 apples grown using the usual fertilizer have a mean weight of 75 grams and a sample variance of 90 grams (for an individual apple). An experimental sample of 25 apples grown using the new fertilizer have a mean weight of 79 grams and a sample variance of 90 grams .      We have an established factory which produces coins that are close to fair. We're opening up a second factory, and we'd like to ensure the machines are calibrated to produce coins which behave similarly to the ones produced in the established factory. We pick one sample coin from each factory, and flip each sample coin 100 times. The coin from the established factory flips 52 heads in 100 flips. The coin from the new factory flips 62 heads in 100 flips. Is this strong enough evidence to reject the null hypothesis that the two factories produce similar coins at a 0.05 significance level?      A store owner wants to determine how much shelf space to allocate to each of the drinks that they sell. They survey their customers about their favorite drinks. Is the data below consistent with the null hypothesis that each type of drink will be equally preferred?      drink type  water  soda  tea  coffee  energy drinks    favorite  28  17  15  26  14         A particular drug is administered in 100 independent trials. In each trial, the drug is administered to four people, and we count how many respond to the drug. The table below shows how many trials have each different count of people who respond to the drug.      # who respond to drug  0  1  2  3  4    # of trials  3  11  31  34  21        Is the data consistent with a binomial distribution with parameter ?      What is the total number of people who have been administered the drug? What is the total number who have responded to it? What is the maximum likelihood estimation for the probability that a person will respond to the drug?      Is the data consistent with a binomial distribution with the MLE value of ?      "
+},
+{
+  "id": "Exam-2-Review-4-1",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose a coin has probability 0.4 of coming up heads, and we flip the coin 100 times. Let be the number of heads. Estimate the probability that .        "
+},
+{
+  "id": "Exam-2-Review-4-2",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose a fair die is rolled 100 times, and let be the average value of the rolls. Estimate the probability that .        "
+},
+{
+  "id": "Exam-2-Review-4-3",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The heights of men in the US have a mean of 69 in and a variance of about 9 in , and the heights of women in the US have a mean of 63.5 in with a variance of 6.25 in .     Suppose the heights of 30 men are sampled, and a sample mean is taken. Find the expected value and variance of .     and .      Estimate the probability that .     .      If the sampled group was women, estimate the probability that .     and . .    "
+},
+{
+  "id": "Exam-2-Review-4-4",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose we flip a coin 100 times and count 60 heads. Let be the (unknown) probability that the coin comes up heads on a flip. Give an approximate 95% confidence interval for the value of .     .   "
+},
+{
+  "id": "Exam-2-Review-4-5",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Suppose in a sample of 100 people, 12 are left-handed.     Give a 95% confidence interval for the proportion of left-handed people.     .      Give a 90% confidence interval.     .    "
+},
+{
+  "id": "Exam-2-Review-4-6",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  The weights of five mice are measured and recorded below. Give a 95% confidence interval for the sample mean weight of mice. (Pretend 5 measurements is large enough for the CLT to apply.)      mouse  weight (g)    1  26    2  32    3  33    4  20    5  29            .   "
+},
+{
+  "id": "Exam-2-Review-4-7",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-7",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  The heights of five plants are measured and recorded below. Give a 95% confidence interval around the sample mean for the heights of the plants. (Pretend 5 measurements is large enough for the CLT to apply.)      plant  height (in)    1  15    2  14    3  18    4  21    5  17            .   "
+},
+{
+  "id": "Exam-2-Review-4-8",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-8",
+  "type": "Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test.     We have a coin which we've flipped many times, seeing an above-average number of heads. We suspect the coin comes up heads more often than a fair coin would.      We find a coin on the street and wonder whether or not it's a fair coin.      We suspect there will be a difference in average weight of mice caught during the summer versus during the winter.      In a medical study, a group of patients are gathered and the proportion experiencing particular symptoms is measured. A new drug intended to eliminate these symptoms is administered, after which the proportion experiencing symptoms is measured again.    "
+},
+{
+  "id": "Exam-2-Review-4-9",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-9",
+  "type": "Exercise",
+  "number": "9",
+  "title": "",
+  "body": "  Suppose we find a coin and wonder whether it's fair. As a first test, we decide to flip the coin 200 times and count the number of heads. If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?   "
+},
+{
+  "id": "Exam-2-Review-4-10",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-10",
+  "type": "Exercise",
+  "number": "10",
+  "title": "",
+  "body": "  Suppose we have a coin which we suspect comes up heads more often than a fair coin would. As a first test, we decide to flip the coin 200 times and count the number of heads. If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?   "
+},
+{
+  "id": "Exam-2-Review-4-11",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-11",
+  "type": "Exercise",
+  "number": "11",
+  "title": "",
+  "body": "  Suppose we find a six-sided die and wonder whether it's fair. As a first test, we decide to roll the die 100 times and count the number of times it comes up 1. If we roll 22 1's, should we accept or reject the null hypothesis of a fair die at a significance level of 0.05?   "
+},
+{
+  "id": "Exam-2-Review-4-12",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-12",
+  "type": "Exercise",
+  "number": "12",
+  "title": "",
+  "body": "  Suppose a particular plant when grown outdoors has an average height of 39 in with a variance of 20 in . We suspect that growing this plant in a greenhouse will increase its height. A sample of 50 plants grown in a greenhouse has an average height of 40 in. Is this significant enough data to reject the null hypothesis of equal means at the significance level?   "
+},
+{
+  "id": "Exam-2-Review-4-13",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-13",
+  "type": "Exercise",
+  "number": "13",
+  "title": "",
+  "body": "  A farmer is testing an experimental new plant fertilizer that is supposed to increase the weight of a particular apple variety. A control sample of 25 apples grown using the usual fertilizer have a mean weight of 75 grams and a sample variance of 90 grams (for an individual apple). An experimental sample of 25 apples grown using the new fertilizer have a mean weight of 79 grams and a sample variance of 90 grams .   "
+},
+{
+  "id": "Exam-2-Review-4-14",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-14",
+  "type": "Exercise",
+  "number": "14",
+  "title": "",
+  "body": "  We have an established factory which produces coins that are close to fair. We're opening up a second factory, and we'd like to ensure the machines are calibrated to produce coins which behave similarly to the ones produced in the established factory. We pick one sample coin from each factory, and flip each sample coin 100 times. The coin from the established factory flips 52 heads in 100 flips. The coin from the new factory flips 62 heads in 100 flips. Is this strong enough evidence to reject the null hypothesis that the two factories produce similar coins at a 0.05 significance level?   "
+},
+{
+  "id": "Exam-2-Review-4-15",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-15",
+  "type": "Exercise",
+  "number": "15",
+  "title": "",
+  "body": "  A store owner wants to determine how much shelf space to allocate to each of the drinks that they sell. They survey their customers about their favorite drinks. Is the data below consistent with the null hypothesis that each type of drink will be equally preferred?      drink type  water  soda  tea  coffee  energy drinks    favorite  28  17  15  26  14      "
+},
+{
+  "id": "Exam-2-Review-4-16",
+  "level": "2",
+  "url": "Exam-2-Review.html#Exam-2-Review-4-16",
+  "type": "Exercise",
+  "number": "16",
+  "title": "",
+  "body": "  A particular drug is administered in 100 independent trials. In each trial, the drug is administered to four people, and we count how many respond to the drug. The table below shows how many trials have each different count of people who respond to the drug.      # who respond to drug  0  1  2  3  4    # of trials  3  11  31  34  21        Is the data consistent with a binomial distribution with parameter ?      What is the total number of people who have been administered the drug? What is the total number who have responded to it? What is the maximum likelihood estimation for the probability that a person will respond to the drug?      Is the data consistent with a binomial distribution with the MLE value of ?    "
+},
+{
   "id": "boxes",
   "level": "1",
   "url": "boxes.html",
