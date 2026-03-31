@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="Exam-2-Review">
+  <title>Exam 2 Review</title>
+
+  <introduction>
+    <p>
+      Use the following problems to prepare for the exam.
+      There will be in-class review on Thursday, February 12.
+      Your recitation this week will also be exam review.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Allowed Materials</title>
+
+    <p>
+      You will be allowed to use a scientific calculator (<em>not</em> a graphing calculator, <em>not</em> a calculator app on your phone).
+      You may not share a calculator with another student; you must use your own calculator.
+    </p>
+
+    <p>
+      You may bring a standard 3 in x 5 in index card with prepared notes.
+      You may use both sides of the notecard.
+      You must put your full name in the top right corner of the card, and turn it in along with your exam.
+    </p>
+  </subsection>
+
+  <exercises>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a coin has probability 0.4 of coming up heads, and we flip the coin 100 times.
+        Let <m>S</m> be the number of heads.
+        Estimate the probability that <m>34 \leq S \leq 44</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\Pr(34 \leq S \leq 44) \approx 0.8212 - 0.0918 = 0.7294.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a fair die is rolled 100 times, and let <m>m</m> be the average value of the rolls.
+        Estimate the probability that <m>3.45 \leq m \leq 3.55</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\Pr(3.45 \leq m \leq 3.55) \approx 0.6255 - 0.3745 = 0.2510.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        The heights of men in the US have a mean of 69 in and a variance of about 9 in<m>^2</m>, and the heights of women in the US have a mean of 63.5 in with a variance of 6.25 in<m>^2</m>.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Suppose the heights of 30 men are sampled, and a sample mean <m>m</m> is taken.
+          Find the expected value and variance of <m>m</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\E(m) = 69</m> and <m>\Var(m) = 0.3</m>.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Estimate the probability that <m>m \geq 69.5</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\Pr(m \geq 69.5) \approx 1 - 0.8186 = 0.1814</m>.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          If the sampled group was women, estimate the probability that <m>m \geq 64</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\E(m) = 63.5</m> and <m>\Var(m) \approx 0.208</m>. <m>\Pr(m \geq 64) \approx 1 - 0.8643 = 0.1357</m>.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+
+    <exercise>
+    <statement>
+      <p>
+        Suppose we flip a coin 100 times and count 60 heads.
+        Let <m>p</m> be the (unknown) probability that the coin comes up heads on a flip.
+        Give an approximate 95% confidence interval for the value of <m>p</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>[0.504, 0.696]</m>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Suppose in a sample of 100 people, 12 are left-handed.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Give a 95% confidence interval for the proportion <m>p</m> of left-handed people.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>[0.056, 0.184]</m>.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Give a 90% confidence interval.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>[0.066, 0.174]</m>.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The weights of five mice are measured and recorded below.
+        Give a 95% confidence interval for the sample mean weight of mice.
+        (Pretend 5 measurements is large enough for the CLT to apply.)
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>mouse <m>i</m></cell>
+            <cell>weight <m>W_i</m> (g)</cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>26</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>32</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>33</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>20</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>29</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        <!-- avg weight = 28 --> <!-- sum of squares = 4030 --> <!-- s^2 = 27.5 --> <!-- \sqrt{s^2/n} \approx 2.35 --> <m>[23.39, 32.61]</m>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The heights of five plants are measured and recorded below.
+        Give a 95% confidence interval around the sample mean for the heights of the plants.
+        (Pretend 5 measurements is large enough for the CLT to apply.)
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>plant <m>i</m></cell>
+            <cell>height <m>H_i</m> (in)</cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>15</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>14</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>18</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>21</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>17</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        <!-- avg weight = 17 --> <!-- sum of squares = 1475 --> <!-- s^2 = 7.5 --> <!-- \sqrt{s^2/n} \approx 1.22 --> <m>[14.61, 19.39]</m>.
+      </p>
+    </answer>
+  </exercise>
+
+<exercise>
+    <introduction>
+      <p>
+        In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          We have a coin which we've flipped many times, seeing an above-average number of heads.
+          We suspect the coin comes up heads more often than a fair coin would.
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          We find a coin on the street and wonder whether or not it's a fair coin.
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          We suspect there will be a difference in average weight of mice caught during the summer versus during the winter.
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          In a medical study, a group of patients are gathered and the proportion experiencing particular symptoms is measured.
+          A new drug intended to eliminate these symptoms is administered, after which the proportion experiencing symptoms is measured again.
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we find a coin and wonder whether it's fair.
+        As a first test, we decide to flip the coin 200 times and count the number of heads.
+        If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we have a coin which we suspect comes up heads more often than a fair coin would.
+        As a first test, we decide to flip the coin 200 times and count the number of heads.
+        If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we find a six-sided die and wonder whether it's fair.
+        As a first test, we decide to roll the die 100 times and count the number of times it comes up 1.
+        If we roll 22 1's, should we accept or reject the null hypothesis of a fair die at a significance level of 0.05?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a particular plant when grown outdoors has an average height of 39 in with a variance of 20 in<m>^2</m>.
+        We suspect that growing this plant in a greenhouse will increase its height.
+        A sample of 50 plants grown in a greenhouse has an average height of 40 in.
+        Is this significant enough data to reject the null hypothesis of equal means at the <m>p = 0.05</m> significance level?
+      </p>
+    </statement>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+      <p>
+        A farmer is testing an experimental new plant fertilizer that is supposed to increase the weight of a particular apple variety.
+        A control sample of 25 apples grown using the usual fertilizer have a mean weight of 75 grams and a sample variance of 90 grams<m>^2</m> (for an individual apple).
+        An experimental sample of 25 apples grown using the new fertilizer have a mean weight of 79 grams and a sample variance of 90 grams<m>^2</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        We have an established factory which produces coins that are close to fair.
+        We're opening up a second factory, and we'd like to ensure the machines are calibrated to produce coins which behave similarly to the ones produced in the established factory.
+        We pick one sample coin from each factory, and flip each sample coin 100 times.
+        The coin from the established factory flips 52 heads in 100 flips.
+        The coin from the new factory flips 62 heads in 100 flips.
+        Is this strong enough evidence to reject the null hypothesis that the two factories produce similar coins at a 0.05 significance level?
+      </p>
+    </statement>
+  </exercise>
+
+
+  <exercise>
+      <statement>
+        <p>
+          A store owner wants to determine how much shelf space to allocate to each of the drinks that they sell.
+          They survey their customers about their favorite drinks.
+          Is the data below consistent with the null hypothesis that each type of drink will be equally preferred?
+        </p>
+
+        <table>
+          <title></title>
+
+          <tabular>
+            <row header="yes" bottom="minor">
+              <cell halign="center">drink type</cell>
+              <cell halign="center">water</cell>
+              <cell halign="center">soda</cell>
+              <cell halign="center">tea</cell>
+              <cell halign="center">coffee</cell>
+              <cell halign="center">energy drinks</cell>
+            </row>
+
+            <row>
+              <cell halign="center">favorite</cell>
+              <cell halign="center">28</cell>
+              <cell halign="center">17</cell>
+              <cell halign="center">15</cell>
+              <cell halign="center">26</cell>
+              <cell halign="center">14</cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          A particular drug is administered in 100 independent trials.
+          In each trial, the drug is administered to four people, and we count how many respond to the drug.
+          The table below shows how many trials have each different count of people who respond to the drug.
+        </p>
+
+        <table>
+          <title></title>
+
+          <tabular>
+            <row header="yes" bottom="minor">
+              <cell halign="center"># who respond to drug</cell>
+              <cell halign="center">0</cell>
+              <cell halign="center">1</cell>
+              <cell halign="center">2</cell>
+              <cell halign="center">3</cell>
+              <cell halign="center">4</cell>
+            </row>
+
+            <row>
+              <cell halign="center"># of trials</cell>
+              <cell halign="center">3</cell>
+              <cell halign="center">11</cell>
+              <cell halign="center">31</cell>
+              <cell halign="center">34</cell>
+              <cell halign="center">21</cell>
+            </row>
+          </tabular>
+        </table>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Is the data consistent with a binomial distribution with parameter <m>\theta = 0.7</m>?
+          </p>
+        </statement>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            What is the total number of people who have been administered the drug? What is the total number who have responded to it? What is the maximum likelihood estimation <m>\widehat{\theta}</m> for the probability that a person will respond to the drug?
+          </p>
+        </statement>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Is the data consistent with a binomial distribution with the MLE value of <m>\widehat{\theta}</m>?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+
+  </exercises>
+
+</section>
