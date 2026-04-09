@@ -1279,6 +1279,78 @@ var ptx_lunr_docs = [
   "body": "  Suppose a parameter has likelihood function . Find the maximum likelihood estimation of .     is a continuous function and is a closed interval, so we use the CIM. Then:                   is the largest value, so the MLE is    "
 },
 {
+  "id": "exam-02",
+  "level": "1",
+  "url": "exam-02.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 2",
+  "body": " Exam 2    Show all relevant work.       Write either True or False for each of the following statements. No justification is required.     Suppose are any random variables and . Then is approximately normally distributed.    False.      Let be the standard normal distribution. For any , .    True.      If we're using a set of data to find a confidence interval for a parameter, then the 95% confidence interval will be wider than the 90% confidence interval.    True.      In hypothesis testing, a type I error is the probability of accepting the null hypothesis.    False.      For a particular set of collected data, the -value of a 2-tailed test will be as large or larger than the -value of a 1-tailed test.    True.      In a test, if , then we can reject the null hypothesis.    False.         In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test. Indicate clearly which words or phrase in the description of the scenario would lead you to draw your conclusion.     We wonder whether the population of mice in a city have a different average weight to the population of mice in a rural town.    2-tailed, because we wonder whether the cities have \"different average weight\" without suspecting a direction of difference.      A new fertilizer is designed to increase the yield of a particular species of fruit, and we wonder whether the fertilizer is effective.    1-tailed, because the new fertilizer is \"designed to increase the yield\", so we suspect the change happens in a particular direction.      We find a weighted 6-sided die and suspect that it will roll a 6 more often than a fair die would.    1-tailed, because we suspect the die will roll 6 \"more often\", indicating difference in a particular direction.         A coin has a probability of coming up heads. We flip the coin 180 times, and write for the number of heads. Estimate . (Use a continuity correction if appropriate.)     is binomially distributed with and . Therefore:       The weights of five apples are measured and recorded below. Find the sample mean, sample variance, and a 95\\% confidence interval around the sample mean for the weights of the apples. (Pretend that 5 measurements is enough for the CLT to apply. Do not use the -distribution.)    Apple         Weight (g)                    Suppose we're told that a proportion of of a population has a particular trait, but we suspect that this information is incorrect. We sample 160 people from the population and see 76 people with the trait. Is this enough evidence to reject the null hypothesis at the 0.05 significance level?    \"We suspect the information is incorrect\" indicates a 2-tailed test. Let be the number of people in the sample with the trait. Then, under , , so and . The observed people is more than expected. Equally extreme in the other direction would be fewer, so people. Therefore the -value is: so we do not reject .        Suppose we have a coin that we're told has probability of coming up heads, but we suspect it comes up heads more often than that. We flip the coin 160 times.     What is the minimum number of heads we would need to see to reject the null hypothesis?    \"More often\" suggests we should use a 1-tailed test. Let be the number of heads. Then, under , , so and . Therefore, the -value when observing heads would be: We would need the -score to be at least 1.65 to reject , so: Therefore, it would take at least heads to reject .      If the coin is actually fair, what is the power of this test?    If the coin is fair, then and . The probability of rejecting is then:          A store owner assumes an equal number of people on average come into the store each day of the week. Are the following counts of 400 observed shoppers consistent with this hypothesis?    Day  Mon  Tue  Wed  Thu  Fri    Observed Shoppers           Under the null hypothesis, we would expect people each day. So: The number of degrees of freedom is , so the critical value is . Since , we reject the null hypothesis.     "
+},
+{
+  "id": "exam-02-3-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Write either True or False for each of the following statements. No justification is required.     Suppose are any random variables and . Then is approximately normally distributed.    False.      Let be the standard normal distribution. For any , .    True.      If we're using a set of data to find a confidence interval for a parameter, then the 95% confidence interval will be wider than the 90% confidence interval.    True.      In hypothesis testing, a type I error is the probability of accepting the null hypothesis.    False.      For a particular set of collected data, the -value of a 2-tailed test will be as large or larger than the -value of a 1-tailed test.    True.      In a test, if , then we can reject the null hypothesis.    False.    "
+},
+{
+  "id": "exam-02-4-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test. Indicate clearly which words or phrase in the description of the scenario would lead you to draw your conclusion.     We wonder whether the population of mice in a city have a different average weight to the population of mice in a rural town.    2-tailed, because we wonder whether the cities have \"different average weight\" without suspecting a direction of difference.      A new fertilizer is designed to increase the yield of a particular species of fruit, and we wonder whether the fertilizer is effective.    1-tailed, because the new fertilizer is \"designed to increase the yield\", so we suspect the change happens in a particular direction.      We find a weighted 6-sided die and suspect that it will roll a 6 more often than a fair die would.    1-tailed, because we suspect the die will roll 6 \"more often\", indicating difference in a particular direction.    "
+},
+{
+  "id": "exam-02-5-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  A coin has a probability of coming up heads. We flip the coin 180 times, and write for the number of heads. Estimate . (Use a continuity correction if appropriate.)     is binomially distributed with and . Therefore:    "
+},
+{
+  "id": "exam-02-5-2",
+  "level": "2",
+  "url": "exam-02.html#exam-02-5-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  The weights of five apples are measured and recorded below. Find the sample mean, sample variance, and a 95\\% confidence interval around the sample mean for the weights of the apples. (Pretend that 5 measurements is enough for the CLT to apply. Do not use the -distribution.)    Apple         Weight (g)               "
+},
+{
+  "id": "exam-02-6-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-6-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Suppose we're told that a proportion of of a population has a particular trait, but we suspect that this information is incorrect. We sample 160 people from the population and see 76 people with the trait. Is this enough evidence to reject the null hypothesis at the 0.05 significance level?    \"We suspect the information is incorrect\" indicates a 2-tailed test. Let be the number of people in the sample with the trait. Then, under , , so and . The observed people is more than expected. Equally extreme in the other direction would be fewer, so people. Therefore the -value is: so we do not reject .   "
+},
+{
+  "id": "exam-02-7-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-7-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Suppose we have a coin that we're told has probability of coming up heads, but we suspect it comes up heads more often than that. We flip the coin 160 times.     What is the minimum number of heads we would need to see to reject the null hypothesis?    \"More often\" suggests we should use a 1-tailed test. Let be the number of heads. Then, under , , so and . Therefore, the -value when observing heads would be: We would need the -score to be at least 1.65 to reject , so: Therefore, it would take at least heads to reject .      If the coin is actually fair, what is the power of this test?    If the coin is fair, then and . The probability of rejecting is then:     "
+},
+{
+  "id": "exam-02-8-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-8-1",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  A store owner assumes an equal number of people on average come into the store each day of the week. Are the following counts of 400 observed shoppers consistent with this hypothesis?    Day  Mon  Tue  Wed  Thu  Fri    Observed Shoppers           Under the null hypothesis, we would expect people each day. So: The number of degrees of freedom is , so the critical value is . Since , we reject the null hypothesis.   "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
