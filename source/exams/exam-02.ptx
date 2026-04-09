@@ -187,7 +187,7 @@
 
       <solution>
         <p>
-          <m>S</m> is binomially distributed with <m>E(S) = (180)(0.7) = 126</m> and <m>\Var(S) = (180)(0.7)(0.3) = 37.8</m>. Therefore:
+          <m>S</m> is binomially distributed with <m>\E(S) = (180)(0.7) = 126</m> and <m>\Var(S) = (180)(0.7)(0.3) = 37.8</m>. Therefore:
           <md>
             <mrow> \Pr(120 \leq S \leq 130) \amp \approx \Pr\left( \frac{119.5 - 126}{\sqrt{37.8}} \leq Z \leq \frac{130.5 - 126}{\sqrt{37.8}}\right) </mrow>
             <mrow> \amp \approx \Pr(-1.06 \leq Z \leq 0.73) </mrow>
@@ -204,7 +204,7 @@
       <statement>
         <p>
           The weights of five apples are measured and recorded below.
-          Find the sample mean, sample variance, and a 95\% confidence interval around the sample mean for the weights of the apples.
+          Find the sample mean, sample variance, and a 95% confidence interval around the sample mean for the weights of the apples.
           (Pretend that 5 measurements is enough for the CLT to apply.
           Do not use the <m>t</m>-distribution.)
         </p>
@@ -329,11 +329,11 @@
             If the coin is fair, then <m>\E(S) = (160)(0.5) = 80</m> and <m>\Var(S) = (160)(0.5)(0.5) = 40</m>.
             The probability of rejecting <m>H_0</m> is then:
             <md>
-              <mrow> \Pr(S \geq 75) \amp \approx \Pr\left(Z \geq \frac{75 - 80}{\sqrt{40}}\right) </mrow>
-              <mrow> \amp \approx \Pr(Z \geq -0.79) </mrow>
-              <mrow> \amp \approx 1 - \Phi(-0.79) </mrow>
-              <mrow> \amp \approx 1 - 0.2148 </mrow>
-              <mrow> \amp = 0.7852. </mrow>
+              <mrow> \Pr(S \geq 75) \amp \approx \Pr\left(Z \geq \frac{74.5 - 80}{\sqrt{40}}\right) </mrow>
+              <mrow> \amp \approx \Pr(Z \geq -0.87) </mrow>
+              <mrow> \amp \approx 1 - \Phi(-0.87) </mrow>
+              <mrow> \amp \approx 1 - 0.1922 </mrow>
+              <mrow> \amp = 0.8078. </mrow>
             </md>
           </p>
         </solution>
