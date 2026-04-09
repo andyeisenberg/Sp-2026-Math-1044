@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="exam-02">
+  <title>Exam 2</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Show all relevant work.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          Write either True or False for each of the following statements.
+          No justification is required.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Suppose <m>X_1, \dotsc, X_n</m> are any random variables and <m>S = (X_1 + X_2 + X_3 + \dotsb + X_n)^2</m>.
+            Then <m>S</m> is approximately normally distributed.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Let <m>Z</m> be the standard normal distribution.
+            For any <m>x</m>, <m>\Pr(Z \geq x) = 1 - \Phi(x)</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            If we're using a set of data to find a confidence interval for a parameter, then the 95% confidence interval will be wider than the 90% confidence interval.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            In hypothesis testing, a type I error is the probability of accepting the null hypothesis.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            For a particular set of collected data, the <m>p</m>-value of a 2-tailed test will be as large or larger than the <m>p</m>-value of a 1-tailed test.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            True.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            In a <m>\chi^2</m> test, if <m>\chi^2 \lt 0.05</m>, then we can reject the null hypothesis.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            False.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test.
+          Indicate clearly which words or phrase in the description of the scenario would lead you to draw your conclusion.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            We wonder whether the population of mice in a city have a different average weight to the population of mice in a rural town.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            2-tailed, because we wonder whether the cities have "different average weight" without suspecting a direction of difference.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            A new fertilizer is designed to increase the yield of a particular species of fruit, and we wonder whether the fertilizer is effective.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            1-tailed, because the new fertilizer is "designed to increase the yield", so we suspect the change happens in a particular direction.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            We find a weighted 6-sided die and suspect that it will roll a 6 more often than a fair die would.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            1-tailed, because we suspect the die will roll 6 "more often", indicating difference in a particular direction.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          A coin has a probability <m>\theta = 0.7</m> of coming up heads.
+          We flip the coin 180 times, and write <m>S</m> for the number of heads.
+          Estimate <m>\Pr(120 \leq S \leq 130)</m>.
+          (Use a continuity correction if appropriate.)
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <m>S</m> is binomially distributed with <m>E(S) = (180)(0.7) = 126</m> and <m>\Var(S) = (180)(0.7)(0.3) = 37.8</m>. Therefore:
+          <md>
+            <mrow> \Pr(120 \leq S \leq 130) \amp \approx \Pr\left( \frac{119.5 - 126}{\sqrt{37.8}} \leq Z \leq \frac{130.5 - 126}{\sqrt{37.8}}\right) </mrow>
+            <mrow> \amp \approx \Pr(-1.06 \leq Z \leq 0.73) </mrow>
+            <mrow> \amp = \Phi(0.73) - \Phi(-1.06) </mrow>
+            <mrow> \amp = \Phi(0.73) - \Phi(-1.06) </mrow>
+            <mrow> \amp \approx 0.7673 - 0.1446 </mrow>
+            <mrow> \amp = 0.6227. </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          The weights of five apples are measured and recorded below.
+          Find the sample mean, sample variance, and a 95\% confidence interval around the sample mean for the weights of the apples.
+          (Pretend that 5 measurements is enough for the CLT to apply.
+          Do not use the <m>t</m>-distribution.)
+        </p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor">Apple <m>i</m></cell>
+            <cell><m>1</m></cell>
+            <cell><m>2</m></cell>
+            <cell><m>3</m></cell>
+            <cell><m>4</m></cell>
+            <cell><m>5</m></cell>
+          </row>
+
+          <row>
+            <cell right="minor">Weight <m>W_i</m> (g)</cell>
+            <cell><m>140</m></cell>
+            <cell><m>120</m></cell>
+            <cell><m>165</m></cell>
+            <cell><m>168</m></cell>
+            <cell><m>137</m></cell>
+          </row>
+        </tabular>
+      </statement>
+
+      <solution>
+        <p>
+          <md>
+            <mrow> A = \text{Avg weight} \amp = \frac{\sum W_i}{5} = 146 </mrow>
+            <mrow> \sum W_i^2 \amp = 108218 </mrow>
+            <mrow> s^2 \amp = \frac{\sum W_i^2 - n(A^2)}{n -1} = \frac{108218 - 5(146^2)}{4} = 409.5 </mrow>
+            <mrow> \sqrt{\frac{s^2}{n}} \amp = \sqrt{\frac{409.5}{5}} \approx 9.05 </mrow>
+            <mrow> \mu_{\ell} \amp = 146 - 1.96(9.05) = 128.262 </mrow>
+            <mrow> \mu_{h} \amp = 146 + 1.96(9.05) = 163.738 </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Suppose we're told that a proportion of <m>\theta = 0.4</m> of a population has a particular trait, but we suspect that this information is incorrect.
+          We sample 160 people from the population and see 76 people with the trait.
+          Is this enough evidence to reject the null hypothesis at the 0.05 significance level?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          "We suspect the information is incorrect" indicates a 2-tailed test.
+          Let <m>S</m> be the number of people in the sample with the trait.
+          Then, under <m>H_0</m>, <m>S \sim \Bin(160, 0.4)</m>, so <m>\E(S) = (160)(0.4) = 64</m> and <m>\Var(S) = (160)(0.4)(0.6) = 38.4</m>.
+          The observed <m>76</m> people is <m>12</m> more than expected.
+          Equally extreme in the other direction would be <m>12</m> fewer, so <m>52</m> people.
+          Therefore the <m>p</m>-value is:
+          <md>
+            <mrow> \Pr(S \geq 76) + \Pr(S \leq 52) \amp \approx \Pr\left( Z \geq \frac{75.5 - 64}{\sqrt{38.4}} \right) + \Pr\left(Z \leq \frac{52.5 - 64}{\sqrt{38.4}}\right) </mrow>
+            <mrow> \amp \approx \Pr(Z \geq 1.86) + \Pr(Z \leq -1.86) </mrow>
+            <mrow> \amp = 2 \Phi(-1.86) </mrow>
+            <mrow> \amp = 2 (0.0314) </mrow>
+            <mrow> \amp = 0.0628 \gt 0.05, </mrow>
+          </md>
+          so we do not reject <m>H_0</m>.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Suppose we have a coin that we're told has probability <m>\theta = 0.4</m> of coming up heads, but we suspect it comes up heads more often than that.
+          We flip the coin 160 times.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            What is the minimum number of heads we would need to see to reject the null hypothesis?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            "More often" suggests we should use a 1-tailed test.
+            Let <m>S</m> be the number of heads.
+            Then, under <m>H_0</m>, <m>S \sim \Bin(160, 0.4)</m>, so <m>\E(S) = (160)(0.4) = 64</m> and <m>\Var(S) = (160)(0.4)(0.6) = 38.4</m>.
+            Therefore, the <m>p</m>-value when observing <m>k</m> heads would be:
+            <md>
+              <mrow> \Pr(S \geq k) \amp \approx \Pr\left( Z \geq \underbrace{\frac{k - 0.5 - 64}{\sqrt{38.4}}}_{z} \right) </mrow>
+              <mrow> \Pr(Z \geq z) \amp = 0.05 </mrow>
+              <mrow> 1 - \Phi(z) \amp = 0.05 \quad \Rightarrow \quad \Phi(z) = 0.95. </mrow>
+            </md>
+            We would need the <m>z</m>-score to be at least 1.65 to reject <m>H_0</m>, so:
+            <md>
+              <mrow> \frac{k - 0.5 - 64}{\sqrt{38.4}} \amp = 1.65 </mrow>
+              <mrow> k = 64.5 + 1.65 \sqrt{38.4} \amp \approx 74.72 </mrow>
+            </md>
+            Therefore, it would take at least <m>75</m> heads to reject <m>H_0</m>.
+          </p>
+        </solution>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            If the coin is actually fair, what is the power of this test?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            If the coin is fair, then <m>\E(S) = (160)(0.5) = 80</m> and <m>\Var(S) = (160)(0.5)(0.5) = 40</m>.
+            The probability of rejecting <m>H_0</m> is then:
+            <md>
+              <mrow> \Pr(S \geq 75) \amp \approx \Pr\left(Z \geq \frac{75 - 80}{\sqrt{40}}\right) </mrow>
+              <mrow> \amp \approx \Pr(Z \geq -0.79) </mrow>
+              <mrow> \amp \approx 1 - \Phi(-0.79) </mrow>
+              <mrow> \amp \approx 1 - 0.2148 </mrow>
+              <mrow> \amp = 0.7852. </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          A store owner assumes an equal number of people on average come into the store each day of the week.
+          Are the following counts of 400 observed shoppers consistent with this hypothesis?
+        </p>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor">Day</cell>
+            <cell>Mon</cell>
+            <cell>Tue</cell>
+            <cell>Wed</cell>
+            <cell>Thu</cell>
+            <cell>Fri</cell>
+          </row>
+
+          <row>
+            <cell right="minor">Observed Shoppers</cell>
+            <cell><m>83</m></cell>
+            <cell><m>61</m></cell>
+            <cell><m>65</m></cell>
+            <cell><m>90</m></cell>
+            <cell><m>101</m></cell>
+          </row>
+        </tabular>
+      </statement>
+
+      <solution>
+        <p>
+          Under the null hypothesis, we would expect <m>400/5 = 80</m> people each day.
+          So:
+          <md>
+            <mrow> \chi^2 \amp = \frac{(83 - 80)^2}{80} + \dotsb + \frac{(101 - 80)^2}{80} = 14.2. </mrow>
+          </md>
+          The number of degrees of freedom is <m>(5 - 1) - (0) = 4</m>, so the critical value is <m>9.488</m>.
+          Since <m>14.2 \gt 9.488</m>, we reject the null hypothesis.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>

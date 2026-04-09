@@ -49,6 +49,7 @@
       <title>Exams</title>
 
       <xi:include href="./exams/exam-01.ptx"/>
+      <xi:include href="./exams/exam-02.ptx"/>
      
     </chapter>
 
