@@ -1,0 +1,2018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="Final-Exam-Review">
+  <title>Final Exam Review</title>
+
+  <introduction>
+    <p>
+      Use the following problems to prepare for the exam.
+      There will be in-class review on Thursday, April 23.
+      Your recitation this week will also be exam review.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Allowed Materials</title>
+
+    <p>
+      You will be allowed to use a scientific calculator (<em>not</em> a graphing calculator, <em>not</em> a calculator app on your phone).
+      You may not share a calculator with another student; you must use your own calculator.
+    </p>
+
+    <p>
+      You may bring a standard 3 in x 5 in index card with prepared notes.
+      You may use both sides of the notecard.
+      You must put your full name in the top right corner of the card, and turn it in along with your exam.
+    </p>
+  </subsection>
+
+  <exercises>
+  <exercise>
+    <introduction>
+      <p>
+        Consider the sets <m>A = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}</m>, <m>B = \{2, 4, 9, 10, 12, 14, 19\}</m>, and <m>C = \{9, 10, 11, 14, 16, 17, 20\}</m>, which are all subsets of <m>\Omega = \{1, 2, 3, \dotsc, 20\}</m>.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Find <m>A - (B \cap C)</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\{1, 2, 3, 4, 5, 6, 7, 8\}</m>
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Find <m>|A|</m>, <m>|B|</m>, <m>|C|</m>, <m>|A\cup B|</m>, <m>|A \cap B|</m>, <m>|B\cap C|</m>, <m>|A\cap C|</m>, and <m>|A\cup B\cup C|</m>.
+          Is it true that the size of the union of sets is equal to the sum of the sizes of the individual sets?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>|A| = 10</m>, <m>|B| = 7</m>, <m>|C| = 7</m>, <m>|A \cup B| = 13</m>, <m>|A \cap B| = 4</m>, <m>|B\cap C| = 3</m>, <m>|A\cap C| = 2</m>, <m>|A\cup B\cup C| = 17</m>. In particular, note that <m>|A\cup B| = 13 \neq 10 + 7 = |A| + |B|</m>, so it is not true in general that the size of the union of sets is the sum of the sizes of the individual sets.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Find <m>A^c</m> and <m>(A\cup B)^c</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>A^c = \{11, 12, 13, 14, 15, 16, 17, 18, 19, 20\}</m>, <m>(A\cup B)^c = \{11, 13, 15, 16, 17, 18, 20\}</m>.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we have a 6-sided die that's weighted to roll a 6 half of the time.
+        We roll the die two times.
+        List the set of all possible results.
+        [Note: the result (2, 4)---rolling a 2 and then a 4---is different from the result <m>(4, 2)</m>---rolling a 4 and then a 2.]
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <md>
+          <mrow> \Omega = \{\amp (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), </mrow>
+          <mrow> \amp (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (2, 6), </mrow>
+          <mrow> \amp (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), </mrow>
+          <mrow> \amp (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (4, 6), </mrow>
+          <mrow> \amp (5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6), </mrow>
+          <mrow> \amp (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6)\} </mrow>
+        </md>
+        Note that <m>\Omega</m> simply lists outcomes with no reference to the probabilities.
+        So the answer here is the same as in <xref ref="example-sample-space"/>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we flip a coin two times.
+        List the set of all possible results.
+        What about flipping three times? Four times? If we flip the coin 10 times, how many possible results will there be?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        For two flips: <m>\Omega = \{ HH, HT, TH, TT \}</m>.
+      </p>
+
+      <p>
+        For three flips: <m>\Omega = \{ HHH, HHT, HTH, THH, HTT, THT, TTH, TTT \}</m>.
+      </p>
+
+      <p>
+        For four flips:
+        <md>
+          <mrow> \Omega = \{ \amp HHHH, HHHT, HHTH, HTHH, </mrow>
+          <mrow> \amp THHH, HHTT, HTHT, HTTH, </mrow>
+          <mrow> \amp THHT, THTH, TTHH, HTTT, </mrow>
+          <mrow> \amp THTT, TTHT, TTTH, TTTT \}. </mrow>
+        </md>
+      </p>
+
+      <p>
+        Each additional flip doubles the number of outcomes.
+        So, with ten flips, we'll have <m>|\Omega| = 2^{10} = 1024</m>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        If we roll a 6-sided die ten times, how many possible results will there be?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        Each additional roll will multiply the number of outcomes by 6.
+        So, with 10 rolls, we'll have <m>|\Omega| = 6^{10}.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider the sample space <m>\Omega = \{1, 2, 3, 4, 5, 6, 7, 8\}</m> with probability distribution below.
+        Calculate the probabilities of <m>A = \{1, 3, 7, 8\}</m>, <m>B = \{2, 3, 6, 7\}</m>, <m>A\cup B</m>, and <m>A \cap B</m>.
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>\Pr(x)</m></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>0.05</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>0.2</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>0.15</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>0.15</cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>7</cell>
+            <cell>0.05</cell>
+          </row>
+
+          <row>
+            <cell>8</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>9</cell>
+            <cell>0.1</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\Pr(A) = 0.45, \Pr(B) = 0.4, \Pr(A \cup B) = 0.6, \Pr(A \cap B) = 0.25.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a die has the values <m>1, 2, 3, 4, 5, 6</m> on the faces, but the die is not fair.
+        Instead, the probabilities scale by the same amount as the face values.
+        For example, a result of 4 is twice as likely as a result of 2, since 4 is twice as large as 2; a result of 6 is six times more likely than a result of 1; and so on.
+        Write a probability distribution table for this die.
+      </p>
+    </statement>
+
+    <answer>
+      <table>
+        <title>Probability Distribution for a Linearly Scaled Die</title>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>\Pr(x)</m></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell><m>1/21</m></cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell><m>2/21</m></cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell><m>3/21</m></cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell><m>4/21</m></cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell><m>5/21</m></cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell><m>6/21</m></cell>
+          </row>
+        </tabular>
+      </table>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a die has the values <m>1, 2, 3, 4, 5, 6</m> on the faces, but the die is not fair.
+        Instead, each even value has an equal probability, each odd value has an equal probability, and the even values are each twice as likely as the odd values to appear on a roll.
+        Write a probability distribution table for this die.
+      </p>
+    </statement>
+
+    <answer>
+      <table>
+        <title>Probability Distribution for an Even-biased Die</title>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>\Pr(x)</m></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell><m>1/9</m></cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell><m>2/9</m></cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell><m>1/9</m></cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell><m>2/9</m></cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell><m>1/9</m></cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell><m>2/9</m></cell>
+          </row>
+        </tabular>
+      </table>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A toxin molecule inside a cell has a 0.3 probability of leaving the cell during a 1-minute period.
+        For each value of <m>n = 1, 2, 3, \dotsc</m>, find the probability of the toxin molecule leaving the cell during the <m>n</m>th minute.
+        What is the probability of the molecule leaving the cell during the first 3 minutes?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        For short, write <m>\Pr(n)</m> to mean the probability of the toxin molecule leaving during the <m>n</m>th minute.
+        Then <m>\Pr(n) = (0.7)^{n - 1} (0.3).</m>
+      </p>
+
+      <p>
+        The probability of leaving during the first 3 minutes is <m>\Pr(1) + \Pr(2) + \Pr(3) = 0.657.</m>
+      </p>
+    </answer>
+  </exercise>
+  <!--
+  <exercise>
+    <statement>
+      <p>
+        Each of 10 toxin molecules inside a cell has a 0.3 probability of leaving the cell during a 1-minute period.
+        For each value of <m>n = 1, 2, 3, \dotsc</m>, and for each value of <m>0\leq k \leq n</m>, find the probability that exactly <m>k</m> toxin molecules remain in the cell after the <m>n</m>th minute.
+      </p>
+    </statement>
+  </exercise>
+
+  --> <!-- TODO write a solution --> <exercisegroup>
+  <introduction>
+    <p>
+      In each of the following scenarios with given events <m>A</m> and <m>B</m>, alculate <m>\Pr(A), \Pr(B)</m>, <m>\Pr(A\cap B)</m>, <m>\Pr(A \mid B)</m>, and <m>\Pr(B \mid A)</m>.
+    </p>
+  </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        An experiment consists of rolling a fair die two times.
+        Let <m>A</m> be the event that the sum is even, and let <m>B</m> be the event that the second roll is higher than the first.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <md>
+          <mrow> A = \{ \amp (1, 1), (1, 3), (1, 5), (2, 2), (2, 4), (2, 6), </mrow>
+          <mrow> \amp (3, 1), (3, 3), (3, 5), (4, 2), (4, 4), (4, 6), </mrow>
+          <mrow> \amp (5, 1), (5, 3), (5, 5), (6, 2), (6, 4), (6, 6)\} </mrow>
+          <mrow> B = \{ \amp (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), </mrow>
+          <mrow> \amp (2, 3), (2, 4), (2, 5), (2, 6), </mrow>
+          <mrow> \amp (3, 4), (3, 5), (3, 6), </mrow>
+          <mrow> \amp (4, 5), (4, 6), </mrow>
+          <mrow> \amp (5, 6)\} </mrow>
+          <mrow> A \cap B = \{ \amp (1, 3), (1, 5), (2, 4), (2, 6), (3, 5), (4, 6)\} </mrow>
+        </md>
+        So <m>\Pr(A) = \frac{18}{36} = \frac{1}{2}</m>, <m>\Pr(B) = \frac{15}{36} = \frac{5}{12}</m>, and <m>\Pr(A\cap B) = \frac{6}{36} = \frac{1}{6}</m>.
+        Finally:
+        <md>
+          <mrow> \Pr(A \mid B) \amp = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{6/36}{15/36} = \frac{6}{15} = \frac{2}{5} </mrow>
+          <mrow> \Pr(B \mid A) \amp = \frac{\Pr(B\cap A)}{\Pr(A)} = \frac{6/36}{18/36} = \frac{6}{18} = \frac{1}{3} </mrow>
+        </md>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        An experiment consists of flipping a fair coin three times.
+        Let <m>A</m> be the event that the first and second flips match.
+        Let <m>B</m> be the event that there are at least two heads.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <md>
+          <mrow> A \amp = \{ HHH, HHT, TTH, TTT \} </mrow>
+          <mrow> B \amp = \{ HHH, HHT, HTH, THH \} </mrow>
+          <mrow> A\cap B \amp = \{HHH, HHT\} </mrow>
+        </md>
+        So <m>\Pr(A) = \frac{4}{8} = \frac{1}{2}</m>, <m>\Pr(B) = \frac{4}{8} = \frac{1}{2}</m>, and <m>\Pr(A\cap B) = \frac{2}{8} = \frac{1}{4}</m>.
+        Finally:
+        <md>
+          <mrow> \Pr(A \mid B) \amp = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{2/8}{4/8} = \frac{2}{4} = \frac{1}{2} </mrow>
+          <mrow> \Pr(B \mid A) \amp = \frac{\Pr(B\cap A)}{\Pr(A)} = \frac{2/8}{4/8} = \frac{2}{4} = \frac{1}{2} </mrow>
+        </md>
+      </p>
+    </answer>
+  </exercise>
+  </exercisegroup>
+
+  <exercise>
+    <introduction>
+      <p>
+        A diagnostic test is developed to detect a disease present in 3.2% of the population.
+        For a patient who has the disease, the test will accurately give a positive result 65% of the time.
+        When the patient does not have the disease, the test will accurately give a negative result 99.9% of the time.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          For a patient who receives a positive test, what is the probability they have the disease?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          Let <m>P</m> be the event of testing positive and <m>D</m> the event of having the disease.
+          Then the prevalence <m>\Pr(D)</m> is given as 3.2%, or 0.032.
+          The sensitivity is <m>\Pr(P\mid D) = 0.65</m>, and the specificity is <m>\Pr(P^c\mid D^c) = 0.999</m>.
+          So, according to Bayes' Theorem:
+          <md>
+            <mrow> \Pr(D\mid P) \amp = \frac{\Pr(P\mid D)\Pr(D)}{\Pr(P\mid D)\Pr(D) + (1 - \Pr(P^c\mid D^c))\Pr(D^c)} </mrow>
+            <mrow>  \amp = \frac{(0.65)(0.032)}{(0.65)(0.032) + (1 - 0.999)(1 - 0.032)} </mrow>
+            <mrow>  \amp \approx 0.96 </mrow>
+          </md>
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          For a patient who receives a negative test, what is the probability they do not have the disease?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <md>
+            <mrow> \Pr(D^c\mid P^c) \amp = \frac{\Pr(P^c\mid D^c)\Pr(D^c)}{\Pr(P^c\mid D^c)\Pr(D^c) + (1 - \Pr(P\mid D))\Pr(D)} </mrow>
+            <mrow>  \amp = \frac{(0.999)(1 - 0.032)}{(0.999)(1 - 0.032) + (1 - 0.65)(0.032)} </mrow>
+            <mrow>  \amp \approx 0.99 </mrow>
+          </md>
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        An experiment consists of rolling a fair die two times.
+        Let <m>A</m> be the event that the sum is even, and let <m>B</m> be the event that the second roll is higher than the first.
+        Are <m>A</m> and <m>B</m> independent?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <md>
+          <mrow> A = \{ \amp (1, 1), (1, 3), (1, 5), (2, 2), (2, 4), (2, 6), </mrow>
+          <mrow> \amp (3, 1), (3, 3), (3, 5), (4, 2), (4, 4), (4, 6), </mrow>
+          <mrow> \amp (5, 1), (5, 3), (5, 5), (6, 2), (6, 4), (6, 6)\} </mrow>
+          <mrow> B = \{ \amp (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), </mrow>
+          <mrow> \amp (2, 3), (2, 4), (2, 5), (2, 6), </mrow>
+          <mrow> \amp (3, 4), (3, 5), (3, 6), </mrow>
+          <mrow> \amp (4, 5), (4, 6), </mrow>
+          <mrow> \amp (5, 6)\} </mrow>
+          <mrow> A \cap B = \{ \amp (1, 3), (1, 5), (2, 4), (2, 6), (3, 5), (4, 6)\} </mrow>
+        </md>
+        So <m>\Pr(A) = \frac{18}{36} = \frac{1}{2}</m>, <m>\Pr(B) = \frac{15}{36} = \frac{5}{12}</m>, and <m>\Pr(A\cap B) = \frac{6}{36} = \frac{1}{6}</m>.
+        Finally:
+        <md>
+          <mrow> \Pr(A \mid B) \amp = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{6/36}{15/36} = \frac{6}{15} = \frac{2}{5} \neq \Pr(A), </mrow>
+        </md>
+        so <m>A</m> and <m>B</m> are not independent.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        An experiment consists of flipping a fair coin three times.
+        Let <m>A</m> be the event that the first and second flips match.
+        Let <m>B</m> be the event that there are at least two heads.
+        Are <m>A</m> and <m>B</m> independent?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <md>
+          <mrow> A \amp = \{ HHH, HHT, TTH, TTT \} </mrow>
+          <mrow> B \amp = \{ HHH, HHT, HTH, THH \} </mrow>
+          <mrow> A\cap B \amp = \{HHH, HHT\} </mrow>
+        </md>
+        So <m>\Pr(A) = \frac{4}{8} = \frac{1}{2}</m>, <m>\Pr(B) = \frac{4}{8} = \frac{1}{2}</m>, and <m>\Pr(A\cap B) = \frac{2}{8} = \frac{1}{4}</m>.
+        Finally:
+        <md>
+          <mrow> \Pr(A \mid B) \amp = \frac{\Pr(A\cap B)}{\Pr(B)} = \frac{2/8}{4/8} = \frac{2}{4} = \frac{1}{2} = \Pr(A), </mrow>
+        </md>
+        so <m>A</m> and <m>B</m> are independent.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Let <m>A = \{1, 2, 3\}</m> and <m>B = \{3, 4, 5\}</m> be events in the sample space <m>\Omega = \{1, 2, 3, 4, 5, 6\}</m>.
+        Create a probability distribution for <m>\Omega</m> so that <m>A, B</m> are independent.
+      </p>
+    </statement>
+
+    <answer>
+      <table>
+        <title>Example Distribution</title>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>\Pr(x)</m></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>0.2</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>0.2</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell>0.3</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        Now <m>\Pr(A) = 0.5</m>, <m>\Pr(B) = 0.4</m>, and
+        <md>
+          <mrow>\Pr(A\cap B) = 0.2 = (0.5)(0.4) = \Pr(A)\Pr(B),</mrow>
+        </md>
+        so <m>A</m> and <m>B</m> are independent.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        An experiment consists of flipping a biased coin 20 times.
+        If the coin comes up heads with probability <m>p = 0.3</m>, find the probability of seeing 5 heads.
+        Find the probability of seeing up to (and including) 3 heads.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        Let <m>S</m> be the number of heads.
+        Then <m>S \sim \Bin(20, 0.3)</m>, so:
+        <md>
+          <mrow> \Pr(S = 5) \amp = {20 \choose 5} (0.3)^5 (0.7)^{20 - 5} </mrow>
+          <mrow> \amp = \frac{20!}{(5!)(15!)} (0.3)^5 (0.7)^{15} </mrow>
+          <mrow> \amp = \frac{20 \times 19 \times 18 \times 17 \times 16}{5 \times 4 \times 3 \times 2 \times 1} (0.3)^5 (0.7)^{15} </mrow>
+          <mrow> \amp = (19 \times 3 \times 17 \times 16) (0.3)^5 (0.7)^{15} </mrow>
+          <mrow> \amp \approx 0.179 </mrow>
+        </md>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        An experiment consists of flipping a coin repeatedly until we first see heads.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          If the coin comes up heads with probability 0.4, what is the probability we'll see our first heads within three flips? What about precisely on the third flip?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Let <m>T</m> be the number of flips until we see heads.
+          Then <m>T</m> is geometric with parameter <m>p = 0.4</m>, so:
+          <md>
+            <mrow> \Pr(T = k) \amp = (1-0.4)^{k-1}(0.4) = 0.6^{k-1} \cdot 0.4 </mrow>
+          </md>
+        </p>
+      </solution>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Which flip has the highest chance of being the first flip to come up heads?
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A particular store has an average of 20 customers each hour.
+        During a 4-hour afternoon shift, what is the probability of serving 80 customers.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[1, 4]</m> has p.d.f.
+        <m>f(x) = k(x - \sqrt{x})</m> for some constant <m>k</m>.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          What is the value of <m>k</m>?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>k = \frac{6}{17}.</m>
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Find <m>\Pr(2 \leq X \leq 3).</m>
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\Pr(2 \leq X \leq 3) \approx 0.325</m>
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[1, 2]</m> has p.d.f.
+        <m>\displaystyle{f(x) = \frac{1}{2}\left(\frac{1}{x^2} + x\right)}</m>.
+        Find the c.d.f.
+        <m>F(x)</m>.
+        Use your c.d.f.
+        to find <m>\Pr\left(1 \leq X \leq \frac{3}{2}\right)</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\frac{1}{2}\left(\frac{x^2}{2} - \frac{1}{x}\right) + \frac{1}{4}</m>. <m>\Pr\left(1 \leq X \leq \frac{3}{2}\right) \approx 0.479.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[2, 3]</m> has c.d.f.
+        <m>F(x) = \frac{x^3}{3} - x^2 + 4</m>.
+        Find the p.d.f.
+        <m>f(x)</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>f(x) = x^2 - 2x.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider <m>X, Y</m> with the joint distribution table below.
+        Are <m>X, Y</m> independent?
+      </p>
+
+      <table>
+        <title>Joint distribution for <m>X, Y</m></title>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 0</m></cell>
+            <cell><m>X = 1</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 0</m></cell>
+            <cell right="minor">0.2</cell>
+            <cell>0.3</cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor">0.4</cell>
+            <cell>0.1</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        No.
+        For example, <m>\Pr(X = 0, Y = 0) \neq \Pr(X = 0)\Pr(Y = 0).</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose <m>X, Y</m> have the distributions:
+        <md>
+          <mrow> \Pr(X = 0) \amp = 0.1 \amp \Pr(Y = 0) \amp = 0.4 </mrow>
+          <mrow> \Pr(X = 1) \amp = 0.4 \amp \Pr(Y = 1) \amp = 0.6 </mrow>
+          <mrow> \Pr(X = 2) \amp = 0.5  </mrow>
+        </md>
+        Assuming <m>X, Y</m> are independent, write a joint distribution table.
+      </p>
+    </statement>
+
+    <answer>
+      <table>
+        <title>Joint Distribution</title>
+
+        <tabular halign="center">
+          <row bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 0</m></cell>
+            <cell right="minor"><m>X = 1</m></cell>
+            <cell><m>X = 2</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 0</m></cell>
+            <cell right="minor">0.04</cell>
+            <cell right="minor">0.16</cell>
+            <cell>0.2</cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor">0.06</cell>
+            <cell right="minor">0.24</cell>
+            <cell>0.3</cell>
+          </row>
+        </tabular>
+      </table>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider a random variable <m>X</m> with probability distribution below.
+        Find <m>\E(X)</m>.
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>\Pr(X = x)</m></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>0.05</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>0.2</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>0.15</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>0.15</cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>7</cell>
+            <cell>0.05</cell>
+          </row>
+
+          <row>
+            <cell>8</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>9</cell>
+            <cell>0.1</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        4.8.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Suppose we flip a coin <m>n = 100</m> times, and let <m>N</m> count the number of heads.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          If the coin comes up heads on a flip with probability <m>p = 0.4</m>, what is <m>\E(N)</m>?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          40.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          What if <m>n = 80</m> and <m>p = 0.6</m>?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          48.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          What if <m>n = 200</m> and <m>p = 0.5</m>?
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          100.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        If <m>\E(X) = 3</m>, <m>\E(Y) = -2</m>, and <m>\E(Z) = 1</m>, what is <m>\E(4X + 5Y - Z + 3)</m>?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        4.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[0, 1]</m> has p.d.f.
+        <m>f(x) = 2x</m>.
+        What is <m>\E(X)</m>?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        2/3.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[1, 4]</m> has p.d.f.
+        <m>f(x) = \frac{4}{3x^2}</m>.
+        What is <m>\E(X)</m>?
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\frac{4}{3}\ln(4) \approx 1.85.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[1, 2]</m> has p.d.f.
+        <m>\displaystyle{f(x) = \frac{1}{2}\left(\frac{1}{x^2} + x\right)}</m>.
+        Find <m>\E(X)</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\frac{1}{2}\left( \ln(2) + \frac{7}{3}\right) \approx 1.513.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Consider a random variable <m>X</m> with probability distribution below.
+        Find <m>\Var(X)</m>.
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell><m>x</m></cell>
+            <cell><m>\Pr(X = x)</m></cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>0.05</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>0.2</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>0.15</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>0.15</cell>
+          </row>
+
+          <row>
+            <cell>6</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>7</cell>
+            <cell>0.05</cell>
+          </row>
+
+          <row>
+            <cell>8</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell>9</cell>
+            <cell>0.1</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we flip a coin <m>n = 100</m> times, and let <m>N</m> count the number of heads.
+        If the coin comes up heads on a flip with probability <m>p = 0.4</m>, what is <m>\Var(N)</m>? What if <m>n = 80</m> and <m>p = 0.6</m>? What if <m>n = 200</m> and <m>p = 0.5</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        If <m>\E(X) = 3</m>, <m>\Var(X) = 2</m>, what is <m>\E(X^2)</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[0, 1]</m> has p.d.f.
+        <m>f(x) = 2x</m>.
+        What is <m>\Var(X)</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[1, 4]</m> has p.d.f.
+        <m>f(x) = \frac{4}{3x^2}</m>.
+        What is <m>\Var(X)</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A continuous random variable <m>X</m> taking values in <m>[1, 2]</m> has p.d.f.
+        <m>\displaystyle{f(x) = \frac{1}{2}\left(\frac{1}{x^2} + x\right)}</m>.
+        Find <m>\Var(X)</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a coin has an unknown probability of coming up heads.
+        We perform the experiment in <m>n</m> independent trials, during which it takes <m>k_1, k_2, \dotsc, k_n</m> flips to see our first heads in each trial.
+        Find a "common sense" MLE formula for the geometric distribution.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A particular store owner wants to approximate the average hourly rate at which customers come into the store.
+        They observe 80 customers enter during a particular 4-hour shift.
+        What is the maximum likelihood estimation for the hourly customer rate?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A radioactive material emits particles at an unknown probabilistic rate <m>\lambda</m> particles per minute.
+        We observe particles emitted at times 1.1, 1.7, 1.3, 2.2, 1.9, and 1.8 minutes.
+        Write the likelihood function <m>\mathcal{L}(\lambda)</m> based on this data.
+        What is the maximum likelihood estimation for <m>\lambda</m>?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a parameter <m>\theta</m> takes values in <m>[0, 1]</m> with likelihood function <m>\mathcal{L}(\theta) = \sqrt{\theta} - \theta^2</m>.
+        Find the maximum likelihood estimation of <m>\theta</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a coin has probability 0.4 of coming up heads, and we flip the coin 100 times.
+        Let <m>S</m> be the number of heads.
+        Estimate the probability that <m>34 \leq S \leq 44</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\Pr(34 \leq S \leq 44) \approx 0.8212 - 0.0918 = 0.7294.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a fair die is rolled 100 times, and let <m>m</m> be the average value of the rolls.
+        Estimate the probability that <m>3.45 \leq m \leq 3.55</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>\Pr(3.45 \leq m \leq 3.55) \approx 0.6255 - 0.3745 = 0.2510.</m>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        The heights of men in the US have a mean of 69 in and a variance of about 9 in<m>^2</m>, and the heights of women in the US have a mean of 63.5 in with a variance of 6.25 in<m>^2</m>.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Suppose the heights of 30 men are sampled, and a sample mean <m>m</m> is taken.
+          Find the expected value and variance of <m>m</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\E(m) = 69</m> and <m>\Var(m) = 0.3</m>.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Estimate the probability that <m>m \geq 69.5</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\Pr(m \geq 69.5) \approx 1 - 0.8186 = 0.1814</m>.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          If the sampled group was women, estimate the probability that <m>m \geq 64</m>.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>\E(m) = 63.5</m> and <m>\Var(m) \approx 0.208</m>. <m>\Pr(m \geq 64) \approx 1 - 0.8643 = 0.1357</m>.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we flip a coin 100 times and count 60 heads.
+        Let <m>p</m> be the (unknown) probability that the coin comes up heads on a flip.
+        Give an approximate 95% confidence interval for the value of <m>p</m>.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+        <m>[0.504, 0.696]</m>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Suppose in a sample of 100 people, 12 are left-handed.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Give a 95% confidence interval for the proportion <m>p</m> of left-handed people.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>[0.056, 0.184]</m>.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Give a 90% confidence interval.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          <m>[0.066, 0.174]</m>.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The weights of five mice are measured and recorded below.
+        Give a 95% confidence interval for the sample mean weight of mice.
+        (Pretend 5 measurements is large enough for the CLT to apply.)
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>mouse <m>i</m></cell>
+            <cell>weight <m>W_i</m> (g)</cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>26</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>32</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>33</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>20</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>29</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        <!-- avg weight = 28 --> <!-- sum of squares = 4030 --> <!-- s^2 = 27.5 --> <!-- \sqrt{s^2/n} \approx 2.35 --> <m>[23.39, 32.61]</m>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        The heights of five plants are measured and recorded below.
+        Give a 95% confidence interval around the sample mean for the heights of the plants.
+        (Pretend 5 measurements is large enough for the CLT to apply.)
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell>plant <m>i</m></cell>
+            <cell>height <m>H_i</m> (in)</cell>
+          </row>
+
+          <row>
+            <cell>1</cell>
+            <cell>15</cell>
+          </row>
+
+          <row>
+            <cell>2</cell>
+            <cell>14</cell>
+          </row>
+
+          <row>
+            <cell>3</cell>
+            <cell>18</cell>
+          </row>
+
+          <row>
+            <cell>4</cell>
+            <cell>21</cell>
+          </row>
+
+          <row>
+            <cell>5</cell>
+            <cell>17</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+
+    <answer>
+      <p>
+        <!-- avg weight = 17 --> <!-- sum of squares = 1475 --> <!-- s^2 = 7.5 --> <!-- \sqrt{s^2/n} \approx 1.22 --> <m>[14.61, 19.39]</m>.
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        In each of the following scenarios, determine whether we should use a 1-tailed test or a 2-tailed test.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          We have a coin which we've flipped many times, seeing an above-average number of heads.
+          We suspect the coin comes up heads more often than a fair coin would.
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          We find a coin on the street and wonder whether or not it's a fair coin.
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          We suspect there will be a difference in average weight of mice caught during the summer versus during the winter.
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          In a medical study, a group of patients are gathered and the proportion experiencing particular symptoms is measured.
+          A new drug intended to eliminate these symptoms is administered, after which the proportion experiencing symptoms is measured again.
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we find a coin and wonder whether it's fair.
+        As a first test, we decide to flip the coin 200 times and count the number of heads.
+        If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we have a coin which we suspect comes up heads more often than a fair coin would.
+        As a first test, we decide to flip the coin 200 times and count the number of heads.
+        If we see 112 heads, should we accept or reject the null hypothesis of a fair coin at a significance level of 0.05?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we find a six-sided die and wonder whether it's fair.
+        As a first test, we decide to roll the die 100 times and count the number of times it comes up 1.
+        If we roll 22 1's, should we accept or reject the null hypothesis of a fair die at a significance level of 0.05?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a particular plant when grown outdoors has an average height of 39 in with a variance of 20 in<m>^2</m>.
+        We suspect that growing this plant in a greenhouse will increase its height.
+        A sample of 50 plants grown in a greenhouse has an average height of 40 in.
+        Is this significant enough data to reject the null hypothesis of equal means at the <m>p = 0.05</m> significance level?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A farmer is testing an experimental new plant fertilizer that is supposed to increase the weight of a particular apple variety.
+        A control sample of 25 apples grown using the usual fertilizer have a mean weight of 75 grams and a sample variance of 90 grams<m>^2</m> (for an individual apple).
+        An experimental sample of 25 apples grown using the new fertilizer have a mean weight of 79 grams and a sample variance of 90 grams<m>^2</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        We have an established factory which produces coins that are close to fair.
+        We're opening up a second factory, and we'd like to ensure the machines are calibrated to produce coins which behave similarly to the ones produced in the established factory.
+        We pick one sample coin from each factory, and flip each sample coin 100 times.
+        The coin from the established factory flips 52 heads in 100 flips.
+        The coin from the new factory flips 62 heads in 100 flips.
+        Is this strong enough evidence to reject the null hypothesis that the two factories produce similar coins at a 0.05 significance level?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we find a coin and wonder whether it's fair.
+        As a first test, we decide to flip the coin 200 times and count the number of heads, <m>S</m>.
+        What values of <m>S</m> would be extreme enough to reject the null hypothesis of a fair coin? If the coin actually has a 0.6 probability of coming up heads, what is the power of this test?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we have a coin which we suspect comes up heads more often than a fair coin would.
+        As a first test, we decide to flip the coin 200 times and count the number of heads, <m>S</m>.
+        What values of <m>S</m> would be extreme enough to reject the null hypothesis of a fair coin? If the coin actually has a 0.6 probability of coming up heads, what is the power of this test?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        Suppose we find a six-sided die and wonder whether it's fair.
+        As a first test, we decide to roll the die 100 times and count the number of times it comes up 1.
+        The expected number of 1's is 50/3, with a variance of 125/9.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Using a normal approximation, what is the smallest number of 1's greater than 50/3 that would be extreme enough to reject the null hypothesis of a fair die?
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Using a normal approximation, what is the greatest number of 1's less than 50/3 that would be extreme enough to reject the null hypothesis of a fair die?
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Suppose that this die is weighted so that it rolls a 1 with probability 0.2.
+          What would be the power of our test?
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Suppose we roll the die 100 times and see 23 1's.
+          Use the maximum likelihood value for the probability of rolling a 1 to calculate the power of the test.
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose a particular plant when grown outdoors has an average height of 39 in with a variance of 20 in<m>^2</m>.
+        We suspect that growing this plant in a greenhouse will increase its height.
+        We take the average height of a sample of 50 plants grown in a greenhouse.
+        What is the minimum average height of this sample that would be extreme enough to reject the null hypothesis of equal means at the <m>p = 0.05</m> significance level? If the plants, when grown in a greenhouse, would truly have an average height of 41 in, what is the power of our test?
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A store owner wants to determine how much shelf space to allocate to each of the drinks that they sell.
+        They survey their customers about their favorite drinks.
+        Is the data below consistent with the null hypothesis that each type of drink will be equally preferred?
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular>
+          <row header="yes" bottom="minor">
+            <cell halign="center">drink type</cell>
+            <cell halign="center">water</cell>
+            <cell halign="center">soda</cell>
+            <cell halign="center">tea</cell>
+            <cell halign="center">coffee</cell>
+            <cell halign="center">energy drinks</cell>
+          </row>
+
+          <row>
+            <cell halign="center">favorite</cell>
+            <cell halign="center">28</cell>
+            <cell halign="center">17</cell>
+            <cell halign="center">15</cell>
+            <cell halign="center">26</cell>
+            <cell halign="center">14</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        A particular drug is administered in 100 independent trials.
+        In each trial, the drug is administered to four people, and we count how many respond to the drug.
+        The table below shows how many trials have each different count of people who respond to the drug.
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular>
+          <row header="yes" bottom="minor">
+            <cell halign="center"># who respond to drug</cell>
+            <cell halign="center">0</cell>
+            <cell halign="center">1</cell>
+            <cell halign="center">2</cell>
+            <cell halign="center">3</cell>
+            <cell halign="center">4</cell>
+          </row>
+
+          <row>
+            <cell halign="center"># of trials</cell>
+            <cell halign="center">3</cell>
+            <cell halign="center">11</cell>
+            <cell halign="center">31</cell>
+            <cell halign="center">34</cell>
+            <cell halign="center">21</cell>
+          </row>
+        </tabular>
+      </table>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          Is the data consistent with a binomial distribution with parameter <m>\theta = 0.7</m>?
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          What is the total number of people who have been administered the drug? What is the total number who have responded to it? What is the maximum likelihood estimation <m>\widehat{\theta}</m> for the probability that a person will respond to the drug?
+        </p>
+      </statement>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Is the data consistent with a binomial distribution with the MLE value of <m>\widehat{\theta}</m>?
+        </p>
+      </statement>
+    </task>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Calculate the covariance of <m>X</m> and <m>Y</m>:
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 1</m></cell>
+            <cell><m>X = 2</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 0</m></cell>
+            <cell right="minor">0.12</cell>
+            <cell>0.24</cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor">0.3</cell>
+            <cell>34</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Calculate the covariance of <m>X</m> and <m>Y</m>:
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 0</m></cell>
+            <cell right="minor"><m>X = 1</m></cell>
+            <cell><m>X = 2</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 0</m></cell>
+            <cell right="minor">0.08</cell>
+            <cell right="minor">0.16</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor">0.14</cell>
+            <cell right="minor">0.2</cell>
+            <cell>0.32</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we roll a fair, 4-sided die two times.
+        Let <m>X</m> be the sum of the rolls, and let <m>Y</m> be the product of the rolls.
+        Find the covariance of <m>X</m> and <m>Y</m>.
+      </p>
+
+      <p>
+        [Note: Somewhat tedious.]
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Calculate the correlation of <m>X</m> and <m>Y</m>:
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 1</m></cell>
+            <cell><m>X = 2</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 0</m></cell>
+            <cell right="minor">0.12</cell>
+            <cell>0.24</cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor">0.3</cell>
+            <cell>34</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Calculate the correlation of <m>X</m> and <m>Y</m>:
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular halign="center">
+          <row header="yes" bottom="minor">
+            <cell right="minor"></cell>
+            <cell right="minor"><m>X = 0</m></cell>
+            <cell right="minor"><m>X = 1</m></cell>
+            <cell><m>X = 2</m></cell>
+          </row>
+
+          <row bottom="minor">
+            <cell right="minor"><m>Y = 0</m></cell>
+            <cell right="minor">0.08</cell>
+            <cell right="minor">0.16</cell>
+            <cell>0.1</cell>
+          </row>
+
+          <row>
+            <cell right="minor"><m>Y = 1</m></cell>
+            <cell right="minor">0.14</cell>
+            <cell right="minor">0.2</cell>
+            <cell>0.32</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        Suppose we roll a fair, 4-sided die two times.
+        Let <m>X</m> be the sum of the rolls, and let <m>Y</m> be the product of the rolls.
+        Find the correlation of <m>X</m> and <m>Y</m>.
+      </p>
+
+      <p>
+        [Note: Somewhat tedious.]
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A survey of local companies collects information about marketing budgets <m>X</m> and revenue <m>Y</m> (each measures in thousands of dollars), shown below.
+        A linear regression gives the best linear fit as <m>Y = 18.28 X + 29.69</m>.
+        What is the coefficient of determination <m>r^2</m>?
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular>
+          <row header="yes" bottom="minor">
+            <cell halign="right"><m>x_i</m></cell>
+            <cell halign="right"><m>y_i</m></cell>
+            <cell halign="right"><m>(y_i - \text{avg})^2</m></cell>
+            <cell halign="right"><m>\text{pred } y_i</m></cell>
+            <cell halign="right"><m>\text{res}^2</m></cell>
+          </row>
+
+          <row>
+            <cell halign="right">200</cell>
+            <cell halign="right">4300</cell>
+            <cell halign="right">2073600</cell>
+            <cell halign="right">3686</cell>
+            <cell halign="right">377377</cell>
+          </row>
+
+          <row>
+            <cell halign="right">420</cell>
+            <cell halign="right">7700</cell>
+            <cell halign="right">3841600</cell>
+            <cell halign="right">7707</cell>
+            <cell halign="right">53</cell>
+          </row>
+
+          <row>
+            <cell halign="right">270</cell>
+            <cell halign="right">4500</cell>
+            <cell halign="right">1537600</cell>
+            <cell halign="right">4965</cell>
+            <cell halign="right">216495</cell>
+          </row>
+
+          <row>
+            <cell halign="right">380</cell>
+            <cell halign="right">7000</cell>
+            <cell halign="right">1587600</cell>
+            <cell halign="right">6976</cell>
+            <cell halign="right">572</cell>
+          </row>
+
+          <row bottom="minor">
+            <cell halign="right">300</cell>
+            <cell halign="right">5200</cell>
+            <cell halign="right">291600</cell>
+            <cell halign="right">5514</cell>
+            <cell halign="right">98401</cell>
+          </row>
+
+          <row>
+            <cell halign="right">sum:</cell>
+            <cell halign="right">28700</cell>
+            <cell halign="right">9332000</cell>
+            <cell halign="right">28848</cell>
+            <cell halign="right">692898</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A sample of 100 measurements are taken and a best fit line is calculated, resulting in the data below (the final line shows the sums for each column).
+        Find the coefficient of determination.
+      </p>
+
+      <table>
+        <title></title>
+
+        <tabular>
+          <row header="yes" bottom="minor">
+            <cell halign="center"><m>x_i</m></cell>
+            <cell halign="center"><m>y_i</m></cell>
+            <cell halign="center"><m>\text{pred } y_i</m></cell>
+            <cell halign="center"><m>(y - \text{avg})^2</m></cell>
+            <cell halign="center"><m>\text{res}^2</m></cell>
+          </row>
+
+          <row>
+            <cell halign="center">38.00</cell>
+            <cell halign="center">121.00</cell>
+            <cell halign="center">93.17</cell>
+            <cell halign="center">11.83</cell>
+            <cell halign="center">774.33</cell>
+          </row>
+
+          <row>
+            <cell halign="center">87.00</cell>
+            <cell halign="center">241.00</cell>
+            <cell halign="center">238.95</cell>
+            <cell halign="center">13586.23</cell>
+            <cell halign="center">4.22</cell>
+          </row>
+
+          <row>
+            <cell halign="center">30.00</cell>
+            <cell halign="center">61.00</cell>
+            <cell halign="center">69.37</cell>
+            <cell halign="center">4024.63</cell>
+            <cell halign="center">70.12</cell>
+          </row>
+
+          <row>
+            <cell halign="center">35.00</cell>
+            <cell halign="center">85.00</cell>
+            <cell halign="center">84.25</cell>
+            <cell halign="center">1555.51</cell>
+            <cell halign="center">0.57</cell>
+          </row>
+
+          <row>
+            <cell halign="center">⋮</cell>
+            <cell halign="center">⋮</cell>
+            <cell halign="center">⋮</cell>
+            <cell halign="center">⋮</cell>
+            <cell halign="center">⋮</cell>
+          </row>
+
+          <row>
+            <cell halign="center">33.00</cell>
+            <cell halign="center">108.00</cell>
+            <cell halign="center">78.30</cell>
+            <cell halign="center">270.27</cell>
+            <cell halign="center">882.19</cell>
+          </row>
+
+          <row bottom="minor">
+            <cell halign="center">26.00</cell>
+            <cell halign="center">32.00</cell>
+            <cell halign="center">57.47</cell>
+            <cell halign="center">8545.15</cell>
+            <cell halign="center">648.91</cell>
+          </row>
+
+          <row>
+            <cell halign="center">sum:</cell>
+            <cell halign="center">12444.00</cell>
+            <cell halign="center">12444.00</cell>
+            <cell halign="center">515206.64</cell>
+            <cell halign="center">29789.80</cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+  </exercise>
+  </exercises>
+</section>
