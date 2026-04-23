@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-05" margin="0.5in">
+  <title>Quiz 5</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes or textbooks is not allowed.
+      You may use a scientific calculator, not a graphing calculator or phone app.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <statement>
+        <p>
+          The joint and marginal distributions of <m>X</m> and <m>Y</m> are given below.
+          Find <m>\Cov(X, Y)</m> and <m>\rho_{X, Y}</m>.
+        </p>
+
+        <table>
+          <title>Joint Distribution Table</title>
+
+          <tabular halign="center">
+            <row header="yes" bottom="minor">
+              <cell right="minor"></cell>
+              <cell><m>Y = 1</m></cell>
+              <cell><m>Y = 2</m></cell>
+              <cell><m>Y = 3</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>X = 0</m></cell>
+              <cell><m>0.1</m></cell>
+              <cell><m>0.15</m></cell>
+              <cell><m>0.1</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>X = 1</m></cell>
+              <cell><m>0.15</m></cell>
+              <cell><m>0.2</m></cell>
+              <cell><m>0.3</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <table>
+          <title>Distribution Table for <m>X</m></title>
+
+          <tabular halign="center">
+            <row header="yes" bottom="minor">
+              <cell right="minor"><m>x</m></cell>
+              <cell><m>0</m></cell>
+              <cell><m>1</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>\Pr(X = x)</m></cell>
+              <cell><m>0.35</m></cell>
+              <cell><m>0.65</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <table>
+          <title>Distribution Table for <m>Y</m></title>
+
+          <tabular halign="center">
+            <row header="yes" bottom="minor">
+              <cell right="minor"><m>y</m></cell>
+              <cell><m>1</m></cell>
+              <cell><m>2</m></cell>
+              <cell><m>2</m></cell>
+            </row>
+
+            <row>
+              <cell right="minor"><m>\Pr(Y = y)</m></cell>
+              <cell><m>0.25</m></cell>
+              <cell><m>0.35</m></cell>
+              <cell><m>0.4</m></cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+
+      <solution>
+        <p>
+          <m>\Cov(X, Y) = \E(XY) - \E(X)\E(Y)</m>. We have:
+          <md>
+            <mrow> \E(X) \amp = 0(0.35) + 1(0.65) = 0.65 </mrow>
+            <mrow> \E(Y) \amp = 1(0.25) + 2(0.35) + 3(0.4) = 2.15 </mrow>
+            <mrow> \E(XY) \amp = (0)(1)(0.1) + (0)(2)(0.15) + (0)(3)(0.1) + </mrow>
+            <mrow> \amp \quad\, (1)(1)(0.15) + (1)(2)(0.2) + (1)(3)(0.3) = 1.45 \\ </mrow>
+            <mrow> \Cov(X, Y) \amp = 1.45 - (0.65)(2.15) = \boxed{0.0525} </mrow>
+          </md>
+          Since <m>X</m> is an indicator random variable, we have <m>\Var(X) = (0.65)(0.35) = 0.2275</m>.
+          For <m>\Var(Y)</m>:
+          <md>
+            <mrow> \E(Y^2) \amp = 1^2(0.25) + 2^2(0.35) + 3^2(0.4) = 5.25 </mrow>
+            <mrow> \Var(Y) \amp = \E(Y^2) - (\E(Y))^2 = 5.25 - (2.15)^2 = 0.6275 </mrow>
+          </md>
+          So the correlation is:
+          <md>
+            <mrow> \rho_{X, Y} \amp = \frac{\Cov(X, Y)}{\sqrt{\Var(X)\Var(Y)}} = \frac{0.0525}{\sqrt{(0.2275)(0.6275)}} \approx \boxed{0.139}. </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          A sample of 30 measurements are taken and a best fit line is calculated, resulting in the data below (the final row of the table shows the sums for each column).
+          Find the RSS, SST, and coefficient of determination.
+        </p>
+
+        <table>
+          <title>Sample Data</title>
+
+          <tabular>
+            <row header="yes" bottom="minor">
+              <cell><m>x_i</m></cell>
+              <cell><m>y_i</m></cell>
+              <cell>best fit predicted <m>y_i</m></cell>
+              <cell>res<m>^2</m></cell>
+              <cell><m>(y - \textrm{avg }y)^2</m></cell>
+            </row>
+
+            <row>
+              <cell><m>1.94</m></cell>
+              <cell><m>3.31</m></cell>
+              <cell><m>10.53</m></cell>
+              <cell><m> 52.13</m></cell>
+              <cell><m>886.55</m></cell>
+            </row>
+
+            <row>
+              <cell><m>2.63</m></cell>
+              <cell> <m>10.38</m></cell>
+              <cell><m> 17.37</m> </cell>
+              <cell><m>48.76</m></cell>
+              <cell><m> 515.34</m></cell>
+            </row>
+
+            <row>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+              <cell><m>\vdots</m></cell>
+            </row>
+
+            <row>
+              <cell><m>3.94</m></cell>
+              <cell><m>19.47</m></cell>
+              <cell><m> 30.31</m> </cell>
+              <cell><m>117.35</m></cell>
+              <cell><m> 185.24 </m></cell>
+            </row>
+
+            <row bottom="minor">
+              <cell><m>6.35</m></cell>
+              <cell><m> 53.42</m></cell>
+              <cell><m>54.22</m></cell>
+              <cell><m>0.64</m></cell>
+              <cell><m>413.51</m></cell>
+            </row>
+
+            <row>
+              <cell>sum:</cell>
+              <cell><m>992.55</m></cell>
+              <cell><m>992.55</m></cell>
+              <cell><m> 953.03</m></cell>
+              <cell><m>38397.35</m></cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+
+      <solution>
+        <p>
+          The RSS is the sum of res<m>^2</m>, <m>953.03</m>, and the SST is the sum of <m>(y - \textrm{avg})^2</m>, <m>38397.35</m>.
+          Then the coefficient of determination is:
+          <md>
+            <mrow> r^2 = 1 - \frac{\text{RSS}}{\text{SST}} = 1 - \frac{953.03}{38397.35} \approx \boxed{0.975} </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>
