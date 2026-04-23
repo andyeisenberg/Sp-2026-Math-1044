@@ -1198,6 +1198,33 @@ var ptx_lunr_docs = [
   "body": "  Suppose we have a coin that we're told is not fair and has a probability of of coming up heads. We suspect the probability is even higher than this.  Throughout the following parts, do not use a normal approximation.     We flip the coin 10 times and see 9 heads. Should we use a 1-tailed test or a 2-tailed test? Find the -value. Do we have strong enough evidence to reject the null hypothesis at a 0.05 significance level?    Using a 1-tailed test, the -value is : The -value is the sum: , so we can reject the null hypothesis.      What is the minimum number of heads we would need to see in 10 flips to reject the null hypothesis?    We saw in part (a) that at least 9 heads is enough to reject. Then: Adding to the previous probabilities, . So 8 heads would not be enough to reject the null hypothesis, therefore the minimum number of heads to reject would be 9.      What is the power of the test if the true value of the parameter is ?    With : So the power of the test is .    "
 },
 {
+  "id": "quiz-05",
+  "level": "1",
+  "url": "quiz-05.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 5",
+  "body": " Quiz 5    The following work should be completed individually. Use of notes or textbooks is not allowed. You may use a scientific calculator, not a graphing calculator or phone app.  Show all work unless instructed otherwise.       The joint and marginal distributions of and are given below. Find and .   Joint Distribution Table                        Distribution Table for                Distribution Table for                    . We have: Since is an indicator random variable, we have . For : So the correlation is:         A sample of 30 measurements are taken and a best fit line is calculated, resulting in the data below (the final row of the table shows the sums for each column). Find the RSS, SST, and coefficient of determination.   Sample Data      best fit predicted  res                                           sum:           The RSS is the sum of res , , and the SST is the sum of , . Then the coefficient of determination is:      "
+},
+{
+  "id": "quiz-05-3-1",
+  "level": "2",
+  "url": "quiz-05.html#quiz-05-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The joint and marginal distributions of and are given below. Find and .   Joint Distribution Table                        Distribution Table for                Distribution Table for                    . We have: Since is an indicator random variable, we have . For : So the correlation is:    "
+},
+{
+  "id": "quiz-05-4-1",
+  "level": "2",
+  "url": "quiz-05.html#quiz-05-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A sample of 30 measurements are taken and a best fit line is calculated, resulting in the data below (the final row of the table shows the sums for each column). Find the RSS, SST, and coefficient of determination.   Sample Data      best fit predicted  res                                           sum:           The RSS is the sum of res , , and the SST is the sum of , . Then the coefficient of determination is:    "
+},
+{
   "id": "exam-01",
   "level": "1",
   "url": "exam-01.html",
@@ -1400,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "recitation-calculus-review.html#thm-FTC",
   "type": "Theorem",
-  "number": "127",
+  "number": "131",
   "title": "Fundamental Theorem of Calculus.",
   "body": " Fundamental Theorem of Calculus   If is an antiderivative of i.e., if then:    "
 },
